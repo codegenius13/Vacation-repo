@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Book A Trip</title>
+    <!-- OUR STYLES SECTION -->
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/Vacation.css">
+    <!-- END STYLES SECTION -->
+</head>
+<body>
+   <!-- PRELOADER-->
+   <div id="preloader"></div>
+   <!-- END PRELOADER-->
+   
+    <!-- HEADER SECTION -->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+          <div class="navbar-header"></div>
+          <a href="Vacation-home.html" class="pull-left visible-md visible-lg visible-sm visible-xs">
+              <div>
+                  <img src="Vacation Images/images.jpeg"
+                   alt="Logo image" id="logo-pic">  
+              </div>
+          </a>
+          <div class="navbar-brand">
+             <a href="Vacation-home.html"><h1 class="visible-lg visible-md visible-sm"> ADVENTOIRRE</h1>
+             <h6 class="visible-xs">ADVENTOIRRE</h6>
+            </a>
+           </div> 
+           <!-- SIDEBAR -->
+           <label>
+            <input type="checkbox">
+            <div class="toggle visible-xs" id="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+            <div id="sidebar">
+            <div class="overlay  hidden-md hidden-lg hidden-sm" id="cover" onclick="close()">
+            </div>
+            <div class="slide hidden-md hidden-lg hidden-sm" id="slide">
+              <p><a href="mailto: adventoirre@gmail.com">adventoirre@gmail.com</a></p>
+             <ol>
+              <li>
+                <a href="Vacation-home.html">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">Home</a>
+              </li>
+             <hr id="line"class="visible-xs">
+                <li>
+                    <a href="Vacation-About.html">
+                      <span class="glyphicon glyphicon-info-sign"></span>
+                      <br class="hidden-xs">About</a>
+                </li>
+               <hr id="line"class="visible-xs">
+                <li>
+                    <a href="Vacation-Destination.html">
+                        <span class="glyphicon glyphicon-road"></span>
+                    <br class="hidden-xs">Destination</a>
+                </li>
+               <hr id="line"class="visible-xs">
+                <li class="active">
+                    <a href="Vacation-Book-a-trip.html">
+                        <span class="glyphicon glyphicon-time"></span>
+                    <br class="hidden-xs">Book a trip NOW!</a>
+                </li>
+               <hr id="line"class="visible-xs">
+                <li>
+                  <a href="Vacation-Blog.html">
+                      <span class="glyphicon glyphicon-book"></span>
+                  <br class="hidden-xs">Blog</a>
+              </li>
+             <hr id="line"class="visible-xs">
+              <li>
+                <a href="tel: 0802-970-3045">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                <br class="hidden-xs">Contact</a>
+            </li>
+           <hr id="line"class="visible-xs">
+            <div>
+             <li>
+              <a href="" target="_blank">
+                  <img src="icon svg/facebook.svg" alt="facebook">
+               <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/instagram.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/twitter.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+            </div>
+          </ol>
+           <p id="verified">&reg; ADVENTOIRRE 2022</p>
+          </div>
+          </div>
+        </label>
+        <!-- END SIDEBAR -->
+           <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="Vacation-home.html">
+                <span class="glyphicon glyphicon-home"></span>
+                <br class="hidden-xs">Home</a>
+            </li>
+           <hr id="line"class="visible-xs">
+              <li>
+                  <a href="">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                    <br class="hidden-xs">About</a>
+              </li>
+             <hr id="line"class="visible-xs">
+              <li>
+                <a href="">
+                    <span class="glyphicon glyphicon-road"></span>
+                <br class="hidden-xs">Destination</a>
+             </li>
+             <hr id="line"class="visible-xs">
+              <li class="active">
+                  <a href="Vacation-Book-a-trip.html">
+                      <span class="glyphicon glyphicon-time"></span>
+                  <br class="hidden-xs">Book a trip NOW!</a>
+              </li>
+             <hr id="line"class="visible-xs">
+              <li>
+                <a href="">
+                    <span class="glyphicon glyphicon-book"></span>
+                <br class="hidden-xs">Blog</a>
+            </li>
+           <hr id="line"class="visible-xs">
+            <li>
+              <a href="tel: 0802-970-3045">
+                  <span class="glyphicon glyphicon-earphone"></span>
+              <br class="hidden-xs">Contact</a>
+          </li>
+         <hr id="line"class="visible-xs">
+          <li>
+            <a href="" target="_blank">
+                <img src="icon svg/facebook.svg" alt="facebook">
+            <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/instagram.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/twitter.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+          </ul> 
+        </div> 
+      </div> 
+    </nav> 
+  </header>
+    <!-- END HEADER SECTION -->
+    <!-- BODY SECTION -->
+    <h1 class="title">Book a trip Now!</h1>
+    <div class="table">
+      <p>This section of the vacation destination site requires some steps that you
+      must follow in terms of booking and adding to your list of future trips.</p>
+      <p>Some informations have been provided for you in the table below on what this section is all about.
+         The table below will help you to fill out what is required for the boxes below the page.
+         Either you want to add to your list of trips or Book an upcoming trip. 
+      </p>
+      <h3>Take a look at the instructions</h3>
+      <div id="read-info">
+      <table>
+        <tr>
+          <td id="td-one">Box 1:</td>
+          <td id="td-two"><span>Names: </span>In this 
+           section of the boxes to fill below, you will need to provide us with the correct names used to register 
+          for this website.</td>
+        </tr>
+        <tr>
+          <td id="td-one">Box 2:</td>
+          <td id="td-two"><span>Destination Information: </span>In this 
+           section of the boxes to fill below, you will need to include the name 
+          of your chosen destination that you wish to visit from our available countries.</td>
+        </tr>
+        <tr>
+          <td id="td-one">Box 3:</td>
+          <td id="td-two"><span>Destination Location: </span>This section of the boxes
+          to fill below, you will need to provide us with the geographical location 
+          of the destination you have given.</td>
+        </tr>
+        <tr>
+          <td id="td-one">Box 4:</td>
+          <td id="td-two"><span>Destination Location URL:</span> Thsi is requires you to give a description of the exact place 
+           you want to take your vacation. That is the room section you want to choose from the hotel 
+           being provided for this Vacation. <a href="Vacation-Blog.html">Click here to see the details of the 
+            hotel rooms.
+           </a> 
+        </td>
+        </tr>
+        <tr>
+          <td id="td-one">Box 5:</td>
+          <td id="td-two"><span>Mode of transportation:</span> In this section you are being asked to select 
+          your prefered mode of transportation. Select Airways for Transportation By Air
+          while Seaways for Transportation By Water. The road transportation is for vacation
+          at your closest vicinity.</td>
+        </tr>
+        <tr>
+          <td id="td-one">Box 6:</td>
+          <td id="td-two"><span>Hotel Name:</span>In this section of the following 
+          boxes, you are asked to put in the name of the available hotels we have for this vacation
+           destination project.</td>
+        </tr>
+        <tr>
+          <td id="td-one">Box 7:</td>
+          <td id="td-two"><span>Hotel Class:</span>In this section of the boxes, you 
+          are asked a suitable class of hotel for your taste. These Hotel Classes 
+          vary in prices.
+          <div>Hotel Classes:</div>
+          <ul>
+            <li>High Class: Large room with a master bed. Air conditioner and heater are available</li>
+            <li>Medium Class: Medium size room with a medium size bed. Air conditioner and heater available</li>
+            <li>Lower Class: Small room size with a bed comfortable fot at most one person. No Air conditioner and heater available</li>
+            <li>Couples Class: Decorated to the taste of the couple. Also the same as the High class Hotel. 
+              <span>Only Available On Honeymoon Vacation</span>
+            </li>
+          </ul> 
+         </td>
+        </tr>
+        <tr>
+          <td id="td-one">Box 8:</td>
+          <td id="td-two"><span>Code Number Input:</span> Input your code number given to you while 
+          signing up for this site. Kindly sign up if there is no code number.
+          <div>How you can sign up:</div>
+          <ul>
+            <li>Scroll to the bottom of this page</li>
+            <li>Click This Link to Scroll down <a href="#email-form">
+              <i class="glyphicon glyphicon-hand-down"></i>
+            </a></li>
+            <li>Sign in from our home page</li>
+          </ul> 
+         </td>
+        </tr>
+        <tr>
+          <td id="td-one">Box 9:</td>
+          <td id="td-two">Click the button to book a trip</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+    <div class="box reveal">
+      <h3> Fill out these boxes below <i class="glyphicon glyphicon-hand-down"></i> </h3>
+      <p>Provide the necessary information for the trip you want to take</p>
+      <p>Follow the guide table at the top of the page <i class="glyphicon glyphicon-hand-up"></i></p>
+     <main>
+        <form id="destination_details_form">
+          <label for="description">First Name</label>
+          <input type="text" id="name-one" required placeholder="Provide Your First Name">
+          <label for="description">Last Name</label>
+          <input type="text" id="name-two" required placeholder="Provide Your Last Name">
+          <label for="description">Other Names</label>
+          <input type="text" id="name-three" required placeholder="Provide Other Names">
+            <label for="name">Destination</label>
+            <div class="mode">
+              <select name="countries" required>
+                <button class="btn-default active">
+                 <option value="...">...</option>
+                 <option value="Canada">Canada</option>
+                 <option value="Australia">Australia</option>
+                 <option value="United States Of America">United States Of America</option>
+                 <option value="Germany">Germany</option>
+                 <option value="India">India</option>
+                 <option value="South Africa">South Africa</option>
+                 <option value="Denmark">Denmark</option>
+                 <option value="France">France</option>
+                 <option value="Spain">Spain</option>
+                 <option value="Japan">Japan</option>
+                 <option value="China">China</option>
+                 <option value="South Korea">South Korea</option>
+                 <option value="Singapore Malaysia">Singapore Malaysia</option>
+                 <option value="Qatar">Qatar</option>
+                 <option value="United Arab Emirates">United Arab Emirates</option>
+                 <option value="Russia">Russia</option>
+                 <option value="England">England</option>
+                 <option value="Scotland">Scotland</option>
+                 <option value="Wales">Wales</option>
+                 <option value="Ghana">Ghana</option>
+                 <option value="Egypt">Egypt</option>
+                 <option value="Brazil">Brazil</option>
+                </button>
+              </select>
+            </div>
+            <label for="location">Destination Location</label>
+            <div class="mode">
+              <select name="States" required>
+                 <option value="...">...</option>
+                 <option value="Rio">Rio</option>
+                 <option value="Ontawa">Ontawa</option>
+                 <option value="Munich">Munich</option>
+                 <option value="Paris">Paris</option>
+                 <option value="Mumbai">Mumbai</option>
+                 <option value="Cambera">Cambera</option>
+                 <option value="Cairo">Cairo</option>
+                 <option value="Tokyo">Tokyo</option>
+                 <option value="Madrid">Madrid</option>
+                 <option value="Barcelona">Bacelona</option>
+                 <option value="Berlin">Berlin</option>
+                 <option value="New York">New York</option>
+                 <option value="Miami">Miami</option>
+                 <option value="Pennsylvania">Pennsylvania</option>
+                 <option value="Copenhagen">Copenhagen</option>
+                 <option value="Johannesberg">Johannesberg</option>
+                 <option value="Beijing">Beijing</option>
+                 <option value="Seoul">Seoul</option>
+                 <option value="Cardiff">Cardiff</option>
+                 <option value="London">London</option>
+                 <option value="Manchester">Manchester</option>
+                 <option value="Aberdeen">Aberdeen</option>
+                 <option value="Glasgow">Glasgow</option>
+                 <option value="Doha">Doha</option>
+                 <option value="Abu Dhabi">Abu Dhabi</option>
+                 <option value="Dubai">Dubai</option>
+                 <option value="Accra">Accra</option>
+                 <option value="New Bronswich">New Bronswich</option>
+                 <option value="Moscow">Moscow</option>
+                 <option value="Peterburg">Peterburg</option>
+              </select>
+            </div>
+            <label for="description">Destination Location URL</label>
+            <textarea id="description" placeholder="Provide The Google Location"></textarea>
+            <label for="description">Mode of transportation</label>
+            <div class="mode">
+              <select name="vehicle" required>
+                <option value="...">...</option>
+                 <option value="Seaways">Seaways Transportation</option>
+                 <option value="Airway">Airway Transportation</option>
+                 <option value="Road">Road Transportation</option>
+              </select>
+            </div>
+            <label for="description">Hotel Name</label>
+            <input type="text" id="hotel-name" required placeholder="Select one of the available hotels we have">
+            <label for="description">Hotel Class</label>
+            <div class="mode">
+              <select name="hotel-class">
+                 <option value="...">...</option>
+                 <option value="High">High Class</option>
+                 <option value="Medium">Medium Class</option>
+                 <option value="Lower">Lower Class</option>
+                 <option value="Couples">Couples Class</option>
+              </select>
+            </div>
+            <label for="description">Code Number for this site</label>
+            <input type="text" id="number" required placeholder="Input code number given while signing up">
+        </form>
+    </main>
+    <p>Your trip will be scheduled soon...</p>
+    </div>
+    <div class="buy reveal">
+      <div class="container-buy">
+        <h2>Card Information</h2>
+        <p>Indicate details of the card from which money will be debited</p>
+        <div class="container-buy-input">
+          <div class="container-card">
+            <h4 id="money">$(USD)</h4>
+            <div id="cards">
+             <img src="icon svg/mastercard.png" alt="mastercard" id="master">
+             <img src="icon svg/visa.png" alt="visa">
+             <img src="icon svg/verve.svg" alt="verve">
+            </div>
+          </div>
+          <div class="container-input">
+            <div class="point-one">
+            <div>Card Number <i class="glyphicon glyphicon-credit-card"></i></div>
+            <input type="text" required placeholder="0000 0000 0000 0000" id="card-num">
+            </div>
+            <div class="point-two">
+              <div id="point-two-date">
+              <div>Month and Year</div>
+              <div>
+              <input type="text" required placeholder="00" id="month">
+              <input type="text" required placeholder="00" id="year">
+              </div>
+              </div>
+              <div id="cvv">
+              <div>CVV</div>
+              <input type="password" required placeholder="***" id="cvv-input">
+              </div>
+            </div>
+          </div>
+          <div class="container-buy-hotel">
+            <div>Hotel Type</div>
+            <div class="types">
+              <div class="type-off">
+                <select name="hotel" id="hotel-choose">
+                  <option value="$(USD)">...</option>
+                  <option value="$2,900(USD)" id="high"> High Class</option>
+                  <option value="$2,500(USD)" id="medium">Medium Class</option>
+                  <option value="$2,000(USD)" id="lower">Lower Class</option>
+                  <option value="$3,000(USD)" id="couples">Couples Class</option>
+                </select>
+              </div>
+            </div>
+            <p>Note: The Hotel Type you have selected changes the price of payment. Check the top of
+              this section.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="personal-info">
+        <h2>Personal Information</h2>
+        <p>Input the required information</p>
+        <div class="name-info">
+          <input type="text" required placeholder="First Name" id="first-name">
+          <input type="text" required placeholder="Last Name" id="last-name">
+        </div>
+        <div class="county">
+          <div class="county">
+            <select name="county" id="country-name">
+              <option value="Select a Country">Select a Country</option>
+              <option value="Albania">Albania</option>
+              <option value="Algeria">Algeria</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Armenia">Armenia</option>
+              <option value="Austria">Austria</option>
+              <option value="Bahamas">Bahamas</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Republic Benin">Republic Benin</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Botwana">Botwana</option>
+              <option value="Burkina Faso">Burkina Faso</option>
+              <option value="Cameroon">Cameroon</option>
+              <option value="Canada">Canada</option>
+              <option value="Central African Republic">Central African Republic</option>
+              <option value="Chile">Chile</option>
+              <option value="Chins">Chins</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Croatia">Croatia</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Egypt">Egypt</option>
+              <option value="England">England</option>
+              <option value="Equatorial Guinea">Equatorial Guinea</option>
+              <option value="Ethopia">Ethopia</option>
+              <option value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="Gabon">Gabon</option>
+              <option value="Gambia">Gambia</option>
+              <option value="Germany">Germany</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Greece">Greece</option>
+              <option value="Guinea-Bissau">Guinea-Bissau</option>
+              <option value="Hungary">Hungary</option>
+              <option value="India">India</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Isreal">Isreal</option>
+              <option value="Italy">Italy</option>
+              <option value="Jamaica">Jamaica</option>
+              <option value="Japan">Japan</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Liberia">Liberia</option>
+              <option value="Madagascar">Madagascar</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Malawi">Malawi</option>
+              <option value="Mauritania">Mauritania</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Monaco">Monaco</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Niger">Niger</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="North Korea">North Korea</option>
+              <option value="Norway">Norway</option>
+              <option value="Panama">Panama</option>
+              <option value="Peru">Peru</option>
+              <option value="Phillipines">Phillipines</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Russia">Russia</option>
+              <option value="San Marino">San Marino</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="Senegal">Senegal</option>
+              <option value="Serbia">Serbia</option>
+              <option value="Scotland">Scotland</option>
+              <option value="Sierra Leone">Sierra Leone</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Spain">Spain</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Tanzania">Tanzania</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Togo">Togo</option>
+              <option value="Tunisia">Tunisia</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option value="Unites States Of America">Unites States Of America</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Wales">Wales</option>
+              <option value="Zambia">Zambia</option>
+              <option value="Zimbabwe">Zimbabwe</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div id="postal">
+          <div class="reside">
+            <div class="reside">
+              <select name="reside" id="reside-name">
+                <option value="Select a Country">Select a Country</option>
+                <option value="Tirana">Tirana</option>
+                <option value="Algiers">Algiers</option>
+                <option value="Andorra la Vella">Andorra la Vella</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Yerevan">Yerevan</option>
+                <option value="Vienna">Vienna</option>
+                <option value="Nassau">Nassau</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Brussels">Brussels</option>
+                <option value="Porto Novo">Porto Novo</option>
+                <option value="Brasillia">Brasillia</option>
+                <option value="Sofia">Sofia</option>
+                <option value="Gamborre">Gamborre</option>
+                <option value="Ougadougou">Ougadougou</option>
+                <option value="Yaounde">Yaounde</option>
+                <option value="Ottawa">Ottawa</option>
+                <option value="Praia">Praia</option>
+                <option value="Santiago">Santiago</option>
+                <option value="Bogota">Bogota</option>
+                <option value="San Jose">San Jose</option>
+                <option value="Zagreb">Zagreb</option>
+                <option value="Prague">Prague</option>
+                <option value="Copenhagen">Denmark</option>
+                <option value="Quito">Quito</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Malabo">Malabo</option>
+                <option value="Addis Ababa">Addis Ababa</option>
+                <option value="Helsinki">Helsinki</option>
+                <option value="Paris">Paris</option>
+                <option value="Libreville">Libreville</option>
+                <option value="Banjul">Banjul</option>
+                <option value="Accra">Accra</option>
+                <option value="Athens">Athens</option>
+                <option value="Bissau">Bissau</option>
+                <option value="Budapest">Budapest</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Dublin">Dublin</option>
+                <option value="Jerusalem">Jerusalem</option>
+                <option value="Rome">Rome</option>
+                <option value="Kingston">Kingston</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Monrovia">Monrovia</option>
+                <option value="Antananarivo">Antananarivo</option>
+                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                <option value="Lilongwe">Lilongwe</option>
+                <option value="Nouakchott">Nouakchott</option>
+                <option value="Mexico City">Mexico City</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Rabat">Rabat</option>
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="Wellington">Wellington</option>
+                <option value="Niamey">Niamey</option>
+                <option value="Abuja">Abuja</option>
+                <option value="Skopje">Skopje</option>
+                <option value="Oslo">Oslo</option>
+                <option value="Panama City">Panama City</option>
+                <option value="Lima">Lima</option>
+                <option value="Manila">Manila</option>
+                <option value="Warsaw">Warsaw</option>
+                <option value="Lisbon">Lisbon</option>
+                <option value="Doha">Doha</option>
+                <option value="Moscow">Moscow</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Riyadh">Riyadh</option>
+                <option value="Dakar">Dakar</option>
+                <option value="Belgrade">Belgrade</option>
+                <option value="Freetown">Freetown</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Bratislavia">Bratislavia</option>
+                <option value="Pretoria">Pretoria</option>
+                <option value="Juba">Juba</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Stockholm">Stockholm</option>
+                <option value="Bern">Bern</option>
+                <option value="Dodoma">Dodoma</option>
+                <option value="Bangkok">Bangkok</option>
+                <option value="Lome">Lome</option>
+                <option value="Ankara">Ankara</option>
+                <option value="Kampala">Kampala</option>
+                <option value="Kiev">Kiev</option>
+                <option value="Abu Dhabi">Abu Dhabi</option>
+                <option value="Washington DC">Washington DC</option>
+                <option value="Motevideo">Motevideo</option>
+                <option value="Caracas">Caracas</option>
+                <option value="Hanol">Hanol</option>
+                <option value="Lusska">Lusska</option>
+                <option value="Harare">Harare</option>
+                <option value="Rio">Rio</option>
+                <option value="Munich">Munich</option>
+                <option value="Cambera">Cambera</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Barcelona">Bacelona</option>
+                <option value="Berlin">Berlin</option>
+                <option value="New York">New York</option>
+                <option value="Miami">Miami</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Johannesberg">Johannesberg</option>
+                <option value="Beijing">Beijing</option>
+                <option value="Seoul">Seoul</option>
+                <option value="Cardiff">Cardiff</option>
+                <option value="London">London</option>
+                <option value="Manchester">Manchester</option>
+                <option value="Aberdeen">Aberdeen</option>
+                <option value="Glasgow">Glasgow</option>
+                <option value="New Bronswich">New Bronswich</option>
+                <option value="Peterburg">Peterburg</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <input type="text" required placeholder="Postal Code" id="postal-code">
+        </div>
+        <div class="email">
+        <input type="text" required placeholder="E-Mail Address" id="e-address">
+        </div>
+        <form class="num">
+        <input type="tel" placeholder="Phone Number" id="phone">
+        </form>
+      </div>
+    </div>
+    <div class="consent reveal">
+      <h2>Consent <span>(Required)</span></h2>
+      <div id="must">
+        <input type="checkbox" required name="checbox" id="check">
+        <p>By submitting this form, I agree to go on a vacation via the 
+          "ADVENTOIRRE" and i have Inputed the required information above
+        </p>
+      </div>
+      <div id="must-two">
+        <input type="checkbox" required name="checbox" id="check">
+        <p>Yes, I would like to join the "ADVENTOIRRE"
+          to be able to receive articles, tips, travel updates and deals and more
+          directly into my Login account
+        </p>
+      </div>
+    </div>
+    <div class="submit reveal">
+    <button type="submit" id="add-list">BOOK IT NOW!</button>
+    </div>
+    <div class="jumbotron">
+      <h2>Suscribe to Stay Updated </h2>
+      <p>Sign up to be the first to know about new trips, and general 
+        awesomeness!
+      </p>
+      <div id="email-form">
+       <button type="submit"><a href="Vacation-login.html">Sign up</a></button>
+      </div>
+      <p>We respect your privacy. See our <span><a href="">
+        <img src="Vacation Images/cookie.png" alt="cookie" id="cookie">Privacy Policy&Cookies</a></span></p>
+    </div>
+    <!-- END BODY SECTION -->
+   <!-- FOOTER SECTION -->
+   <footer class="panel-footer">
+    <div id="site">Click the email to email us<i class="glyphicon glyphicon-hand-right"></i>
+      <a href=" mailto: adventoirrep@gmail.com">adventoirrep@gmail.com</a>
+      OR chat us<i class="glyphicon glyphicon-hand-right"></i>
+      <a href="https://wa.me/0802-970-3045" target="_blank"><img src="icon svg/whatsapp white.svg" alt="whatsapp" id="whatsapp"></a>
+    </div>
+    <div class="container-three">
+     <div class="row">
+       <section id="hours" class="col-sm-4">
+         <span>Hours:</span><div><br>
+         Mon-Thurs: 9:00am - 6:00pm <br>
+         Fri: 10:15am - 4:00pm <br>
+         Sunday Closed</div>
+         <hr id="line" class="visible-xs">
+       </section>
+       <section id="address" class="col-sm-4">
+         <span>Address:</span>
+         <div><br>Opposite New visa center, Off Igbe road, 
+         Igbogbo, Ikorodu, Lagos State <br></div>
+         <p>*Comments: We give the best services</p>
+         <hr id="line" class="visible-xs">
+       </section>
+       <section id="partners" class="col-sm-4">
+         <span>Agencies in Partner:</span>
+         <ul>
+           <li>Clearview Int'l Travels & Tours Ltd.</li>
+           <li>WOW Travels and Tours</li>
+           <li>Sephora Travels</li>
+           <li>Inspiring Careers and Solutions</li>
+           <li>Royal coat travels limited</li>
+         </ul>
+         <hr id="line" class="visible-xs">
+       </section>
+     </div>
+     <div class="text-center">&reg; ADVENTOIRRE 2022</div>
+   </footer>
+   <!-- END FOOTER SECTION -->
+
+   <!-- SCROLL TOP BUTTON -->
+   <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">
+   <i class="glyphicon glyphicon-chevron-up"></i></button></a>
+   <!-- END SCROLL TOP BUTTON -->
+
+   <!-- JAVASCRIPT BOOK A TRIP -->
+   <script>
+   </script>
+   <!-- END JAVASCRIPT BOOK A TRIP -->
+
+   <!-- OUR JAVASCRIPT SECTION -->
+   <script src="jQuery library/jquery-3.6.1.min.js"></script>
+   <script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+   <script src="bootstrap-3.4.1-dist/js/Book-a-trip.js"></script>
+   <!-- END JAVASCRIPT SECTION -->
+ </body>
+</html>

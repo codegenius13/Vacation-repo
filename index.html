@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Project</title>
+    <!-- OUR STYLES SECTION -->
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/Vacation.css">
+    <!-- END STYLES SECTION -->
+</head>
+<body>
+  <!-- PRELOADER-->
+  <div id="preloader"></div>
+  <!-- END PRELOADER-->
+
+    <!-- HEADER SECTION -->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+          <div class="navbar-header"></div>
+          <a href="Vacation-home.html" class="pull-left visible-md visible-lg visible-sm visible-xs">
+              <div>
+                  <img src="Vacation Images/images.jpeg"
+                   alt="Logo image" id="logo-pic">  
+              </div>
+          </a>
+          <div class="navbar-brand">
+             <a href="Vacation-home.html"><h1 class="hidden-xs" > Adventoirre</h1>
+              <h6 class="visible-xs">Adventoirre</h6>
+            </a>
+           </div> 
+           <!-- SIDEBAR -->
+           <label>
+            <input type="checkbox">
+            <div class="toggle visible-xs" id="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+            <div id="sidebar">
+            <div class="overlay  hidden-md hidden-lg hidden-sm" id="cover" onclick="close()">
+            </div>
+            <div class="slide hidden-md hidden-lg hidden-sm" id="slide">
+             <p><a href="mailto: adventoirre@gmail.com">adventoirre@gmail.com</a></p>
+             <ol>
+              <li class="active">
+                <a href="Vacation-home.html">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">Home</a>
+              </li>
+              <hr id="line"class="visible-xs">
+                <li>
+                    <a href="Vacation-About.html">
+                      <span class="glyphicon glyphicon-info-sign"></span>
+                      <br class="hidden-xs">About</a>
+                </li>
+                <hr id="line"class="visible-xs">
+                <li>
+                    <a href="Vacation-Destination.html">
+                        <span class="glyphicon glyphicon-road"></span>
+                    <br class="hidden-xs">Destination</a>
+                </li>
+                <hr id="line"class="visible-xs">
+                <li>
+                    <a href="Vacation-Book-a-trip.html">
+                        <span class="glyphicon glyphicon-time"></span>
+                    <br class="hidden-xs">Book a trip NOW!</a>
+                </li>
+                <hr id="line"class="visible-xs">
+                <li>
+                  <a href="Vacation-Blog.html">
+                      <span class="glyphicon glyphicon-book"></span>
+                  <br class="hidden-xs">Blog</a>
+              </li>
+              <hr id="line"class="visible-xs">
+              <li>
+                <a href="tel: 0802-970-3045">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                <br class="hidden-xs">Contact</a>
+            </li>
+            <hr id="line"class="visible-xs">
+            <div>
+             <li>
+              <a href="" target="_blank">
+                  <img src="icon svg/facebook.svg" alt="facebook">
+               <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/instagram.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/twitter.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+            </div>
+          </ol>
+           <p id="verified">&reg; ADVENTOIRRE 2022</p>
+          </div>
+          </div>
+        </label>
+        <!-- END SIDEBAR -->
+           <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="Vacation-home.html">
+                <span class="glyphicon glyphicon-home"></span>
+                <br class="hidden-xs">Home</a>
+            </li>
+            <hr id="line"class="visible-xs">
+              <li>
+                  <a href="Vacation-About.html">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                    <br class="hidden-xs">About</a>
+              </li>
+              <hr id="line"class="visible-xs">
+              <li>
+                <a href="Vacation-Destination.html">
+                    <span class="glyphicon glyphicon-road"></span>
+                <br class="hidden-xs">Destination</a>
+             </li>
+             <hr id="line"class="visible-xs">
+              <li>
+                  <a href="Vacation-Book-a-trip.html">
+                      <span class="glyphicon glyphicon-time"></span>
+                  <br class="hidden-xs">Book a trip NOW!</a>
+              </li>
+              <hr id="line"class="visible-xs">
+              <li>
+                <a href="Vacation-Blog.html">
+                    <span class="glyphicon glyphicon-book"></span>
+                <br class="hidden-xs">Blog</a>
+            </li>
+            <hr id="line"class="visible-xs">
+            <li>
+              <a href="tel: 0802-970-3045">
+                  <span class="glyphicon glyphicon-earphone"></span>
+              <br class="hidden-xs">Contact</a>
+          </li>
+          <hr id="line"class="visible-xs">
+          <li>
+            <a href="" target="_blank">
+                <img src="icon svg/facebook.svg" alt="facebook">
+            <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/instagram.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/twitter.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+          </ul> 
+        </div> 
+      </div> 
+    </nav> 
+  </header>
+    <!-- END HEADER SECTION -->
+
+    <!-- BODY SECTION -->
+    <div id="parallax">
+      <section class="parallax-move">
+          <h2 id="text-parallax"><span>It's time for a new</span><br>Adventure</h2>
+          <img src="Vacation Images/cloud.png" id="cloud">
+          <img src="Vacation Images/sun.png" id="sun">
+          <img src="Vacation Images/airplane color.png" id="ad-air">
+          <img src="Vacation Images/bird 1.png" id="bird1">
+          <img src="Vacation Images/forest 1.png" id="forest">
+          <a href="#varieties" id="btn-parallax">Explore</a>
+          <img src="Vacation Images/water.png" id="water">
+          <div class="cartoon">
+              <img src="Vacation Images/rock left.png" id="rock1">
+              <img src="Vacation Images/rock right.png" id="rock2">
+              <img src="Vacation Images/rock right.png" id="rock3">
+          </div>
+      </section>
+      </div>
+    <ul id="varieties" class="reveal">
+      <li><a href="Vacation-Destination.html">CURATED&nbsp;DESTINATIONS</a></li>
+      <li>+</li>
+      <li><a href="Vacation-Blog.html">LOCAL&nbsp;RESIDENT</a></li>
+      <li class="hidden-xs">+</li>
+      <li class="hidden-xs"><a href="Vacation-About.html">NGO&nbsp;PARTNER&nbsp;PROJECTS</a></li>
+    </ul>
+    <ul id="varieties-two" class="text-center reveal">
+    <li class="visible-xs">+</li>
+    <li class="visible-xs"><a href="">NGO&nbsp;PARTNER&nbsp;PROJECTS</a></li>
+    </ul>
+    <p class="text-center reveal">HAVE FUN, MEET NEW PEOPLE AND MAKE A DIFFERENCE !</p>
+    <hr id="line">
+    <div class="categories reveal">
+    <p id="discover">DISCOVER&nbsp;OUR&nbsp;UPCOMING&nbsp;DESTINATIONS</p>
+    <p id="click">Check out our destination icon for more trips and click for info<i class="glyphicon glyphicon-info-sign"></i>:</p>
+    <div class="destination-categories">
+      <div id="categories-section" class="row">
+        <div class="column">
+          <a href="America-Destination.html">
+          <img src="Vacation Images/America.jpeg"
+           alt="America" id="america">
+          </a>
+           <h4>A trip to America</h4>
+           <p>Next Trip:</p>
+           <div>December 23rd 2022 - January 9th 2023</div>
+        </div>
+        <div class="column">
+          <a href="Australia-Destination.html">
+          <img src="Vacation Images/Australia.jpeg"
+          alt="Australia" id="australia">
+          </a>
+          <h4>A trip to Australia</h4>
+          <p>Next Trip:</p>
+          <div>December 9th 2022 - January 3rd 2023</div>
+        </div>
+        <div class="column">
+          <a href="South-Africa-Destination.html">
+          <img src="Vacation Images/South Africa.jpeg" 
+          alt="South Africa" id="south-africa">
+          </a>
+          <h4>A trip to South Africa</h4>
+          <p>Next Trip:</p>
+          <div>January 6th 2023 - Febuary 10th 2023</div>
+        </div>
+        <div class="column">
+          <a href="Canada-Destination.html">
+          <img src="Vacation Images/Canada.jpeg" 
+          alt="Canada" id="Canada">
+          </a>
+          <h4>A trip to Canada</h4>
+          <p>Next Trip:</p>
+          <span>November 9th 2022 - December 3rd 2022</span>
+        </div>
+        <div class="column">
+          <a href="Japan-Destination.html">
+          <img src="Vacation Images/Japan.jpeg" 
+          alt="Japan" id="Japan">
+          </a>
+          <h4>A trip to Japan</h4>
+          <p>Next Trip:</p>
+          <span>Febuary 1st 2023 - Febuary 28th 2023</span>
+        </div>
+        <div class="column">
+          <a href="Germany-Destination.html">
+          <img src="Vacation Images/Germany.jpeg" 
+          alt="Germany" id="Germany">
+          </a>
+          <h4>A trip to Germany</h4>
+          <p>Next Trip:</p>
+          <span>January 1st 2023 - January 30th 2023</span>
+        </div>
+        <div class="column">
+          <a href="France-Destination.html">
+          <img src="Vacation Images/France.jpeg" 
+          alt="France" id="france">
+          </a>
+          <h4>A trip to France</h4>
+          <p>Next Trip:</p>
+          <span>March 3rd 2023 - April 1st 2023</span>
+        </div>
+        <div class="column">
+          <a href="India-Destination.html">
+          <img src="Vacation Images/India.jpeg" 
+          alt="India" id="India">
+          </a>
+          <h4>A trip to India</h4>
+          <p>Next Trip:</p>
+          <span>November 1st 2022 - December 2nd 2022</span>
+        </div>
+       </div>
+     </div>
+    </div>
+    <hr id="line">
+    <form class="info reveal">
+      <h1>Read About Us On...</h1>
+      <h3>Travel Destination Project</h3>
+      <h4>Principles of Hospitality and Tourism</h4>
+      <div>
+        <p><span>NOTE CODE &#8594; EKS 10A:</span> Work independently to be able to fund yourself;</p>
+        <p><span></span></p>
+        <p><span>NOTE CODE &#8594; EKS 10B:</span> Use travel information to book the best posibble trip;
+        for travelers</p>
+        <p><span>NOTE CODE &#8594; EKS 10C:</span> Identify local and regional tourism page on this website;</p>
+      </div>
+      <ol>
+        <li>1. Choose a location anywhere in the world that is interesting
+          to you. You need to narrow down your location to a city, state and/or country
+          (Example: Berlin, Paris, Tokyo or Ottawa). Pick a place you might like to travel
+          someday, or even a place where you have already been. 
+        </li>
+        <li>2.  You will have to click on the BOOK A TRIP icon above 
+          and fill in the required information about your travel destination.
+          The pop up slide beside the page wiil show you your requirement and what you need on the trip.
+        </li>
+        <li>3.  This Travel Destination Project will provide you with an 
+          insite on tourism in the palmflet will give after registration.
+        </li>
+      </ol>
+      <div id="grades">"When you think of South-Africa, you probably think of the 
+        beutiful motifs & architecture, but would you ever travel deeper + beyound 
+        the traditional scenes to experience their natural lanscape & remote villages
+        ? ADVENTOIRRE take us beyound bustling souks,colourful rugs in the hotel 
+        and luxury hotels but to see what lies beyound"</div>
+    </form>
+    <hr id="line">
+    <article>
+       <h2 class="reveal"> See what some our travelers who experienced 
+        ADVENTOIRRE are saying!. 
+       </h2>
+        <div class="row-two reveal">
+           <div class="column-two">
+             <img src="Vacation Images/01.jpeg" alt="comments" id="tweet-one">
+           </div>
+           <div class="column-two">
+             <img src="Vacation Images/2.jpeg" alt="comments" id="tweet-two">
+           </div>
+           <div class="column-two">
+             <img src="Vacation Images/3.jpeg" alt="comments" id="tweet-three">
+           </div>
+           <div class="column-two">
+             <img src="Vacation Images/01.png" alt="comments" id="tweet-four">
+           </div>
+        </div>
+    </article>
+    <hr id="line">
+    <div class="jumbotron reveal">
+      <h2>Suscribe to Stay Updated </h2>
+      <p>Sign up to be the first to know about new trips, and general 
+        awesomeness!
+      </p>
+      <div id="email-form">
+       <button type="submit"><a href="Vacation-login.html">Sign up</a></button>
+      </div>
+      <p>We respect your privacy. See our <span><a href="">
+      <img src="Vacation Images/cookie.png" alt="cookie" id="cookie"> Privacy Policy&Cookies</a></span></p>
+    </div>
+    <!-- END BODY SECTION-->
+
+    <!-- FOOTER SECTION -->
+    <footer class="panel-footer">
+     <div id="site">Click the email to email us<i class="glyphicon glyphicon-hand-right"></i>
+      <a href=" mailto: adventoirre@gmail.com">adventoirre@gmail.com</a>
+      OR chat us up<i class="glyphicon glyphicon-hand-right"></i>
+      <a href="https://wa.me/0802-970-3045" target="_blank"><img src="icon svg/whatsapp white.svg" alt="whatsapp" id="whatsapp"></a>
+     </div>
+     <div class="container-three">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><div><br>
+          Mon-Thurs: 9:00am - 6:00pm <br>
+          Fri: 10:15am - 4:00pm <br>
+          Sunday Closed</div>
+          <hr id="line" class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span>
+          <div><br>Opposite New visa center, Off Igbe road, 
+          Igbogbo, Ikorodu, Lagos State <br></div>
+          <p>*Comments: We give the best services</p>
+          <hr id="line" class="visible-xs">
+        </section>
+        <section id="partners" class="col-sm-4">
+          <span>Agencies in Partner:</span>
+          <ul>
+            <li>Clearview Int'l Travels & Tours Ltd.</li>
+            <li>WOW Travels and Tours</li>
+            <li>Sephora Travels</li>
+            <li>Inspiring Careers and Solutions</li>
+            <li>Royal coat travels limited</li>
+          </ul>
+          <hr id="line" class="visible-xs">
+        </section>
+      </div>
+      <div class="text-center">&reg; ADVENTOIRRE 2022</div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+    <!-- SCROLL TOP BUTTON -->
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="glyphicon glyphicon-chevron-up"></i></button></a>
+    <!-- END SCROLL TOP BUTTON -->
+
+    <!-- OUR JAVASCRIPT SECTION -->
+    <script src="jQuery library/jquery-3.6.1.min.js"></script>
+    <script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-3.4.1-dist/js/Vacation.js"></script>
+    <!-- END JAVASCRIPT SECTION -->
+</body>
+</html>

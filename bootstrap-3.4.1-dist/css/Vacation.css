@@ -1,0 +1,9586 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+html {
+    scroll-behavior: smooth;  
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+#preloader {
+    background: black url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/loading.gif")no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    opacity: .8;
+}
+/* HEADER SECTION */
+#header-nav {
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    scroll-padding-top: 4rem;
+    z-index: 9999;
+    transition: all 300ms ease-in-out;
+}
+.sticky + ::content {
+    padding-top: 102px;
+}
+#logo-pic{
+    padding-top: 10px;
+    width: 110px;
+    height: 90px;
+}
+.navbar-brand {
+    padding-top: 25px;
+}
+.navbar-brand h1 {
+    font-family: 'Sevillana', cursive;
+    color: midnightblue;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.navbar-brand h6 {
+    font-family: 'Sevillana', cursive;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: midnightblue;
+    letter-spacing: 1px
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+#nav-list {
+    margin-top: 5px;
+}
+#nav-list a {
+    color: black;
+    text-align: center;
+}
+#nav-list a:hover {
+    color: gray;
+}
+#nav-list a span {
+    font-size: 1.3em;
+}
+#nav-list img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: lightgrey;
+}
+#nav-list img:hover {
+    box-shadow: 0 1px 5px 1px black;
+    transition: .8s;
+}
+#phone {
+    margin-top: 5px;
+}
+#phone a {
+    text-align: right;
+    padding-bottom: 0;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+#sidebar {
+    display: flex;
+}
+#sidebar .overlay {
+    background-color: black;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 145px;
+    height: 900px;
+    z-index: 1111;
+    opacity: .5;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-150%);
+    transition: .5s ease;
+}
+#sidebar .slide {
+    height: 700px;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+    position: absolute;
+    background: silver;
+    background-size: cover;
+    background-position: center;
+    transition: .5s ease;
+    right: 0;
+    transform: translateY(-150%);
+    text-align: center;
+    z-index: 1111;
+}
+#sidebar .slide p {
+    margin-top: 90px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+#sidebar .slide p a {
+    color: black;
+    text-decoration: none;
+}
+#sidebar .slide p a:hover {
+    transition: .5s;
+    color: gray;
+}
+#sidebar .slide ol li a {
+    text-decoration: none;
+    color: black;
+}
+#sidebar .slide ol li a:hover {
+    color: gray;
+    transition: .5s;
+}
+#sidebar .slide ol li a:active {
+    color: gray;
+}
+#sidebar .slide div {
+    display: flex;
+    justify-content: center;
+}
+#sidebar .slide div img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    box-shadow: 0 1px 5px 1px black;
+}
+#sidebar .slide div img:hover {
+    box-shadow: 0 1px 5px 1px gray;
+    transition: .8s;
+}
+#sidebar #verified {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    font-weight: 100;
+}
+label input {
+    display: none;
+    visibility: hidden;
+    right: 0;
+}
+.toggle{
+    position: absolute;
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 40px;
+    z-index: 9999;
+}
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    border: 1px solid black;
+    opacity: .5;
+    transition: 0.9s ease;
+}
+.toggle .top_line {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.toggle .middle_line {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.toggle .bottom_line {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+input:checked ~ .toggle .top_line {
+    left: 7px;
+    top: 12px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom_line {
+    left: 7px;
+    top: 12px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+input:checked ~ .toggle .middle_line {
+    opacity: 0;
+    transform: translateX(5px);
+}
+input:checked ~ #sidebar .slide  {
+    transform: translate(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: 1.5s;
+}
+input:checked ~ #sidebar .overlay {
+    transform: translate(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: 1.5s;
+}
+/* END HEADER SECTION */
+
+/* BODY SECTION */
+#parallax {
+    background: linear-gradient(180deg, lightblue,white,white,white);
+    height: 640px;
+    overflow: hidden;
+}
+.parallax-move {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallax-move #text-parallax {
+    position: absolute;
+    color: #094b65;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Sevillana', cursive;
+    transform: translateY(-50%);
+}
+.parallax-move #text-parallax span {
+    font-size: 0.25em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#btn-parallax {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: #094b65;
+    border-radius: 40px;
+    transform: translateY(-50px);
+}
+#btn-parallax:hover {
+    background-color: #ffff;
+    color: #094b65;
+    border: 2px solid #094b65;
+}
+.parallax-move img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+#bird1{
+    height: 150px;
+    width: 100vw;
+    margin-top: 10px;
+    margin-left: -50px;
+}
+#water {
+    margin-top: 430px;
+    height: 300;
+}
+#forest {
+    width: 100%;
+    height: 480px;
+    margin-top: -49px;
+}
+.cartoon {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+#rock1 {
+    margin-top: 450px;
+    width: 320px;
+    height: 140px;
+    margin-left: 3em;
+    z-index: 5;
+}
+#rock2 {
+    margin-top: 400px;
+    width: 320px;
+    height: 140px;
+    margin-left: 65vw;
+}
+#rock3 {
+    margin-top: 500px;
+    width: 320px;
+    height: 140px;
+    margin-left: 40vw;
+}
+#sun {
+    width: 300px;
+    height: 300px;
+    mix-blend-mode: screen;
+    margin-left: 39vw;
+    margin-top: -70px;
+}
+#ad-air {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: -100px;
+}
+#cloud {
+    width: 100%;
+    height: 300px;
+}
+#line {
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#varieties {
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+}
+#varieties li a {
+    text-decoration: none;
+    color: #fff;
+}
+#varieties li {
+    padding-left: 30px;
+}
+#varieties-two {
+    display: flex;
+    margin-left: 70px;
+}
+#varieties-two li a {
+    text-decoration: none;
+    color: #fff;
+}
+#varieties-two li {
+    padding-left: 10px;
+}
+.categories {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.destination-categories {
+    overflow: hidden;
+}
+#discover {
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+}
+#click {
+    font-size: 18px;
+}
+.column {
+    float: left;
+    padding: 10px;
+}
+.column img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid midnightblue;
+}
+.column img:hover {
+    box-shadow: 0 1px 5px 1px black;
+}
+.row::after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+.column{
+    text-align: center;
+}
+.column h4 {
+    text-transform: uppercase;
+}
+.column p {
+    font-weight: bold;
+    color: black;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+    outline: none;
+    background-color: midnightblue;
+    box-shadow: 0 1px 5px 1px black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    margin-top: -10px;
+    margin-right: 10px;
+    border: transparent;
+}
+#myBtn i {
+    color: silver;
+}
+#myBtn:hover {
+    background-color: grey;
+    transition: .9s;
+}
+.info {
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+}
+.info h1 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.info h3 {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;   
+}
+.info p {
+    text-align: left;
+    margin-left: 90px;
+}
+.info h4 {
+    text-align: left;
+    margin-left: 90px;
+    text-decoration: underline; 
+}
+.info p span {
+    font-weight: 900;
+}
+.info ol {
+    text-align: left;
+    margin-left: 130px;
+    margin-right: 130px
+}
+#grades {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    color: midnightblue;
+    text-shadow: 1px 1px 1px #222;
+}
+article {
+    text-align: center;
+}
+article h2 {
+    font-weight: bold;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
+}
+.column-two {
+    float: left;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.column-two img {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+.row-two::after {
+    content: "";
+    display: flex;
+    clear: both;
+    overflow: hidden;
+}
+.jumbotron {
+    text-align: center;
+    background-color: black;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    opacity: .6;
+}
+.jumbotron p {
+    font-size: 15px;
+}
+.jumbotron p span a{
+     color: #fff;
+     text-decoration: underline;
+     text-transform: uppercase;
+}
+.jumbotron p span a:hover {
+    transition: .7s;
+    color: gray;
+}
+#cookie {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+#cookie:hover {
+    background-color: gray;
+    transition: .7s;
+}
+.jumbotron button {
+    text-align: center;
+    color: black;
+    height: 40px;
+    width: 110px;
+}
+.jumbotron button a {
+    color: black;
+    text-decoration: none;
+}
+.jumbotron button:hover {
+    box-shadow: 0 1px 5px 1px gray;
+}
+.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 2s ease;
+}
+/*** BOOK A TRIP ***/
+.title {
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.table {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.table p{
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #222;
+}
+.table h3 {
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: center;
+}
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+#td-one {
+    background-color: black;
+    opacity: .5;
+    width: 150px;
+    text-align: center;
+}
+#td-two span {
+    font-weight: bold;
+}
+#td-two {
+    background-color: silver;
+    color: black;
+}
+#td-two div {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+#td-two ul li{
+    list-style: disc;
+    margin-left: 20px;
+}
+.box {
+    border: 2px solid black;
+    box-shadow: 0 1px 5px 1px black;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: midnightblue;
+    background-position: center;
+}
+.box h3 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.box p {
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+}
+main {
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+form .mode {
+    margin-bottom: 20px;
+    color: #222;
+}
+form .mode select {
+    width: 550px;
+    height: 50px;
+}
+form label {
+    display: block;
+    margin-bottom: 1em;
+    color: black;
+    font-size: 17px;
+}
+form input, textarea, #destination_details_form button {
+    display: block;
+    width: 550px;
+    margin-bottom: 1em;
+    border: 1px solid darkblue;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.buy {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+.buy h2 {
+    color: #000;
+    font-weight: 600;
+}
+.container-buy-input {
+    margin-right: 50px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 1px black;
+    background-color: silver;
+    color: #000;
+    width: 500px;
+    height: 520px;
+    border-radius: 5%;
+}
+.container-card {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.container-card h4 {
+    color: midnightblue;
+    font-size: 23px;
+}
+#cards {
+    float: right;
+    padding-left: 150px;
+}
+.container-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.container-input {
+    margin-left: 40px;
+    margin-top: 50px;
+    opacity: .4;
+}
+.point-two {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+#point-two-date div{
+    display: flex;
+    justify-content: space-between;
+}
+#point-two-date div input {
+    width: 50px;
+}
+#cvv input {
+    width: 150px;
+}
+#cvv {
+    margin-right: 50px;
+}
+.container-buy-hotel {
+    text-align: center;
+    margin-top: 30px;
+}
+.container-buy-hotel p {
+    font-style: italic;
+    font-size: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: cursive;
+}
+#hotel-choose {
+    width: 400px;
+    text-align: center;
+    height: 50px;
+    background-color: white;
+    color: black;
+}
+.container-input div {
+    font-size: 19px;
+}
+.container-input input {
+    border-bottom: 1px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    background-color: transparent;
+    font-size: 19px;
+    width: 350px;
+    margin-top: 20px;
+}
+.name-info {
+    margin-top: 30px;
+}
+.name-info input {
+    width: 250px;
+    height: 50px;
+    border-radius: 5%;
+    border: transparent;
+    text-align: center;
+    background-color: silver;
+    color: #000;
+}
+#last-name {
+    margin-left: 20px;
+}
+#country-name {
+    margin-top: 50px;
+    width: 520px;
+    height: 50px;
+    color: black;
+    background-color: silver;
+    border: transparent;
+    text-align: center;
+    border-radius: 5%;
+}
+#postal {
+    margin-top: 50px;
+    display: flex;
+}
+#reside-name {
+    width: 250px;
+    height: 50px;
+    background-color: silver;
+    text-align: center;
+    color: black;
+    border-radius: 5%;
+    border: transparent;
+}
+#postal-code {
+    width: 250px;
+    margin-right: 5px;
+    color: #000;
+    text-align: center;
+    background-color: silver;
+    border-radius: 5%;
+    border: transparent;
+    margin-left: 30px;
+}
+#e-address {
+    width: 520px;
+    margin-right: 5px;
+    height: 50px;
+    color: #000;
+    text-align: center;
+    background-color: silver;
+    border-radius: 5%;
+    border: transparent;
+    margin-top: 50px;
+}
+#phone {
+    width: 520px;
+    margin-right: 5px;
+    height: 50px;
+    color: #000;
+    text-align: center;
+    background-color: silver;
+    border-radius: 5%;
+    border: transparent;
+    margin-top: 50px;
+}
+.consent {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.consent h2 {
+    color: #000;
+}
+.consent span {
+    font-size: 18px;
+    color: skyblue;
+    font-style: italic;
+}
+#must {
+    display: flex;
+    margin-top: 20px;
+}
+#must p {
+    margin-top: 20px;
+}
+#check {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#must-two {
+    display: flex;
+    margin-top: 20px;
+}
+#must-two p {
+    margin-top: 20px;
+}
+.submit {
+    text-align: center;
+}
+#add-list {
+    background-color: midnightblue;
+    width: 300px;
+    height: 70px;
+    margin-top: 90px;
+}
+#add-list:hover {
+    box-shadow: 0 1px 5px 1px black;
+}
+/*** END BOOK A TRIP ***/
+
+/** ABOUT CATEGORY **/
+#firm {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .4;
+}
+.about h1 {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 500px;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 3.5vw;
+}
+#story {
+    background-color: silver;
+    height: 100%;
+}
+#border-line {
+    width: 100%;
+    opacity: .8;
+}
+#airplane {
+    margin-left: 550px;
+    width: 200px;
+    height: 200px;
+}
+#our-story {
+    text-align: center;
+    margin-top: -30px;
+}
+#our-story h3 {
+    font-weight: bold;
+    color: midnightblue;
+}
+#our-story p {
+    color: black;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+#heritage {
+    color: teal;
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+}
+#people {
+    width: 200px;
+}
+#reception {
+    width: 100%;
+    height: 100%;
+}
+#building {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.column-three {
+    float: right;
+    padding: 10px;
+}
+#firm-two {
+    width: 700px;
+    height: 600px;
+}
+#border-img {
+    height: 670px;
+    width: 450px;
+    margin-top: -35px;
+    margin-right: -30px;
+}
+.box-two {
+    background-color: silver;
+    border-radius: 5%;
+    border: 1px solid midnightblue;
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 50px;
+    width: 350px;
+    height: 530px;
+    box-shadow: 0 1px 5px 1px black;
+    color: #222;
+    text-align: center;
+}
+.box-two h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+#firm-draw {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}
+#find-us{
+    border: 1px solid black;
+    margin-top: -5px;
+    height: 50px;
+    background-color: midnightblue;
+}
+#find-us a {
+    color: #fff;
+    text-decoration: none;
+}
+#find-us:hover {
+    background-color: black;
+    transition: .8s;
+}
+#line-two {
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.row-three::after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+#ceo-comments {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#ceo-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#ceo-one h2{
+    color: black;
+}
+#ceo-one p {
+    font-size: 17px;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-style: italic;
+    opacity: .7;
+}
+#duos {
+    float: right;
+    display: flex;
+    content: "";
+    clear: both;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+#duos h3 {
+    color: black;
+}
+#duos p {
+    font-style: italic;
+}
+#came {
+    margin-left: 120px;
+}
+#values {
+    margin-left: 50px;
+}
+#came-img {
+    width: 500px;
+    height: 300px;
+}
+#values-img {
+    width: 500px;
+    height: 300px;
+}
+#start-service {
+    position: absolute;
+    margin-top: -650px;
+    margin-left: 500px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+#start-border {
+    width: 80%;
+    height: 60px;
+    object-fit: cover;
+}
+#start-service p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#start-pick {
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90px;
+    height: 40px;
+}
+#start-pick a {
+    color: white;
+    text-decoration: none;
+}
+#start-pick:hover {
+    background-color: silver;
+}
+#end-service {
+    position: absolute;
+    margin-top: -650px;
+    margin-left: -400px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    color: black;
+}
+#end-border {
+    width: 35%;
+    height: 60px;
+    object-fit: cover;
+}
+#end-service p {
+    margin-left: 600px;
+    margin-right: 600px;
+}
+/** END ABOUT CATEGORY **/
+
+/** DESTINATION PAGE **/
+.slider {
+    position: relative;
+    background-color: grey;
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    margin-top: -20px;
+}
+.slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 50%);
+    transition: 5s;
+}
+.slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 5s;
+}
+.slider .slide img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.slider .slide .info {
+    position: absolute;
+    color: black;
+    background: rgba(255, 255, 255, 0.3);
+    width: 75%;
+    margin-top: 100px;
+    margin-left: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1/ 5%);
+}
+.slider .slide .info h2 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 800;
+}
+.slider .slide .info p {
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+}
+.navigation {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+}
+.prev-btn, .next-btn {
+    z-index: 1111;
+    font-size: 1.5em;
+    color: black;
+    background: silver;
+    padding: 10px;
+    cursor: pointer;
+}
+.slider:hover .navigation {
+    opacity: 1;
+    transition: 2.5s;
+}
+.prev-btn {
+   border-radius: 50%;
+   margin-left: 30px;
+   margin-top: 80px;
+}
+.next-btn {
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 80px;
+}
+.fun {
+    top: -20px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fun-content {
+    text-align: center;
+}
+.fun-content h1 {
+    font-size: 6vw;
+    font-weight: 600;
+    transition: .6s;
+}
+.fun-content h1:hover {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+.fun-content a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 18px;
+    border: 2px solid white;
+    padding: 14px 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.fun-content a:hover {
+    background-color: silver;
+    transition: .9s;
+    opacity: .7;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.destination-categories-two {
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.destination-option-text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+    font-size: 3vw;
+    transition: .9s;
+}
+/*** SOUTH AFRICA ***/
+#header-nav-two {
+    background: linear-gradient(45deg,darkblue,black,darkred,darkgreen,goldenrod);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-two div {
+    text-align: center;
+    color: wheat;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+#south-africa-logo {
+    width: 100px;
+    height: 70px;
+    margin-right: 30px;
+}
+.country-name {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name .country-id {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name .country-id h1 {
+    color: wheat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: wheat;
+}
+.country-name ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: wheat;
+}
+.section-slide {
+    height: 600px;
+    display: flex;
+    top: 0;
+    margin-bottom: 0;
+}
+.slider-three {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.slide-three {
+    width: 500%;
+    height: 600px;
+    display: flex;
+    position: relative;
+}
+.slide-three input {
+    display: none;
+}
+.st {
+    width: 20%;
+    transition: 2s;
+    position: relative;
+}
+.st .st-text {
+    position: absolute;
+    color: black;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text h2 {
+    color: darkgreen;
+    font-weight: 600;
+}
+.st .st-text p {
+    font-style: italic;
+}
+.st img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.nav-m {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex; 
+}
+.m-btn {
+    border: 2px solid darkgoldenrod;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn:hover {
+    background-color: darkgreen;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+.nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+#radio1:checked ~ .nav-auto .a-b1 {
+    background-color:whitesmoke;
+}
+#radio2:checked ~ .nav-auto .a-b2 {
+    background-color:whitesmoke;
+}
+#radio3:checked ~ .nav-auto .a-b3 {
+    background-color:whitesmoke;
+}
+#radio4:checked ~ .nav-auto .a-b4 {
+    background-color:whitesmoke;
+}
+#radio5:checked ~ .nav-auto .a-b5 {
+    background-color:whitesmoke;
+}
+.need-to {
+    margin-top: -18px;
+    border-top: 2px solid darkgoldenrod;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/cultural.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content {
+    margin-top: 50px;
+}
+.need-to-content h2 {
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content p {
+    color: #000;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line {
+    border: 2px solid black;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular {
+    position: relative;
+}
+.need-to-popular-two {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two h2 {
+    color: red;
+}
+.need-to-popular-two #need-to-line {
+    border: 2px solid red;
+}
+.need-to-popular-three {
+    position: relative;
+    margin-top: 100px;
+}
+.need-to-popular-three h2 {
+    color: darkblue;
+}
+.need-to-popular-three #need-to-line {
+    border: 2px solid darkblue;
+}
+#cultural {
+    width: 100vw;
+    height: 650px;
+    object-fit: cover;
+}
+.need-to-popular-content {
+    position: absolute;
+    top: 30px;
+}
+.main-scroll-div {
+    width: 100vw;
+    height: 450px;
+    display: flex;
+}
+.cover {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin-right: 10px;
+}
+.scroll-images {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.scroll-images-two {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.scroll-images-three {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.child {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/cultural%203.jpg") no-repeat;
+    background-position: center;
+}
+.child img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child h2 {
+    color: white;
+}
+.child #need-to-line {
+    border: 2px solid white
+}
+.scroll-images::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.scroll-images-two::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.scroll-images-three::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.icon-prev {
+    color: darkgreen;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    margin-left: 50px;
+}
+.icon-prev:hover {
+    color: darkgoldenrod;
+}
+.icon-next {
+    color: darkgreen;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    right: 50px;
+}
+.icon-next:hover {
+    color: darkgoldenrod;
+}
+#cultural-two {
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+}
+.country-footer {
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/cultural%205.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+.country-footer-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#south-africa-logo-two {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+.country-footer-content h2 {
+    margin-top: 50px;
+    font-weight: 600;
+}
+.country-footer-content p {
+    font-style: italic;
+    font-weight: 600;
+}
+.footer-official-three {
+    background-color: black;
+    color: #fff;
+    height: 275px;
+    text-align: center;
+    border-bottom: 2px solid grey;
+}
+.footer-official-three-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.official {
+    display: block;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.official h1 {
+    font-weight: 700;
+}
+#checkmark {
+    background-color: grey;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+#footer-section {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.sticky-two {
+    position: fixed;
+    bottom: 0;
+    scroll-padding-bottom: 4rem;
+    z-index: 9999;
+    transition: all 300ms ease-in-out;
+}
+.sticky-two + ::content {
+    padding-bottom: 102px;
+}
+#footer-section i {
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+#header-nav-three {
+    background: linear-gradient(90deg,maroon,maroon,maroon,rgba(245, 245, 245, 0.704),rgba(245, 245, 245, 0.704),rgba(245, 245, 245, 0.704),maroon,maroon,maroon);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-three div {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.country-name-two {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name-two .country-id-two {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name-two .country-id-two h1 {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name-two ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: whitesmoke;
+}
+.country-name-two ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name-two ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.st .st-text-two {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-two h2 {
+    color: red;
+    font-weight: 600;
+}
+.st .st-text-two p {
+    font-style: italic;
+}
+.m-btn-two {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-two:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-two:hover {
+    background-color: whitesmoke;
+}
+.need-to-two {
+    margin-top: -18px;
+    border-top: 2px solid maroon;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/canada%201.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-two {
+    margin-top: 50px;
+}
+.need-to-content-two h2 {
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-two p {
+    color: #000;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line-two {
+    border: 2px solid black;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular-canada {
+    position: relative;
+}
+.need-to-popular-two-canada {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two-canada h2 {
+    color: red;
+}
+.need-to-popular-two-canada #need-to-line-two {
+    border: 2px solid black;
+}
+.need-to-popular-three-canada {
+    position: relative;
+    margin-top: 100px;
+}
+.need-to-popular-three-canada h2 {
+    color: black;
+}
+.need-to-popular-three-canada #need-to-line-two {
+    border: 2px solid black;
+}
+.need-to-popular-content-two {
+    position: absolute;
+    top: 30px;
+}
+.child-two {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/canada%206.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-two img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-two h2 {
+    color: black;
+}
+.icon-prev-two {
+    color: red;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    margin-left: 50px;
+}
+.icon-prev-two:hover {
+    color: whitesmoke;
+}
+.icon-next-two {
+    color: red;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    right: 50px;
+}
+.icon-next-two:hover {
+    color: whitesmoke;
+}
+.country-footer-two {
+    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/canada%205.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+#header-nav-four {
+    background: linear-gradient(45deg,midnightblue,darkred,white,midnightblue,white,midnightblue,darkred);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-four div {
+    text-align: center;
+    color: maroon;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.country-name-three {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name-three .country-id-three {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name-three .country-id-three h1 {
+    color: midnightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name-three ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: maroon;
+}
+.country-name-three ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name-three ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: maroon;
+}
+.st .st-text-three {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-three h2 {
+    color: midnightblue;
+    font-weight: 600;
+}
+.st .st-text-three p {
+    font-style: italic;
+}
+.m-btn-three {
+    border: 2px solid midnightblue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-three:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-three:hover {
+    background-color: whitesmoke;
+}
+.need-to-three {
+    margin-top: -18px;
+    border-top: 2px solid midnightblue;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/america%201.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-three {
+    margin-top: 50px;
+}
+.need-to-content-three h2 {
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-three p {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line-three {
+    border: 2px solid black;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular-america {
+    position: relative;
+}
+.need-to-popular-two-america {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two-america h2 {
+    color: black;
+}
+.need-to-popular-two-america #need-to-line-three {
+    border: 2px solid black;
+}
+.need-to-popular-three-america {
+    position: relative;
+    margin-top: 100px;
+}
+.need-to-popular-three-america h2 {
+    color: black;
+}
+.need-to-popular-three-america #need-to-line-three {
+    border: 2px solid black;
+}
+.need-to-popular-content-three {
+    position: absolute;
+    top: 30px;
+}
+.child-three {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/america%201.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-three img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-three h2 {
+    color: black;
+}
+.icon-prev-three {
+    color: maroon;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    margin-left: 50px;
+}
+.icon-prev-three:hover {
+    color: white;
+}
+.icon-next-three {
+    color: maroon;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    right: 50px;
+}
+.icon-next-three:hover {
+    color: white;
+}
+.country-footer-three {
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/america%204.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END AMERICA ***/
+
+/*** AUSTRALIA ***/
+.need-to-australia {
+    margin-top: -18px;
+    border-top: 2px solid ;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/Australia%20background%203.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.child-four {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/Australia%20background%201.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-four img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-four h2 {
+    color: black;
+}
+.country-footer-four {
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/Australia%20fotter.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END AUSTRALIA ***/
+
+/*** ENGLAND ***/
+#header-nav-five {
+    background: linear-gradient(90deg,darkred,darkred,white,white);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-five div {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.country-name-four {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name-four .country-id-four {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name-four .country-id-four h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name-four ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: black;
+}
+.country-name-four ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name-four ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+.st .st-text-four {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-four h2 {
+    color: darkred;
+    font-weight: 600;
+}
+.st .st-text-four p {
+    font-style: italic;
+}
+.m-btn-four {
+    border: 2px solid darkred;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-four:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-four:hover {
+    background-color: whitesmoke;
+}
+.need-to-four {
+    margin-top: -18px;
+    border-top: 2px solid darkred;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/England%20background%203.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-four {
+    margin-top: 50px;
+}
+.need-to-content-four h2 {
+    color: darkred;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-four p {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line-four {
+    border: 2px solid black;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular-england {
+    position: relative;
+}
+.need-to-popular-two-england {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two-england h2 {
+    color: darkred;
+}
+.need-to-popular-two-england #need-to-line-four {
+    border: 2px solid darkred;
+}
+.need-to-popular-content-four {
+    position: absolute;
+    top: 30px;
+}
+.child-five {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/England%20background%201.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-five img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-five h2 {
+    color: black;
+}
+.icon-prev-three {
+    color: maroon;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    margin-left: 50px;
+}
+.icon-prev-three:hover {
+    color: white;
+}
+.icon-next-three {
+    color: maroon;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    right: 50px;
+}
+.icon-next-three:hover {
+    color: white;
+}
+.country-footer-five {
+    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/England%20footter.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+#header-nav-six {
+    background: linear-gradient(90deg,black,white,darkgreen,red);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-six div {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.country-name-five {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name-five .country-id-five {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name-five .country-id-five h1 {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name-five ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: black;
+}
+.country-name-five ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name-five ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+.st .st-text-five {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-five h2 {
+    color: darkgreen;
+    font-weight: 600;
+}
+.st .st-text-five p {
+    font-style: italic;
+}
+.m-btn-five {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-five:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-five:hover {
+    background-color: black;
+}
+.need-to-five {
+    margin-top: -18px;
+    border-top: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/uae%20background%202.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-five {
+    margin-top: 50px;
+}
+.need-to-content-five h2 {
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-five p {
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line-five {
+    border: 2px solid black;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular-uae {
+    position: relative;
+}
+.need-to-popular-two-uae {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two-uae h2 {
+    color: black;
+}
+.need-to-popular-two-uae #need-to-line-five {
+    border: 2px solid black;
+}
+.need-to-popular-three-uae{
+    position: relative;
+    margin-top: 100px;
+}
+.need-to-popular-three-uae h2 {
+    color: black;
+}
+.need-to-popular-three-uae #need-to-line-five {
+    border: 2px solid black;
+}
+.need-to-popular-content-five {
+    position: absolute;
+    top: 30px;
+}
+.child-six {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/uae%20background%203.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-six img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-six h2 {
+    color: black;
+}
+.icon-prev-four {
+    color: darkgreen;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    margin-left: 50px;
+}
+.icon-prev-four:hover {
+    color: black;
+}
+.icon-next-four {
+    color: darkgreen;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    right: 50px;
+}
+.icon-next-four:hover {
+    color: black;
+}
+.country-footer-six {
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/uae%20footter.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END UAE ***/
+
+/*** SPAIN ***/
+#header-nav-seven {
+    background: linear-gradient(180deg,maroon,maroon,darkgoldenrod,darkgoldenrod,darkgoldenrod,maroon,maroon);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-seven div {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.st .st-text-six {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-six h2 {
+    color: darkgoldenrod;
+    font-weight: 600;
+}
+.st .st-text-six p {
+    font-style: italic;
+}
+.m-btn-six {
+    border: 2px solid maroon;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-six:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-six:hover {
+    background-color: darkgoldenrod;
+}
+.need-to-six {
+    margin-top: -18px;
+    border-top: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/spain%20background%205.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-spain {
+    margin-top: 50px;
+}
+.need-to-content-spain h2 {
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-spain p {
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+.child-seven {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/spain%20background%202.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-seven img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-seven h2 {
+    color: black;
+}
+.icon-prev-five {
+    color: darkgoldenrod;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    margin-left: 50px;
+}
+.icon-prev-five:hover {
+    color: maroon;
+}
+.icon-next-five {
+    color: darkgoldenrod;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    right: 50px;
+}
+.icon-next-five:hover {
+    color: maroon;
+}
+.country-footer-seven {
+    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/spain%20background%206.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END SPAIN ***/
+
+/*** QATAR ***/
+#header-nav-eight {
+    background: linear-gradient(90deg,rgba(63, 3, 3, 0.956),rgba(63, 3, 3, 0.956),rgba(63, 3, 3, 0.956),white,white);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-eight div {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.country-name-six {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name-six .country-id-six {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name-six .country-id-six h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name-six ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: black;
+}
+.country-name-six ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name-six ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgba(63, 3, 3, 0.856);
+}
+.st .st-text-seven {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-seven h2 {
+    color: rgba(63, 3, 3, 0.856);
+    font-weight: 600;
+}
+.st .st-text-seven p {
+    font-style: italic;
+}
+.m-btn-seven {
+    border: 2px solid rgba(63, 3, 3, 0.856);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-seven:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-seven:hover {
+    background-color: white;
+}
+.need-to-seven  {
+    margin-top: -18px;
+    border-top: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/qatar%20background%202.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-six {
+    margin-top: 50px;
+}
+.need-to-content-six h2 {
+    color: rgba(63, 3, 3, 0.856);
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-six p {
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line-five {
+    border: 2px solid black;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular-qatar {
+    position: relative;
+}
+.need-to-popular-two-qatar {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two-qatar h2 {
+    color: rgba(63, 3, 3, 0.856);
+}
+.need-to-popular-two-qatar #need-to-line-five {
+    border: 2px solid black;
+}
+.need-to-popular-content-six {
+    position: absolute;
+    top: 30px;
+}
+.child-eight {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/qatar%20background%201.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-eight img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-eight h2 {
+    color: black;
+}
+.icon-prev-six {
+    color: rgba(63, 3, 3, 0.856);
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    margin-left: 50px;
+}
+.icon-prev-six:hover {
+    color: white;
+}
+.icon-next-six {
+    color: rgba(63, 3, 3, 0.856);
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    right: 50px;
+}
+.icon-next-six:hover {
+    color: white;
+}
+.country-footer-eight {
+    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/qatar%20footer%20.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+#header-nav-nine {
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.774),rgba(255, 255, 255, 0.774),maroon,rgba(255, 255, 255, 0.774),rgba(255, 255, 255, 0.774));
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-nine div {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.country-name-seven {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name-seven .country-id-seven {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name-seven .country-id-seven h1 {
+    color: maroon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name-seven ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: black;
+}
+.country-name-seven ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name-seven ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: maroon;
+}
+.st .st-text-eight {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-eight h2 {
+    color: maroon;
+    font-weight: 600;
+}
+.st .st-text-eight p {
+    font-style: italic;
+}
+.m-btn-eight {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-eight:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-eight:hover {
+    background-color: maroon;
+}
+.need-to-eight  {
+    margin-top: -18px;
+    border-top: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/japan%20background%201.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-japan {
+    margin-top: 50px;
+}
+.need-to-content-japan h2 {
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-japan p {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line-japan {
+    border: 2px solid white;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular-japan {
+    position: relative;
+}
+.need-to-popular-japan h2 {
+    color: maroon;
+}
+.need-to-popular-two-japan {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two-japan h2 {
+    color: maroon;
+}
+.need-to-popular-three-japan{
+    position: relative;
+    margin-top: 100px;
+}
+.need-to-popular-three-japan h2 {
+    color: maroon;
+}
+.child-nine {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/japan%20background%203.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-nine img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-nine h2 {
+    color: maroon;
+}
+.country-footer-nine {
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/japan%20background%204.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+#header-nav-ten {
+    background: linear-gradient(180deg,black,black,rgb(184, 1, 1),rgb(184, 1, 1),goldenrod,goldenrod);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-ten div {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.country-name-eight {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name-eight .country-id-eight {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name-eight .country-id-eight h1 {
+    color: goldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name-eight ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: black;
+}
+.country-name-eight ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name-eight ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+.st .st-text-nine {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-nine h2 {
+    color: rgb(184, 1, 1);
+    font-weight: 600;
+}
+.st .st-text-nine p {
+    font-style: italic;
+}
+.m-btn-nine {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-nine:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-nine:hover {
+    background-color: goldenrod;
+}
+.need-to-nine  {
+    margin-top: -18px;
+    border-top: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/germany%20background%202.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-seven {
+    margin-top: 50px;
+}
+.need-to-content-seven h2 {
+    color: rgb(184, 1, 1);
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-seven p {
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line-six {
+    border: 2px solid black;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular-germany {
+    position: relative;
+}
+.need-to-popular-two-germany {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two-germany h2 {
+    color: rgb(184, 1, 1);
+}
+.need-to-popular-two-germany #need-to-line-six {
+    border: 2px solid black;
+}
+.need-to-popular-three-germany{
+    position: relative;
+    margin-top: 100px;
+}
+.need-to-popular-three-germany h2 {
+    color: rgb(184, 1, 1);
+}
+.need-to-popular-three-germany #need-to-line-six {
+    border: 2px solid black;
+}
+.need-to-popular-content-seven {
+    position: absolute;
+    top: 30px;
+}
+.child-ten {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/germany%20background%201.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-ten img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-ten h2 {
+    color: black;
+}
+.icon-prev-seven {
+    color: goldenrod;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    margin-left: 50px;
+}
+.icon-prev-seven:hover {
+    color: rgb(184, 1, 1);
+}
+.icon-next-seven {
+    color: goldenrod;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    right: 50px;
+}
+.icon-next-seven:hover {
+    color: rgb(184, 1, 1);
+}
+.country-footer-ten {
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/germany%20background%204.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: white;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+#header-nav-eleven {
+    background: linear-gradient(90deg,midnightblue,midnightblue,white,white,red,red);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-eleven div {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.country-name-nine {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name-nine .country-id-nine {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name-nine .country-id-nine h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name-nine ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: black;
+}
+.country-name-nine ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name-nine ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+.st .st-text-ten {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-ten h2 {
+    color: midnightblue;
+    font-weight: 600;
+}
+.st .st-text-ten p {
+    font-style: italic;
+}
+.m-btn-ten {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-ten:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-ten:hover {
+    background-color: white;
+}
+.need-to-ten  {
+    margin-top: -18px;
+    border-top: 2px solid midnightblue;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/france%20background%201.jpg");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-eight {
+    margin-top: 50px;
+}
+.need-to-content-eight h2 {
+    color: midnightblue;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-eight p {
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line-seven {
+    border: 2px solid black;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular-france {
+    position: relative;
+}
+.need-to-popular-france h2{
+    color: white;
+}
+.need-to-popular-two-france {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two-france h2 {
+    color: white;
+}
+.need-to-popular-two-france #need-to-line-seven {
+    border: 2px solid black;
+}
+.need-to-popular-three-france{
+    position: relative;
+    margin-top: 100px;
+}
+.need-to-popular-three-france h2 {
+    color: white;
+}
+.need-to-popular-three-france #need-to-line-seven {
+    border: 2px solid black;
+}
+.need-to-popular-content-seven {
+    position: absolute;
+    top: 30px;
+}
+.child-eleven {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/france%20background%204.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-eleven img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-eleven h2 {
+    color: red;
+}
+.icon-prev-eight {
+    color: midnightblue;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    margin-left: 50px;
+}
+.icon-prev-eight:hover {
+    color: white;
+}
+.icon-next-eight {
+    color: midnightblue;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    top: 50%;
+    right: 50px;
+}
+.icon-next-eight:hover {
+    color: white;
+}
+.country-footer-eleven {
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/france%20background%202.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+#header-nav-twelve {
+    background: linear-gradient(180deg,orange,orange,whitesmoke,whitesmoke,darkgreen,darkgreen);
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+#header-nav-twelve div {
+    text-align: center;
+    color: orange;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.country-name-ten {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0;
+    justify-content: space-between;
+}
+.country-name-ten .country-id-ten {
+    display: flex;
+    margin-left: 30px;
+}
+.country-name-ten .country-id-ten h1 {
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+}
+.country-name-ten ul {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: orange;
+}
+.country-name-ten ul li {
+    font-size: 19px;
+    font-style: italic;
+    font-family: cursive;
+}
+.country-name-ten ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: orange;
+}
+.st .st-text-eleven {
+    position: absolute;
+    color: white;
+    justify-conelevent: center;
+    top: 30%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.st .st-text-eleven h2 {
+    color: orange;
+    font-weight: 600;
+}
+.st .st-text-eleven p {
+    font-style: italic;
+}
+.m-btn-eleven {
+    border: 2px solid darkgreen;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn-eleven:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn-eleven:hover {
+    background-color: orange;
+}
+.need-to-eleven  {
+    margin-top: -18px;
+    border-top: 2px solid orange;
+    position: relative;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/india%20background%205.webp");
+    background-position: center;
+    background-size: 100vh;
+    position: relative;
+}
+.need-to-content-nine {
+    margin-top: 50px;
+}
+.need-to-content-nine h2 {
+    color: darkgreen;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.need-to-content-nine p {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+}
+#need-to-line-eight {
+    border: 2px solid orange;
+    width: 100px;
+    margin-left: 20px;
+}
+.need-to-popular-india {
+    position: relative;
+}
+.need-to-popular-two-india {
+    position: relative;
+    margin-top: 150px;
+}
+.need-to-popular-two-india h2 {
+    color: darkgreen;
+}
+.need-to-popular-two-india #need-to-line-eight {
+    border: 2px solid orange;
+}
+.need-to-popular-three-india{
+    position: relative;
+    margin-top: 100px;
+}
+.need-to-popular-three-india h2 {
+    color: darkgreen;
+}
+.need-to-popular-three-india #need-to-line-eight {
+    border: 2px solid orange;
+}
+.need-to-popular-content-seven {
+    position: absolute;
+    top: 30px;
+}
+.child-twelve {
+    min-width: 100%;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/india%20background%202.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.child-twelve img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.child-twelve h2 {
+    color: darkgreen;
+}
+.country-footer-twelve {
+    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/india%20background%206.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 650px;
+    color: #000;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION PAGE **/
+
+/** BLOG PAGE **/
+.blog {
+    position: relative;
+}
+#palm-tree {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.palm {
+    position: absolute;
+    background: linear-gradient(-45deg,silver,grey,white);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    opacity: .8;
+    animation: change 10s ease-in-out infinite;
+    background-size: 400% 400%;
+    border-bottom: line-gradient(180deg,grey,transparent);
+}
+.palm-text {
+    text-align: center;
+    margin-top: 250px;
+}
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+#showcase {
+    text-align: center;
+    background: linear-gradient(180deg,grey,transparent,silver,transparent);
+}
+#laptop {
+    margin-top: 100px;
+    width: 1100px;
+    height: 450px;
+}
+#showcase h3 {
+    margin-bottom: 100px;
+}
+#showcase-phone {
+    margin-top: 150px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    display: flex;
+}
+#blog-phone {
+    width: 500px;
+    height: 500px;
+}
+#showcase-phone-text {
+    text-align: left;
+    display: block;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 100px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+#showcase-phone-text h3 {
+    color: black;
+}
+#showcase-phone-button {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: transparent;
+    color: black;
+    margin-top: 20px;
+}
+#showcase-phone-button:hover {
+    background-color: silver;
+    transition: .9s;
+}
+#showcase-phone-two {
+    display: flex;
+    justify-content: right;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 70px;
+}
+#showcase-phone-text-two {
+    margin-top: 150px;
+    text-align: right;
+    margin-left: 150px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+#showcase-phone-text-two h3 {
+    color: black;
+}
+#showcase-phone-button-two {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: transparent;
+    color: black;
+    margin-top: 20px;
+}
+#showcase-phone-button-two:hover {
+    background-color: silver;
+    transition: .9s;
+}
+.food {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#food-box {
+    border: 1px solid silver;
+    width: 400px;
+    height: 550px;
+    background-color: whitesmoke;
+    float: left;
+    margin-right: 20px;
+}
+#food-box-two {
+    border: 1px solid silver;
+    width: 400px;
+    height: 550px;
+    background-color: whitesmoke;
+    float: right;
+    margin-left: 20px;
+}
+#food-box-text {
+    margin-top: 50px;
+    color: black;
+}
+#food-box-text h3 {
+    color: midnightblue;
+}
+#food-box-text-price {
+    display: flex;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 50px;
+    color: teal;
+    margin-bottom: 20px;
+}
+#food-box-text-price div {
+    font-size: 50px;
+    margin-top: -15px;
+}
+#food-box-text-ok {
+    margin-top: 50px;
+    color: darkgreen;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+#food-box-text-ok i {
+    margin-right: 10px;
+}
+#food-box-enter {
+    background-color: silver;
+    width: 150px;
+    height: 50px;
+    border: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#food-box-text-price-two {
+    display: flex;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 50px;
+    color: teal;
+    margin-bottom: 20px; 
+}
+#food-box-text-price-two div {
+    font-size: 50px;
+    margin-top: -15px;
+}
+#food-box-dollar {
+    margin-left: 10px;
+}
+#save {
+    color: red;
+}
+.blog-end {
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    color: black;
+    margin-bottom: 20px;
+}
+/** END BLOG PAGE **/
+
+/** LOGIN PAGE **/
+.login img{
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+}
+.loginbox {
+    width: 400px;
+    height: 550px;
+    background-color: midnightblue;
+    color: white;
+    border: 1px solid gray;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1px 5px 1px black;
+}
+.loginbox h2 {
+    text-align: center;
+}
+#avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: silver;
+    position: absolute;
+    top: -50px;
+    left: 150px;
+    object-fit: cover;
+}
+.fillin {
+    margin-top: 90px;
+}
+.form {
+    margin-left: 40px;
+    margin-top: 40px;
+    color: #000;
+}
+.form p {
+    font-size: 20px;
+    color: silver;
+}
+.form input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+}
+#username {
+    margin-bottom: 30px;
+}
+#password {
+    margin-bottom: 25px;
+}
+#submit {
+    width: 100px;
+    margin-left: 110px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#submit:hover {
+    background-color: silver;
+}
+#questions p{
+    font-size: 16px;
+}
+#questions a {
+    color: white;
+    text-decoration: none;
+}
+#questions a:hover {
+    color: gray;
+    transition: 1s;
+}
+/** END LOGIN PAGE **/
+
+/* END BODY SECTION */
+
+/* FOOTER SECTION*/
+.panel-footer {
+    background-color: black;
+    border: 0;
+    color: midnightblue;
+    opacity: .9;
+    width: 100%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.panel-footer #site {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.panel-footer #site a {
+    color: silver;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.panel-footer #site a:hover {
+    transition: .5s;
+    color: midnightblue;
+}
+#whatsapp {
+    background-color: silver;
+    margin-left: -5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#whatsapp:hover {
+    background-color: midnightblue;
+    transition: 1s;
+}
+.panel-footer div.row {
+    margin-bottom: 35px;
+    text-align: center;
+    font-style: italic;
+}
+#hours, #address, #partners {
+    line-height: 2;
+}
+#hours > span, #address > span, #partners > span {
+    font-size: 1.3em;
+}
+#address p, #address div, #hours div, #partners ul {
+    color: white;
+    font-size: .8em;
+    line-height: 1.8;
+    font-weight: bold;
+}
+/* END FOOTER SECTION */
+
+/* VIDEO SIZE FOR ALL DEVICES */
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+/* END VIDEO SIZE FOR ALL DEVICES */
+
+/*** MEDIA DEVICES ****/
+
+/*** LARGE DEVICES ****/
+
+/* Laptop Devices */
+@media (min-width: 1200px) {
+/* BODY SECTION */
+.container img {
+    width: 102.7%;
+}
+#varieties {
+    margin-left: 300px;
+}
+.categories {
+    overflow: hidden;
+}
+/* END BODY SECTION*/
+}
+/**** END LARGE DEVICES *****/
+    
+/***** MEDIUM DEVICES ****/
+    
+/* ipad pro */
+@media(min-width: 992px) and (max-width: 1199px) {
+/* BODY SECTION */
+#sun {
+    margin-left: 35vw;
+}
+#rock1 {
+    width: 350px;
+    height: 140px;
+    margin-left: 3em;
+}
+#rock2 {
+    width: 350px;
+    height: 140px;
+    margin-left: 60vw;
+}
+#rock3 {
+    width: 350px;
+    height: 140px;
+    margin-left: 40vw;
+}
+#varieties {
+    margin-left: 200px;
+}
+.column-two {
+    margin-left: 250px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+main {
+    margin-left: 50px;
+}
+.buy {
+    margin-left: 30px;
+}
+.container-buy-input {
+    margin-right: 80px;
+    width: 400px;
+    height: 550px;
+}
+.container-card {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#cards {
+    padding-left: 50px;
+}
+.container-card img {
+    width: 50px;
+    height: 50px;
+}
+#point-two-date div input {
+    width: 50px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 250px;
+}
+.container-input input {
+    width: 270px;
+}
+.name-info input {
+    width: 180px;
+}
+#last-name {
+    margin-left: 20px;
+}
+#country-name {
+    width: 390px;
+}
+#reside-name {
+    width: 180px;
+}
+#postal-code {
+    width: 180px;
+    margin-right: 5px;
+}
+#e-address {
+    width: 390px;
+}
+#phone {
+    width: 390px;
+}
+.consent {
+    margin-left: 50px;
+}
+/** END BOOK ATRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 400px;
+    margin-top: 200px;
+}
+#airplane {
+    margin-left: 500px;
+}
+#firm-two {
+    width: 500px;
+    height: 450px;
+}
+#border-img {
+    height: 520px;
+    width: 450px;
+}
+.box-two {
+    margin-top: -470px;
+    margin-left: 50px;
+    width: 350px;
+    height: 420px;
+}
+.box-two h3 {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+#firm-draw {
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+}
+#find-us{
+    margin-top: -5px;
+    height: 30px; 
+}
+#duos {
+    margin-right: 50px;
+}
+#came {
+    margin-left: 150px;
+}
+#came-img {
+    width: 420px;
+    height: 250px;
+}
+#values-img{
+    width: 420px;
+    height: 250px;
+}
+#ceo-one p {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#start-service {
+    margin-top: -600px;
+    margin-left: 400px;
+}
+#end-service {
+    margin-top: -550px;
+    margin-left: -400px;
+}
+#end-service p {
+    margin-left: 500px;
+    margin-right: 500px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 130px;
+}
+.destination-categories-two {
+    margin-left: 100px;
+}
+/** END DESTINATION CATEGORY SECTION **/
+/** BLOG PAGE **/
+#laptop {
+    width: 900px;
+    height: 350px;
+}
+#showcase-phone {
+    margin-left: 30px;
+}
+#showcase-phone-text {
+    margin-right: 50px;
+}
+#showcase-phone-two {
+    margin-right: 30px;
+}
+#showcase-phone-text-two {
+    margin-left: 50px;
+}
+/** END BLOG PAGE **/
+}
+/***** END MEDIUM DEVICES ***/
+    
+/***** SMALL DEVICES *****/
+    
+/* Surface 7 pro */
+@media(min-width: 912px) and (max-width: 991px) {
+/* BODY SECTION */
+#sun {
+    margin-left: 33vw;
+}
+#rock1 {
+    width: 300px;
+    height: 130px;
+    margin-left: 2em;
+}
+#rock2 {
+    width: 300px;
+    height: 130px;
+    margin-left: 62vw;
+}
+#rock3 {
+    width: 300px;
+    height: 130px;
+    margin-left: 40vw;
+}
+#varieties {
+    margin-left: 90px;
+}
+.destination-categories {
+    margin-left: 110px;
+}
+.column-two {
+    margin-left: 150px;
+}
+#discover {
+    text-align: center;
+}
+#click {
+    text-align: center;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+main {
+    margin-left: 50px;
+}
+.buy {
+    margin-left: 30px;
+}
+.container-buy-input {
+    margin-right: 60px;
+    width: 400px;
+    height: 550px;
+}
+#cards {
+    padding-left: 50px;
+}
+.container-card img {
+    width: 50px;
+    height: 50px;
+}
+#point-two-date div input {
+    width: 50px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 250px;
+}
+.container-input input {
+    width: 270px;
+}
+.name-info input {
+    width: 180px;
+}
+#last-name {
+    margin-left: 20px;
+}
+#country-name {
+    width: 390px;
+}
+#reside-name {
+    width: 180px;
+}
+#postal-code {
+    width: 180px;
+    margin-right: 5px;
+}
+#e-address {
+    width: 390px;
+}
+#phone {
+    width: 390px;
+}
+.consent {
+    margin-left: 20px;
+}
+/** END BOOK A TRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 350px;
+    margin-top: 150px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 350px;
+}
+#firm-two {
+    width: 650px;
+    height: 450px;
+    margin-right: 150px;
+}
+#border-img {
+    height: 520px;
+    width: 750px;
+    margin-right: 100px;  
+}
+.box-two {
+    margin-top: -470px;
+    margin-left: 100px;
+    width: 550px;
+    height: 410px;
+}
+.box-two h3 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#firm-draw {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+}
+#find-us{
+    margin-top: -5px;
+    height: 50px; 
+}
+#duos {
+    display: block;
+    margin-left: 120px;
+}
+#came {
+    margin-bottom: 30px;
+}
+#values {
+    margin-left: 120px;
+    margin-top: 30px;
+}
+#ceo-one p {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#start-service {
+    margin-top: -450px;
+    margin-left: 350px;
+}
+#end-service {
+    margin-top: -450px;
+    margin-left: -300px;
+}
+#end-service p {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 120px;
+}
+.destination-categories-two {
+    margin-left: 100px;
+}
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 180px;
+}
+#laptop {
+    width: 850px;
+    height: 330px;
+}
+#showcase-phone {
+    margin-left: 10px;
+}
+#showcase-phone-text {
+    margin-right: 30px;
+}
+#showcase-phone-two {
+    margin-right: 10px;
+}
+#showcase-phone-text-two {
+    margin-left: 30px;
+}
+/** END BLOG PAGE **/
+    
+/* END BODY SECTION */
+}
+/* ipad Air */
+@media(min-width: 820px) and (max-width: 911px) {
+/* BODY SECTION */
+#sun {
+    margin-left: 33vw;
+}
+#rock1 {
+    width: 300px;
+    height: 130px;
+    margin-left: 2em;
+}
+#rock2 {
+    width: 300px;
+    height: 130px;
+    margin-left: 62vw;
+}
+#rock3 {
+    width: 300px;
+    height: 130px;
+    margin-left: 40vw;
+}
+#varieties {
+    margin-left: 90px;
+}
+.destination-categories {
+    margin-left: 90px;
+}
+.column-two {
+    margin-left: 150px;
+}
+#discover {
+    text-align: center;
+}
+#click {
+    text-align: center;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+main {
+    margin-left: 50px;
+}
+.buy {
+    margin-left: 30px;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 350px;
+    height: 550px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 250px;
+}
+.container-input input {
+    width: 270px;
+}
+.name-info input {
+    width: 125px;
+    height: 50px;
+}
+#last-name {
+    margin-left: 20px;
+}
+#country-name {
+    width: 280px;
+    height: 50px;
+}
+#reside-name {
+    width: 125px;
+    height: 50px;
+}
+#postal-code {
+    width: 125px;
+}
+#e-address {
+    width: 280px;
+}
+#phone {
+    width: 280px;
+}
+.consent {
+    margin-left: 20px;
+}
+/** END BOOK ATRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 300px;
+    margin-top: 150px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 350px;
+}
+#firm-two {
+    width: 650px;
+    height: 450px;
+    margin-right: 100px;
+}
+#border-img {
+    height: 520px;
+    width: 750px;
+    margin-right: 55px;  
+}
+.box-two {
+    margin-top: -470px;
+    margin-left: 100px;
+    width: 550px;
+    height: 410px;
+}
+.box-two h3 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#firm-draw {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+}
+#find-us{
+    margin-top: -5px;
+    height: 50px; 
+}
+#duos {
+    display: block;
+    margin-left: 60px;
+}
+#came {
+    margin-bottom: 30px;
+}
+#values {
+    margin-left: 120px;
+    margin-top: 30px;
+}
+#ceo-one p {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#start-service {
+    margin-top: -450px;
+    margin-left: 350px;
+}
+#end-service {
+    margin-top: -450px;
+    margin-left: -300px;
+}
+#end-service p {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 100px;
+}
+.destination-categories-two {
+    margin-left: 80px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 180px;
+}
+#laptop {
+    width: 750px;
+    height: 300px;
+}
+#showcase-phone {
+    margin-left: 5px;
+}
+#blog-phone {
+    width: 400px;
+    height: 400px;
+}
+#showcase-phone-text {
+    margin-right: 10px;
+    margin-top: 50px;
+}
+#showcase-phone-two {
+    margin-right: 5px;
+}
+#showcase-phone-text-two {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.food {
+    display: block;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+}
+/** END BLOG PAGE **/
+    
+/* END BODY SECTION */
+}
+/* ipad Mini */
+@media(min-width: 768px) and (max-width: 819px){
+/* BODY SECTION */
+#sun {
+    margin-left: 30vw;
+}
+#rock1 {
+    width: 300px;
+    height: 130px;
+    margin-left: 2em;
+}
+#rock2 {
+    width: 300px;
+    height: 130px;
+    margin-left: 62vw;
+}
+#rock3 {
+    width: 300px;
+    height: 130px;
+    margin-left: 40vw;
+}
+#varieties {
+    margin-left: 90px;
+}
+.destination-categories {
+    margin-left: 60px;
+}
+.column-two {
+    margin-left: 150px;
+}
+#discover {
+    text-align: center;
+}
+#click {
+    text-align: center;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+main {
+    margin-left: 50px;
+}
+.buy {
+    margin-left: 10px;
+}
+.container-buy-input {
+    margin-right: 100px;
+    width: 350px;
+    height: 550px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 250px;
+}
+.container-input input {
+    width: 270px;
+}
+.name-info input {
+    width: 125px;
+    height: 50px;
+}
+#last-name {
+    margin-left: 20px;
+}
+#country-name {
+    width: 280px;
+    height: 50px;
+}
+#reside-name {
+    width: 125px;
+    height: 50px;
+}
+#postal-code {
+    width: 125px;
+}
+#e-address {
+    width: 280px;
+}
+#phone {
+    width: 280px;
+}
+.consent {
+    margin-left: 20px;
+}
+/** END BOOK A TRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 300px;
+    margin-top: 150px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 300px;
+}
+#firm-two {
+    width: 650px;
+    height: 450px;
+    margin-right: 50px;
+}
+#border-img {
+    height: 520px;
+    width: 750px;
+    margin-right: 2px;  
+}
+.box-two {
+    margin-top: -470px;
+    margin-left: 100px;
+    width: 550px;
+    height: 410px;
+}
+.box-two h3 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#firm-draw {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+}
+#find-us{
+    margin-top: -5px;
+    height: 50px; 
+}
+#duos {
+    display: block;
+    margin-left: 60px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+#values {
+    margin-left: 60px;
+    margin-top: 30px;
+}
+#ceo-one p {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#start-service {
+    margin-top: -400px;
+    margin-left: 300px;
+}
+#start-service p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#end-service {
+    margin-top: -400px;
+    margin-left: -300px;
+}
+#end-service p {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 100px;
+}
+.destination-categories-two {
+    margin-left: 80px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 180px;
+}
+#laptop {
+    width: 750px;
+    height: 300px;
+}
+#blog-phone {
+    width: 400px;
+    height: 400px;
+}
+#showcase-phone {
+    margin-left: 10px;
+}
+#showcase-phone-text {
+    margin-right: 30px;
+    margin-top: 50px;
+}
+#showcase-phone-two {
+    margin-right: 10px;
+}
+#showcase-phone-text-two {
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.food {
+    display: block;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+}
+/** END BLOG PAGE **/
+    
+/* END BODY SECTION */
+}
+/*** END SMALL DEVICES ****/
+    
+/**** EXTRA SMALL DEVICES ****/
+@media(min-width: 713px) and (max-width: 767px) {
+    
+/* HEADER SECTION */
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h6 { 
+    padding-top: 20px;
+    font-size: 3.5vw;
+    margin-left: 20px;
+}
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+#collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+}
+#logo-pic{
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+.toggle {
+    margin-top: 27px;
+    margin-left: 100px;
+}
+#sidebar .overlay {
+    width: 300px;
+    height: 900px;
+}
+#sidebar .slide {
+    height: 900px;
+}
+/* END HEADER SECTION */
+    
+/* BODY SECTION */
+#sun {
+    margin-left: 29vw;
+}
+#rock1 {
+    width: 250px;
+    height: 100px;
+    margin-left: 1.5em;
+}
+#rock2 {
+    width: 250px;
+    height: 100px;
+    margin-left: 60vw;
+}
+#rock3 {
+    width: 250px;
+    height: 100px;
+    margin-left: 35vw;
+}
+#varieties {
+    margin-left: 150px;
+}
+#varieties-two {
+    margin-left: 250px;
+}
+#discover {
+    text-align: center;
+}
+#click {
+    text-align: center;
+}
+.column img {
+    width: 430px;
+}
+.destination-categories {
+    margin-left: 100px;
+}
+.info p {
+    margin-left: 30px;
+}
+.info h4 {
+    margin-left: 30px;
+}
+.info ol {
+    margin-left: 60px;
+    margin-right: 60px
+}
+.column-two {
+    margin-left: 100px;
+}
+.column-two img {
+    width: 450px;
+}
+.jumbotron {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#td-one {
+    width: 90px;
+}
+main {
+    margin-left: 5px;
+}
+#title {
+    margin-right: 50px;
+}
+.box p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+form input, textarea, #destination_details_form button {
+    width:400px;
+}
+form .mode select {
+    width: 400px;
+}
+.buy {
+    margin-left: 100px;
+    display: block;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 450px;
+    height: 550px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 350px;
+}
+.container-input input {
+    width: 350px;
+}
+.name-info input {
+    width: 200px;
+    height: 50px;
+}
+#last-name {
+    margin-left: 20px;
+}
+#country-name {
+    width: 425px;
+    height: 50px;
+}
+#reside-name {
+    width: 200px;
+    height: 50px;
+}
+#postal-code {
+    width: 200px;
+}
+#e-address {
+    width: 425px;
+}
+#phone {
+    width: 425px;
+}
+.consent {
+    margin-left: 30px;
+}
+/** END BOOK A TRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 250px;
+    margin-top: 100px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 250px;
+}
+#our-story p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#firm-two {
+    width: 620px;
+    height: 450px;
+    margin-right: 10px;
+}
+#border-img {
+    height: 520px;
+    width: 700px;
+    margin-right: -25px;  
+}
+.box-two {
+    margin-top: -470px;
+    margin-left: 75px;
+    width: 550px;
+    height: 410px;
+}
+.box-two h3 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#firm-draw {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+}
+#find-us{
+    margin-top: -5px;
+    height: 50px; 
+}
+#duos {
+    display: block;
+    margin-left: 50px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+#values {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#ceo-one p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#start-service {
+    margin-top: -420px;
+    margin-left: 300px;
+}
+#start-service p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#start-pick {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#end-service {
+    margin-top: -380px;
+    margin-left: -300px;
+}
+#end-service p {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 90px;
+}
+.destination-categories-two {
+    margin-left: 130px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 130px;
+}
+#laptop {
+    width: 650px;
+    height: 250px;
+}
+#showcase-phone {
+    margin-left: 5px;
+}
+#blog-phone {
+    width: 350px;
+    height: 350px;
+}
+#showcase-phone-text {
+    margin-right: 5px;
+    margin-top: 20px;
+}
+#showcase-phone-two {
+    margin-right: 5px;
+}
+#showcase-phone-text-two {
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.food {
+    display: block;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+}
+/** END BLOG PAGE **/
+    
+/* END BODY SECTION */
+}
+/*** TAB DEVICES ***/
+    
+/* Galaxy Tab S4 */
+@media(min-width: 641px) and (max-width: 712px){
+    
+/* HEADER SECTION */
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h6 { 
+    padding-top: 20px;
+    font-size: 3.5vw;
+    margin-left: 20px; 
+}
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+#collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+}
+#logo-pic{
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+.toggle {
+    margin-top: 28px;
+    margin-left: 100px;
+}
+#sidebar .overlay {
+    width: 300px;
+    height: 1100px;
+}
+#sidebar .slide {
+    height: 1100px;
+}
+/* END HEADER SECTION */
+    
+/* BODY SECTION */
+#sun {
+    margin-left: 27vw;
+}
+#rock1 {
+    width: 250px;
+    height: 100px;
+    margin-left: 1em;
+}
+#rock2 {
+    width: 250px;
+    height: 100px;
+    margin-left: 60vw;
+}
+#rock3 {
+    width: 250px;
+    height: 100px;
+    margin-left: 38vw;
+}
+#varieties {
+    margin-left: 120px;
+}
+#varieties-two {
+    margin-left: 220px;
+}
+#discover {
+    text-align: center;
+}
+#click {
+    text-align: center;
+}
+.column img {
+    width: 430px;
+}
+.destination-categories {
+    margin-left: 80px;
+}
+.info p {
+    margin-left: 30px;
+}
+.info h4 {
+    margin-left: 30px;
+}
+.info ol {
+    margin-left: 60px;
+    margin-right: 60px
+}
+.column-two {
+    margin-left: 80px;
+}
+.column-two img {
+    width: 490px;
+}
+.jumbotron {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#td-one {
+    width: 90px;
+}
+main {
+    margin-left: 5px;
+}
+#title {
+    margin-right: 50px;
+}
+.box p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+form input, textarea, #destination_details_form button {
+    width:400px;
+}
+form .mode select {
+    width: 400px;
+}
+.buy {
+    margin-left: 100px;
+    display: block;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 450px;
+    height: 550px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 350px;
+}
+.container-input input {
+    width: 350px;
+}
+.name-info input {
+    width: 200px;
+    height: 50px;
+}
+#last-name {
+    margin-left: 20px;
+}
+#country-name {
+    width: 425px;
+    height: 50px;
+}
+#reside-name {
+    width: 200px;
+    height: 50px;
+}
+#postal-code {
+    width: 200px;
+}
+#e-address {
+    width: 425px;
+}
+#phone {
+    width: 425px;
+}
+.consent {
+    margin-left: 30px;
+}
+/** END BOOK ATRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 250px;
+    margin-top: 100px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 250px;
+}
+#our-story p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#firm-two {
+    width: 550px;
+    height: 400px;
+    margin-right: 40px;
+}
+#border-img {
+    height: 520px;
+    width: 600px;
+    margin-right: 15px;  
+}
+.box-two {
+    margin-top: -470px;
+    margin-left: 75px;
+    width: 450px;
+    height: 410px;
+}
+.box-two h3 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#firm-draw {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+}
+#find-us{
+    margin-top: -5px;
+    height: 50px; 
+}
+#duos {
+    display: block;
+    margin-left: 40px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+#values {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#ceo-one p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#start-service {
+    margin-top: -390px;
+    margin-left: 300px;
+}
+#start-service p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#start-pick {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#end-service {
+    margin-top: -380px;
+    margin-left: -200px;
+}
+#end-service p {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 90px;
+}
+.destination-categories-two {
+    margin-left: 110px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 2.8vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 70px;
+}
+#laptop {
+    width: 600px;
+    height: 250px;
+}
+#showcase-phone {
+    margin-left: 5px;
+}
+#blog-phone {
+    width: 300px;
+    height: 300px;
+}
+#showcase-phone-text {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+#showcase-phone-two {
+    margin-right: 5px;
+}
+#showcase-phone-text-two {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.food {
+    display: block;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+}
+/** END BLOG PAGE **/
+    
+/* END BODY SECTION */
+}
+/* Microsoft Lumia 550 */
+@media(min-width: 540px) and (max-width: 640px) {
+    
+/* HEADER SECTION */
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h6 { 
+    padding-top: 20px;
+    font-size: 3.5vw;
+    margin-left: 20px; 
+}
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+#collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+}
+#logo-pic{
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+.toggle {
+    margin-top: 28px;
+    margin-left: 80px;
+}
+#sidebar .overlay {
+    width: 300px;
+    height: 1100px;
+}
+#sidebar .slide {
+    height: 1100px;
+}
+/* END HEADER SECTION */
+    
+/* BODY SECTION */
+#sun {
+    margin-left: 25vw;
+}
+#rock1 {
+    width: 200px;
+    height: 100px;
+    margin-left: 2em;
+}
+#rock2 {
+    width: 200px;
+    height: 100px;
+    margin-left: 60vw;
+}
+#rock3 {
+    width: 200px;
+    height: 100px;
+    margin-left: 40vw;
+}
+#varieties {
+    margin-left: 100px;
+}
+#varieties-two {
+    margin-left: 200px;
+}
+#discover {
+    text-align: center;
+}
+#click {
+    text-align: center;
+}
+.column img {
+    width: 400px;
+}
+.destination-categories {
+    margin-left: 70px;
+}
+.info p {
+    margin-left: 30px;
+}
+.info h4 {
+    margin-left: 30px;
+}
+.info ol {
+    margin-left: 60px;
+    margin-right: 60px
+}
+.categories {
+    overflow: hidden;
+}
+.column-two {
+    margin-left: 40px;
+}
+.column-two img {
+    width: 490px;
+}
+.jumbotron {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#td-one {
+    width: 90px;
+}
+main {
+    margin-left: 5px;
+}
+#title {
+    margin-right: 50px;
+}
+.box p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+form input, textarea, #destination_details_form button {
+    width:400px;
+}
+form .mode select {
+    width: 400px;
+}
+.buy {
+    margin-left: 70px;
+    display: block;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 450px;
+    height: 550px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 350px;
+}
+.container-input input {
+    width: 350px;
+}
+.name-info input {
+    width: 200px;
+    height: 50px;
+}
+#last-name {
+    margin-left: 20px;
+}
+#country-name {
+    width: 425px;
+    height: 50px;
+}
+#reside-name {
+    width: 200px;
+    height: 50px;
+}
+#postal-code {
+    width: 200px;
+}
+#e-address {
+    width: 425px;
+}
+#phone {
+    width: 425px;
+}
+.consent {
+    margin-left: 30px;
+}
+/** END BOOK ATRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 230px;
+    margin-top: 80px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 200px;
+}
+#our-story p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#firm-two {
+    width: 470px;
+    height: 350px;
+    margin-right: 50px;
+}
+#border-img {
+    height: 470px;
+    width: 550px;
+    margin-right: 15px;  
+}
+.box-two {
+    margin-top: -415px;
+    margin-left: 75px;
+    width: 400px;
+    height: 360px;
+}
+.box-two h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#firm-draw {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
+#find-us{
+    margin-top: -10px;
+    height: 50px; 
+}
+#duos {
+    display: block;
+    margin-right: 20px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+#values {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#came-img {
+    width: 420px;
+}
+#values-img {
+    width: 420px;
+}
+#ceo-one p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#start-service {
+    margin-top: -350px;
+    margin-left: 50px;
+}
+#start-service p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#start-pick {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#end-service {
+    margin-top: -350px;
+    margin-left: -150px;
+}
+#end-border {
+    width: 50%;
+}
+#end-service p {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 80px;
+}
+.destination-categories-two {
+    margin-left: 80px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 3.5vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 70px;
+}
+#laptop {
+    width: 500px;
+    height: 180px;
+}
+#showcase-phone {
+    margin-left: 5px;
+}
+#blog-phone {
+    width: 300px;
+    height: 300px;
+}
+#showcase-phone-text {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+#showcase-phone-two {
+    margin-right: 5px;
+}
+#showcase-phone-text-two {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.food {
+    display: block;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+}
+/** END BLOG PAGE **/
+    
+/* END BODY SECTION */
+}
+/*** END TAB DEVICES ***/
+    
+/*** ANDROID DEVICES ****/
+/* iphone SE, iphone 6/7/8, iphone X */
+@media(min-width: 361px) and (max-width: 383px) {
+    
+/* HEADER SECTION */
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h6 { 
+    padding-top: 15px;
+    font-size: 3.5vw;
+    margin-left: 10px;
+}
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+#collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+}
+#logo-pic{
+    width: 80px;
+    height: 70px;
+    padding-top: 20px;
+}
+.toggle {
+    margin-top: 15px;
+    margin-left: 50px;
+}
+#sidebar .overlay {
+    width: 300px;
+    height: 900px;
+}
+#sidebar .slide {
+    height: 900px;
+}
+/* END HEADER SECTION */
+    
+/* BODY SECTION */
+#sun {
+    margin-left: 10vw;
+}
+#rock1 {
+    width: 150px;
+    height: 70px;
+    margin-left: 1em;
+}
+#rock2 {
+    width: 150px;
+    height: 70px;
+    margin-left: 55vw;
+}
+#rock3 {
+    width: 150px;
+    height: 70px;
+    margin-left: 55vw;
+}
+#varieties {
+    margin-right: 100px;
+    font-size: 14px;
+}
+#varieties-two {
+    margin-left: 90px;
+}
+#discover {
+    text-align: center;
+    margin-left: -50px;
+}
+#click {
+    text-align: center;
+    margin-left: -50px;
+}
+.column img {
+    width: 350px;
+    margin-left: -60px;
+}
+.info p {
+    margin-left: 30px;
+}
+.info h4 {
+    margin-left: 30px;
+}
+.info ol {
+    margin-left: 60px;
+    margin-right: 60px
+}
+.column-two {
+    margin-left: 25px;
+}
+.column-two img {
+    width: 300px;
+    height: 200px;
+}
+.jumbotron {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+#td-one {
+    width: 90px;
+}
+main {
+    margin-left: 7px;
+}
+#title {
+    margin-right: 50px;
+}
+.box p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+form input, textarea, #destination_details_form button {
+    width: 350px;
+}
+form .mode select {
+    width: 350px;
+}
+.buy {
+    margin-left: 10px;
+    display: block;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 350px;
+    height: 550px;
+}
+#cards {
+    padding-left: 40px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 250px;
+}
+.container-input input {
+    width: 250px;
+}
+.name-info {
+    display: block;
+}
+.name-info input {
+    width: 350px;
+    height: 50px;
+}
+#last-name {
+    margin-top: 50px;
+    margin-left: 0;
+}
+#country-name {
+    width: 350px;
+    height: 50px;
+}
+#postal {
+    display: block;
+}
+#reside-name {
+    width: 350px;
+    height: 50px;
+}
+#postal-code {
+    width: 350px;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 50px;
+}
+#e-address {
+    width: 350px;
+}
+#phone {
+    width: 350px;
+}
+.consent {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/** END BOOK A TRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 140px;
+    margin-top: 50px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 100px;
+}
+#our-story p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#firm-two {
+    width: 300px;
+    height: 250px;
+    margin-right: 5px;
+}
+#border-img {
+    height: 440px;
+    width: 320px;
+    margin-right: -5px; 
+    margin-top: 5px; 
+}
+.box-two {
+    margin-top: -395px;
+    margin-left: 37px;
+    width: 250px;
+    height: 350px;
+}
+.box-two h3 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 15px;
+}
+#firm-draw {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+#find-us{
+    margin-top: -30px;
+    height: 30px; 
+}
+#duos {
+    display: block;
+    margin-right: 30px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+#values {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#came-img {
+    width: 300px;
+    height: 200px;
+}
+#values-img {
+    width: 300px;
+    height: 200px;
+}
+#ceo-one p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#start-service {
+    margin-top: -245px;
+    margin-left: 10px;
+}
+#start-border {
+    width: 80%;
+    height: 30px;
+}
+#start-service p {
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 12px;
+}
+#start-pick {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+#end-service {
+    margin-top: -245px;
+    margin-left: -10px;
+}
+#end-border {
+    width: 70%;
+    height: 30px;
+}
+#end-service p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.destination-categories-two {
+    margin-left: 50px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 30px;
+}
+.palm-text h1 {
+    font-size: 20px;
+}
+.palm-text p {
+    font-size: 13px;
+}
+#gif-arrow {
+    height: 70px;
+}
+#laptop {
+    width: 300px;
+    height: 140px;
+}
+#showcase-phone {
+    margin-left: 20px;
+    display: block;
+}
+#blog-phone {
+    width: 300px;
+    height: 300px;
+}
+#showcase-phone-text {
+    margin-right: 10px;
+    margin-top: 50px;
+}
+#showcase-phone-two {
+    margin-right:20px;
+    display: block;
+}
+#showcase-phone-text-two {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.food {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+    width: 350px;
+    height: 600px;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+    width: 350px;
+    height: 600px;
+}
+#food-box-text-price {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#food-box-text-price-two {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#food-box-text-ok {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+/** END BLOG PAGE **/
+
+/** LOGIN PAGE **/
+.loginbox {
+    width: 300px;
+    height: 480px;
+}
+#avatar {
+    left: 100px;
+}
+.fillin {
+    margin-top: 60px;
+}
+.form {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+#username {
+    margin-bottom: 20px;
+}
+.form input {
+    width: 250px;
+}
+#submit {
+    margin-left: 70px;
+}
+/** END LOGIN PAGE **/
+    
+/* END BODY SECTION */
+}
+/* iphone XR, iphone 6/7/8 plus, iphone 12 pro */
+@media(min-width: 384px) and (max-width: 400px) {
+    
+/* HEADER SECTION */
+header {
+    width: 100%;
+}
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h6 { 
+    padding-top: 15px;
+    font-size: 3.5vw; 
+    margin-left: 5px;
+}
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+#collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+}
+#logo-pic{
+    width: 80px;
+    height: 70px;
+    padding-top: 20px;
+}
+.toggle {
+    margin-top: 15px;
+    margin-left: 50px;
+}
+#sidebar .overlay {
+    width: 300px;
+    height: 900px;
+}
+#sidebar .slide {
+    height: 900px;
+}
+/* END HEADER SECTION */
+        
+/* BODY SECTION */
+#sun {
+    margin-left: 10vw;
+}
+#rock1 {
+    width: 150px;
+    height: 70px;
+    margin-left: 1em;
+}
+#rock2 {
+    width: 150px;
+    height: 70px;
+    margin-left: 55vw;
+}
+#rock3 {
+    width: 150px;
+    height: 70px;
+    margin-left: 55vw;
+}
+#varieties {
+    margin-right: 170px;
+    font-size: 14px;
+}
+#varieties-two {
+    margin-left: 80px;
+}
+.column img {
+    width: 360px;
+    margin-left: -60px;
+}
+#discover {
+    margin-left: -40px;
+    text-align: center;
+}
+#click {
+    margin-left: -40px;
+    text-align: center;
+}
+.info p {
+    margin-left: 30px;
+}
+.info h4 {
+    margin-left: 10px;
+}
+.info ol {
+    margin-left: 60px;
+    margin-right: 60px
+}
+.column-two {
+    margin-left: 30px;
+}
+.column-two img {
+    width: 300px;
+    height: 200px;
+}
+.jumbotron {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#td-one {
+    width: 90px;
+}
+main {
+    margin-left: 2px;
+}
+#title {
+    margin-right: 50px;
+}
+.box p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+form input, textarea, #destination_details_form button {
+    width: 300px;
+}
+form .mode select {
+    width: 300px;
+}
+.buy {
+    margin-left: 20px;
+    display: block;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 350px;
+    height: 550px;
+}
+#cards {
+    padding-left: 40px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 250px;
+}
+.container-input input {
+    width: 250px;
+}
+.name-info {
+    display: block;
+}
+.name-info input {
+    width: 350px;
+    height: 50px;
+}
+#last-name {
+    margin-top: 50px;
+    margin-left: 0;
+}
+#country-name {
+    width: 350px;
+    height: 50px;
+}
+#postal {
+    display: block;
+}
+#reside-name {
+    width: 350px;
+    height: 50px;
+}
+#postal-code {
+    width: 350px;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 50px;
+}
+#e-address {
+    width: 350px;
+}
+#phone {
+    width: 350px;
+}
+.consent {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/** END BOOK A TRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 130px;
+    margin-top: 50px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 100px;
+}
+#our-story p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#firm-two {
+    width: 300px;
+    height: 250px;
+    margin-right: 15px;
+}
+#border-img {
+    height: 440px;
+    width: 320px;
+    margin-right: 5px; 
+    margin-top: 5px; 
+}
+.box-two {
+    margin-top: -395px;
+    margin-left: 37px;
+    width: 250px;
+    height: 350px;
+}
+.box-two h3 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 15px;
+}
+#firm-draw {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+#find-us{
+    margin-top: -30px;
+    height: 30px; 
+}
+#duos {
+    display: block;
+    margin-right: 30px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+#values {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#came-img {
+    width: 300px;
+    height: 200px;
+}
+#values-img {
+    width: 300px;
+    height: 200px;
+}
+#ceo-one p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#start-service {
+    margin-top: -245px;
+    margin-left: 10px;
+}
+#start-border {
+    width: 80%;
+    height: 30px;
+}
+#start-service p {
+    margin-left: -1px;
+    margin-right: -1px;
+    font-size: 12px;
+}
+#start-pick {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+#end-service {
+    margin-top: -245px;
+    margin-left: -10px;
+}
+#end-border {
+    width: 70%;
+    height: 30px;
+}
+#end-service p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.destination-categories-two {
+    margin-left: 50px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+/*** END AMERICA ***/
+ 
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 30px;
+}
+.palm-text h1 {
+    font-size: 20px;
+}
+.palm-text p {
+    font-size: 13px;
+}
+#gif-arrow {
+    height: 70px;
+}
+#laptop {
+    width: 320px;
+    height: 150px;
+}
+#showcase-phone {
+    margin-left: 30px;
+    display: block;
+}
+#blog-phone {
+    width: 300px;
+    height: 300px;
+}
+#showcase-phone-text {
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#showcase-phone-two {
+    margin-right: 30px;
+    display: block;
+}
+#showcase-phone-text-two {
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+.food {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+    width: 350px;
+    height: 600px;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+    width: 350px;
+    height: 600px;
+}
+#food-box-text-price {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#food-box-text-price-two {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#food-box-text-ok {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+/** END BLOG PAGE **/
+
+/** LOGIN PAGE **/
+.loginbox {
+    width: 300px;
+    height: 480px;
+    top: 45%;
+}
+#avatar {
+    left: 100px;
+}
+.fillin {
+    margin-top: 60px;
+}
+.form {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+#username {
+    margin-bottom: 20px;
+}
+.form input {
+    width: 250px;
+}
+#submit {
+    margin-left: 70px;
+}
+/** END LOGIN PAGE **/
+
+/* END BODY SECTION */
+}
+/* Samsung Galaxy A51/71, Samsung Galaxy S20 */
+@media(min-width: 401px) and (max-width: 439px) {
+    
+/* HEADER SECTION */
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h6 { 
+    padding-top: 15px;
+    font-size: 3.5vw; 
+    margin-left: 5px;
+}
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+#collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+}
+#logo-pic{
+    width: 80px;
+    height: 70px;
+    padding-top: 20px;
+}
+.toggle {
+    margin-top: 15px;
+    margin-left: 80px;
+}
+#sidebar .overlay {
+    width: 300px;
+    height: 1200px;
+}
+#sidebar .slide {
+    height: 1200px;
+}
+/* END HEADER SECTION */
+        
+/* BODY SECTION */
+#sun {
+    margin-left: 13vw;
+}
+#rock1 {
+    width: 150px;
+    height: 70px;
+    margin-left: 1em;
+}
+#rock2 {
+    width: 150px;
+    height: 70px;
+    margin-left: 55vw;
+}
+#rock3 {
+    width: 150px;
+    height: 70px;
+    margin-left: 55vw;
+}
+#varieties {
+    margin-right: 150px;
+}
+#varieties-two {
+    margin-left: 100px;
+}
+#discover {
+    margin-left: -40px;
+    text-align: center;
+}
+#click {
+    margin-left: -40px;
+    text-align: center;
+}
+.column img {
+    width: 300px;
+}
+.destination-categories{
+    margin-left: 10px;
+}
+.info p {
+    margin-left: 30px;
+}
+.info h4 {
+    margin-left: 30px;
+}
+.info ol {
+    margin-left: 60px;
+    margin-right: 60px
+}
+.column-two {
+    margin-left: 45px;
+}
+.column-two img {
+    width: 300px;
+    height: 200px;
+}
+.jumbotron {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#td-one {
+    width: 90px;
+}
+main {
+    margin-left: 5px;
+}
+#title {
+    margin-right: 50px;
+}
+.box p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+form input, textarea, #destination_details_form button {
+    width: 300px;
+}
+form .mode select {
+    width: 300px;
+}
+.buy {
+    margin-left: 30px;
+    display: block;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 350px;
+    height: 550px;
+}
+#cards {
+    padding-left: 40px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 250px;
+}
+.container-input input {
+    width: 250px;
+}
+.name-info {
+    display: block;
+}
+.name-info input {
+    width: 350px;
+    height: 50px;
+}
+#last-name {
+    margin-top: 50px;
+    margin-left: 0;
+}
+#country-name {
+    width: 350px;
+    height: 50px;
+}
+#postal {
+    display: block;
+}
+#reside-name {
+    width: 350px;
+    height: 50px;
+}
+#postal-code {
+    width: 350px;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 50px;
+}
+#e-address {
+    width: 350px;
+}
+#phone {
+    width: 350px;
+}
+.consent {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/** END BOOK A TRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 140px;
+    margin-top: 50px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 100px;
+}
+#our-story p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#firm-two {
+    width: 300px;
+    height: 250px;
+    margin-right: 15px;
+}
+#border-img {
+    height: 440px;
+    width: 320px;
+    margin-right: 15px; 
+    margin-top: 5px; 
+}
+.box-two {
+    margin-top: -395px;
+    margin-left: 37px;
+    width: 250px;
+    height: 350px;
+}
+.box-two h3 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 15px;
+}
+#firm-draw {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+#find-us{
+    margin-top: -30px;
+    height: 30px; 
+}
+#duos {
+    display: block;
+    margin-right: 20px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+#values {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#came-img {
+    width: 300px;
+    height: 200px;
+}
+#values-img {
+    width: 300px;
+    height: 200px;
+}
+#ceo-one p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#start-service {
+    margin-top: -255px;
+    margin-left: 10px;
+}
+#start-border {
+    width: 80%;
+    height: 30px;
+}
+#start-service p {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+#start-pick {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+#end-service {
+    margin-top: -255px;
+    margin-left: -10px;
+}
+#end-border {
+    width: 70%;
+    height: 30px;
+}
+#end-service p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.destination-categories-two {
+    margin-left: 60px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+/*** END CANADA ***/
+
+/*** END SOUTH AFRICA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 30px;
+}
+.palm-text h1 {
+    font-size: 20px;
+}
+.palm-text p {
+    font-size: 13px;
+}
+#gif-arrow {
+    height: 70px;
+}
+#laptop {
+    width: 350px;
+    height: 150px;
+}
+#showcase-phone {
+    margin-left: 40px;
+    display: block;
+}
+#blog-phone {
+    width: 300px;
+    height: 300px;
+}
+#showcase-phone-text {
+    margin-right: 10px;
+    margin-top: 50px;
+}
+#showcase-phone-two {
+    margin-right: 40px;
+    display: block;
+}
+#showcase-phone-text-two {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.food {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+    width: 350px;
+    height: 600px;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+    width: 350px;
+    height: 600px;
+}
+#food-box-text-price {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#food-box-text-price-two {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#food-box-text-ok {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+/** END BLOG PAGE **/
+
+/** LOGIN PAGE **/
+.loginbox {
+    width: 300px;
+    height: 480px;
+    top: 40%;
+}
+#avatar {
+    left: 100px;
+}
+.fillin {
+    margin-top: 60px;
+}
+.form {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+#username {
+    margin-bottom: 20px;
+}
+.form input {
+    width: 250px;
+}
+#submit {
+    margin-left: 70px;
+}
+/** END LOGIN PAGE **/
+        
+/* END BODY SECTION */
+}
+@media(min-width: 440px) and (max-width: 539px) {
+/* HEADER SECTION */
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h6 { 
+    padding-top: 15px;
+    font-size: 3.5vw;
+    margin-left: 10px; 
+}
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+#collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+}
+#logo-pic{
+    width: 90px;
+    height: 90px;
+    padding-top: 10px;
+}
+.toggle {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+#sidebar .overlay {
+    width: 300px;
+    height: 900px;
+}
+#sidebar .slide {
+    height: 900px;
+}
+/* END HEADER SECTION */
+    
+/* BODY SECTION */
+#sun {
+    margin-left: 20vw;
+}
+#rock1 {
+    width: 200px;
+    height: 100px;
+    margin-left: .5em;
+}
+#rock2 {
+    width: 200px;
+    height: 100px;
+    margin-left: 55vw;
+}
+#rock3 {
+    width: 200px;
+    height: 100px;
+    margin-left: 40vw;
+}
+#varieties {
+    margin-left: 30px;
+}
+#varieties-two {
+    margin-left: 130px;
+}
+#varieties-two li {
+    padding-left: 10px;
+}
+#discover {
+    margin-left: -30px;
+}
+#click {
+    margin-left: -30px;
+}
+.column img {
+    width: 400px;
+}
+.destination-categories {
+    margin-left: -10px;
+}
+.info p {
+    margin-left: 30px;
+}
+.info h4 {
+    margin-left: 30px;
+}
+.info ol {
+    margin-left: 60px;
+    margin-right: 60px
+}
+.column-two {
+    margin-left: 25px;
+}
+.column-two img {
+    width: 400px;
+    height: 250px;
+}
+.jumbotron {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+#td-one {
+    width: 90px;
+}
+main {
+    margin-left: 7px;
+}
+#title {
+    margin-right: 50px;
+}
+.box p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+form input, textarea, #destination_details_form button {
+    width: 350px;
+}
+form .mode select {
+    width: 350px;
+}
+.buy {
+    margin-left: 20px;
+    display: block;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 450px;
+    height: 550px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 350px;
+}
+.container-input input {
+    width: 350px;
+}
+.name-info input {
+    width: 200px;
+    height: 50px;
+}
+#last-name {
+    margin-left: 20px;
+}
+#country-name {
+    width: 425px;
+    height: 50px;
+}
+#reside-name {
+    width: 200px;
+    height: 50px;
+}
+#postal-code {
+    width: 200px;
+}
+#e-address {
+    width: 425px;
+}
+#phone {
+    width: 425px;
+}
+.consent {
+    margin-left: 30px;
+}
+/** END BOOK A TRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 150px;
+    margin-top: 80px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 150px;
+}
+#our-story p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#firm-two {
+    width: 400px;
+    height: 250px;
+    margin-right: 5px;
+}
+#border-img {
+    height: 440px;
+    width: 470px;
+    margin-right: -20px; 
+    margin-top: 5px; 
+}
+.box-two {
+    margin-top: -395px;
+    margin-left: 60px;
+    width: 350px;
+    height: 350px;
+}
+.box-two h3 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 15px;
+}
+#firm-draw {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+#find-us{
+    margin-top: -30px;
+    height: 30px; 
+}
+#duos {
+    display: block;
+    margin-right: 20px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+#values {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#came-img {
+    width: 380px;
+}
+#values-img {
+    width: 380px;
+}
+#ceo-one p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#start-service {
+    margin-top: -325px;
+    margin-left: 10px;
+}
+#start-service p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#start-pick {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#end-service {
+    margin-top: -310px;
+    margin-left: -10px;
+}
+#end-border {
+    width: 70%;
+}
+#end-service p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 65px;
+}
+.destination-categories-two {
+    margin-left: 40px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 4vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 40px;
+}
+#laptop {
+    width: 400px;
+    height: 150px;
+}
+#showcase-phone {
+    margin-left: 20px;
+    display: block;
+}
+#blog-phone {
+    width: 400px;
+    height: 400px;
+}
+#showcase-phone-text {
+    margin-right: 10px;
+    margin-top: 50px;
+}
+#showcase-phone-two {
+    margin-right: 20px;
+    display: block;
+}
+#showcase-phone-text-two {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.food {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+}
+/** END BLOG PAGE **/
+    
+/* END BODY SECTION */
+}
+/**** END ANDROID DEVICES ***/
+    
+/***** END EXTRA SMALL DEVICES *****/
+    
+/**** SUPER EXTRA SMALL DEVICES *****/
+    
+/* Samsung Galaxy S8 */
+@media(min-width: 321px) and (max-width: 360px) {
+/* HEADER SECTION */ 
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h6 { 
+    padding-top: 15px;
+    font-size: 3.5vw;
+    margin-bottom: 5px;
+}
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+#collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+}
+#logo-pic{
+    width: 80px;
+    height: 70px;
+    padding-top: 20px;
+}
+.toggle {
+    margin-top: 15px;
+    margin-left: 40px;
+}
+#sidebar .slide {
+    height: 900px;
+}
+#sidebar .overlay {
+    height: 900px;
+}
+/* END HEADER SECTION */
+    
+/* BODY SECTION */
+#sun {
+    margin-left: 8vw;
+}
+#rock1 {
+    width: 150px;
+    height: 70px;
+    margin-left: 1em;
+}
+#rock2 {
+    width: 150px;
+    height: 70px;
+    margin-left: 55vw;
+}
+#rock3 {
+    width: 150px;
+    height: 70px;
+    margin-left: 55vw;
+}
+#comments {
+    margin-top: 220px;
+}
+#varieties {
+    margin-left: -10px;
+    font-size: 14px;
+}
+#varieties-two {
+    margin-left: 70px;
+}
+#discover {
+    font-size: 17px;
+}
+.categories {
+    margin: 10px;
+}
+.column img {
+    width: 300px;
+}
+.destination-categories {
+    margin-left: 25px;
+}
+.info p {
+    margin-left: 20px;
+}
+.info h4 {
+    margin-left: 20px;
+}
+.info ol {
+    margin-left: 50px;
+    margin-right: 50px
+}
+.column-two {
+    margin-left: 20px;
+}
+.column-two img {
+    width: 300px;
+    height: 200px;
+}
+.jumbotron {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+#td-one {
+    width: 90px;
+}
+main {
+    margin-left: 2px;
+}
+#title {
+    margin-right: 50px;
+}
+.box p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+form input, textarea, #destination_details_form button {
+    width: 300px;
+}
+form .mode select {
+    width: 300px;
+}
+.buy {
+    margin-left: 5px;
+    display: block;
+}
+.buy h2, p {
+    text-align: center;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 350px;
+    height: 550px;
+}
+#cards {
+    padding-left: 40px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 100px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 250px;
+}
+.container-input input {
+    width: 250px;
+}
+.name-info {
+    display: block;
+}
+.name-info input {
+    width: 350px;
+    height: 50px;
+}
+#last-name {
+    margin-top: 50px;
+    margin-left: 0;
+}
+#country-name {
+    width: 350px;
+    height: 50px;
+}
+#postal {
+    display: block;
+}
+#reside-name {
+    width: 350px;
+    height: 50px;
+}
+#postal-code {
+    width: 350px;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 50px;
+}
+#e-address {
+    width: 350px;
+}
+#phone {
+    width: 350px;
+}
+.consent {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/** END BOOK ATRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 130px;
+    margin-top: 50px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 80px;
+}
+#our-story p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#firm-two {
+    width: 320px;
+    height: 250px;
+    margin-right: -10px;
+}
+#border-img {
+    height: 440px;
+    width: 320px;
+    margin-right: -10px; 
+    margin-top: 5px; 
+}
+.box-two {
+    margin-top: -395px;
+    margin-left: 37px;
+    width: 250px;
+    height: 350px;
+}
+.box-two h3 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 15px;
+}
+#firm-draw {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+#find-us{
+    margin-top: -30px;
+    height: 30px; 
+}
+#duos {
+    display: block;
+    margin-right: 20px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+#values {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#came-img {
+    width: 300px;
+    height: 200px;
+}
+#values-img {
+    width: 300px;
+    height: 200px;
+}
+#ceo-one p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#start-service {
+    margin-top: -237px;
+    margin-left: 10px;
+}
+#start-border {
+    width: 80%;
+    height: 30px;
+}
+#start-service p {
+    margin-left: -1px;
+    margin-right: -1px;
+    font-size: 12px;
+}
+#start-pick {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+#end-service {
+    margin-top: -240px;
+    margin-left: -10px;
+}
+#end-border {
+    width: 70%;
+    height: 30px;
+}
+#end-service p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.destination-categories-two {
+    margin-left: 30px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: -10px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+.country-name ul li {
+    margin-left: 90px;
+}
+.st-text p {
+    text-align: left;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+.country-name-two ul li {
+    margin-left: 90px;
+}
+.st-text-two p {
+    text-align: left;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+.country-name-three ul li {
+    margin-left: 90px;
+}
+.st-text-three p {
+    text-align: left;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+.country-name-four ul li {
+    margin-left: 90px;
+}
+.st-text-four p {
+    text-align: left;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+.country-name-five ul li {
+    margin-left: 90px;
+}
+.st-text-five p {
+    text-align: left;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+.country-name-six ul li {
+    margin-left: 90px;
+}
+.st-text-seven p {
+    text-align: left;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+.country-name-seven ul li {
+    margin-left: 90px;
+}
+.st-text-eight p {
+    text-align: left;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+.country-name-eight ul li {
+    margin-left: 90px;
+}
+.st-text-nine p {
+    text-align: left;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+.country-name-nine ul li {
+    margin-left: 90px;
+}
+.st-text-ten p {
+    text-align: left;
+}
+/*** END FRANCE ***/
+
+/*** INDIA ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+.country-name-ten ul li {
+    margin-left: 90px;
+}
+.st-text-eleven p {
+    text-align: left;
+}
+/*** END INDIA ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 30px;
+}
+.palm-text h1 {
+    font-size: 20px;
+}
+.palm-text p {
+    font-size: 13px;
+}
+#gif-arrow {
+    height: 70px;
+}
+#laptop {
+    width: 250px;
+    height: 100px;
+}
+#showcase-phone {
+    margin-left: 10px;
+    display: block;
+}
+#blog-phone {
+    width: 300px;
+    height: 300px;
+}
+#showcase-phone-text {
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#showcase-phone-text p {
+    text-align: left;
+}
+#showcase-phone-two {
+    margin-right: 10px;
+    display: block;
+}
+#showcase-phone-text-two {
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+#showcase-phone-text-two p {
+    text-align: right;
+}
+.food {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+    width: 320px;
+    height: 600px;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+    width: 320px;
+    height: 650px;
+}
+#food-box-text-price {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+#food-box-text-price-two {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#food-box-text-ok {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+}
+/** END BLOG PAGE **/
+
+/** LOGIN PAGE **/
+.loginbox {
+    width: 300px;
+    height: 480px;
+    top: 50%;
+}
+#avatar {
+    left: 100px;
+}
+.fillin {
+    margin-top: 60px;
+}
+.form {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.form p {
+    text-align: left;
+}
+#username {
+    margin-bottom: 20px;
+}
+.form input {
+    width: 250px;
+}
+#submit {
+    margin-left: 70px;
+}
+/** END LOGIN PAGE **/
+    
+/* BODY SECTION */
+}
+/* Samsung Galaxy S9 */
+@media(max-width: 320px) {
+/* HEADER SECTION */
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h6 { 
+    padding-top: 15px;
+    font-size: 3.5vw; 
+}
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+#collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+}
+#logo-pic{
+    width: 80px;
+    height: 70px;
+    padding-top: 10px;
+}
+.toggle {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#sidebar .slide {
+    height: 900px;
+}
+#sidebar .overlay {
+    height: 900px;
+}
+/* END HEADER SECTION */
+    
+/* BODY SECTION */
+#sun {
+    margin-left: 3vw;
+}
+#rock1 {
+    width: 150px;
+    height: 70px;
+    margin-left: .2em;
+}
+#rock2 {
+    width: 150px;
+    height: 70px;
+    margin-left: 50vw;
+}
+#rock3 {
+    width: 150px;
+    height: 70px;
+    margin-left: 50vw;
+}
+#varieties {
+    margin-left: -27px;
+    margin-top: 70px;
+    font-size: 14px;
+}
+#varieties-two {
+    margin-left: 50px;
+}
+#discover {
+    font-size: 17px;
+}
+.categories {
+    margin: 10px;
+}
+.column img {
+    width: 300px;
+}
+.destination-categories {
+    margin-left: 7px;
+}
+.info p {
+    margin-left: 20px;
+}
+.info h4 {
+    margin-left: 20px;
+}
+.info ol {
+    margin-left: 50px;
+    margin-right: 50px
+}
+.column-two {
+    margin-left: 25px;
+}
+.column-two img {
+    width: 250px;
+    height: 150px;
+}
+.jumbotron {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+/** BOOK A TRIP SECTION **/
+.box {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#td-one {
+    width: 90px;
+}
+main {
+    margin-left: 2px;
+}
+#title {
+    margin-right: 50px;
+}
+.box p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+form input, textarea, #destination_details_form button {
+    width: 250px;
+}
+form .mode select {
+    width: 250px;
+}
+.buy {
+    margin-left: 10px;
+    display: block;
+}
+.buy h2, p {
+    text-align: center;
+}
+.container-buy-input {
+    margin-right: 110px;
+    width: 300px;
+    height: 580px;
+}
+#cards {
+    padding-left: 20px;
+}
+.container-card img {
+    width: 30px;
+    height: 30px;
+}
+#cvv input {
+    width: 70px;
+}
+#cvv {
+    margin-right: 50px;
+}
+#hotel-choose {
+    width: 250px;
+}
+.container-input input {
+    width: 200px;
+}
+.name-info {
+    display: block;
+}
+.name-info input {
+    width: 300px;
+    height: 50px;
+}
+#last-name {
+    margin-top: 50px;
+    margin-left: 0;
+}
+#country-name {
+    width: 300px;
+    height: 50px;
+}
+#postal {
+    display: block;
+}
+#reside-name {
+    width: 300px;
+    height: 50px;
+}
+#postal-code {
+    width: 300px;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 50px;
+}
+#e-address {
+    width: 300px;
+}
+#phone {
+    width: 300px;
+}
+.consent {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/** END BOOK ATRIP SECTION **/
+
+/** ABOUT CATEGORY SECTION **/
+.about h1 {
+    margin-left: 120px;
+    margin-top: 50px;
+}
+#border-line {
+    height: 50px;
+}
+#airplane {
+    margin-left: 50px;
+}
+#our-story p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#firm-two {
+    width: 300px;
+    height: 250px;
+    margin-right: -20px;
+}
+#border-img {
+    height: 440px;
+    width: 320px;
+    margin-right: -30px; 
+    margin-top: 5px; 
+}
+.box-two {
+    margin-top: -395px;
+    margin-left: 37px;
+    width: 250px;
+    height: 350px;
+}
+.box-two h3 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 15px;
+}
+#firm-draw {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+#find-us{
+    margin-top: -30px;
+    height: 30px; 
+}
+#duos {
+    display: block;
+    margin-right: 20px;
+}
+#came {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+#values {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#came-img {
+    width: 250px;
+    height: 150px;
+}
+#values-img {
+    width: 250px;
+    height: 150px;
+}
+#ceo-one p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#start-service {
+    margin-top: -210px;
+    margin-left: 10px;
+}
+#start-border {
+    width: 80%;
+    height: 30px;
+}
+#start-service h3 {
+    font-size: 16px;
+}
+#start-service p {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+}
+#start-pick {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    height: 30px;
+}
+#end-service {
+    margin-top: -210px;
+    margin-left: -10px;
+}
+#end-border {
+    width: 70%;
+    height: 30px;
+}
+#end-service h3 {
+    font-size: 16px;
+}
+#end-service p {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+/** END ABOUT CATEGORY SECTION **/
+
+/** DESTINATION CATEGORY SECTION **/
+.slider .slide .info {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.destination-categories-two {
+    margin-left: 13px;
+}
+/*** SOUTH AFRICA ***/
+#south-africa-logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: -10px;
+}
+.country-name {
+    margin-top: 10px;
+}
+.country-name .country-id h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name ul li {
+    font-size: 17px;
+}
+.country-name ul li {
+    margin-left: 70px;
+}
+.st-text p {
+    text-align: left;
+}
+/*** END SOUTH AFRICA ***/
+
+/*** CANADA ***/
+.country-name-two {
+    margin-top: 10px;
+}
+.country-name-two .country-id-two h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-two ul li {
+    font-size: 17px;
+}
+.country-name-two ul li {
+    margin-left: 70px;
+}
+.st-text-two p {
+    text-align: left;
+}
+/*** END CANADA ***/
+
+/*** AMERICA ***/
+.country-name-three {
+    margin-top: 10px;
+}
+.country-name-three .country-id-three h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-three ul li {
+    font-size: 17px;
+}
+.country-name-three ul li {
+    margin-left: 70px;
+}
+.st-text-three p {
+    text-align: left;
+}
+/*** END AMERICA ***/
+
+/*** ENGLAND ***/
+.country-name-four {
+    margin-top: 10px;
+}
+.country-name-four .country-id-four h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-four ul li {
+    font-size: 17px;
+}
+.country-name-four ul li {
+    margin-left: 70px;
+}
+.st-text-four p {
+    text-align: left;
+}
+/*** END ENGLAND ***/
+
+/*** UAE ***/
+.country-name-five {
+    margin-top: 10px;
+}
+.country-name-five .country-id-five h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-five ul li {
+    font-size: 17px;
+}
+.country-name-five ul li {
+    margin-left: 70px;
+}
+.st-text-five p {
+    text-align: left;
+}
+/*** END UAE ***/
+
+/*** QATAR ***/
+.country-name-six {
+    margin-top: 10px;
+}
+.country-name-six .country-id-six h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-six ul li {
+    font-size: 17px;
+}
+.country-name-six ul li {
+    margin-left: 70px;
+}
+.st-text-seven p {
+    text-align: left;
+}
+/*** END QATAR ***/
+
+/*** JAPAN ***/
+.country-name-seven {
+    margin-top: 10px;
+}
+.country-name-seven .country-id-seven h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-seven ul li {
+    font-size: 17px;
+}
+.country-name-seven ul li {
+    margin-left: 70px;
+}
+.st-text-eight p {
+    text-align: left;
+}
+/*** END JAPAN ***/
+
+/*** GERMANY ***/
+.country-name-eight {
+    margin-top: 10px;
+}
+.country-name-eight .country-id-eight h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-eight ul li {
+    font-size: 17px;
+}
+.country-name-eight ul li {
+    margin-left: 70px;
+}
+.st-text-nine p {
+    text-align: left;
+}
+/*** END GERMANY ***/
+
+/*** FRANCE ***/
+.country-name-nine {
+    margin-top: 10px;
+}
+.country-name-nine .country-id-nine h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-nine ul li {
+    font-size: 17px;
+}
+.country-name-nine ul li {
+    margin-left: 70px;
+}
+.st-text-ten p {
+    text-align: left;
+}
+/*** END FRANCE ***/
+
+/*** FRANCE ***/
+.country-name-ten {
+    margin-top: 10px;
+}
+.country-name-ten .country-id-ten h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+}
+.country-name-ten ul li {
+    font-size: 17px;
+}
+.country-name-ten ul li {
+    margin-left: 70px;
+}
+.st-text-eleven p {
+    text-align: left;
+}
+/*** END FRANCE ***/
+
+/** END DESTINATION CATEGORY SECTION **/
+
+/** BLOG PAGE **/
+.palm-text {
+    margin-top: 20px;
+}
+.palm-text h1 {
+    font-size: 20px;
+}
+.palm-text p {
+    font-size: 13px;
+}
+#gif-arrow {
+    height: 70px;
+}
+#laptop {
+    width: 200px;
+    height: 100px;
+}
+#showcase-phone {
+    margin-left: 5px;
+    display: block;
+}
+#blog-phone {
+    width: 300px;
+    height: 300px;
+}
+#showcase-phone-text {
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#showcase-phone-text p {
+    text-align: left;
+}
+#showcase-phone-two {
+    margin-right: 5px;
+    display: block;
+}
+#showcase-phone-text-two {
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+#showcase-phone-text-two p {
+    text-align: right;
+}
+.food {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#food-box {
+    float: none;
+    margin-right: 0;
+    width: 300px;
+    height: 600px;
+}
+#food-box-two {
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+    width: 300px;
+    height: 650px;
+}
+#food-box-text-price {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#food-box-text-price-two {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+#food-box-text-ok {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+}
+/** END BLOG PAGE **/
+
+/** LOGIN PAGE **/
+.loginbox {
+    width: 300px;
+    height: 480px;
+    top: 50%;
+}
+#avatar {
+    left: 100px;
+}
+.fillin {
+    margin-top: 60px;
+}
+.form {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.form p {
+    text-align: left;
+}
+#username {
+    margin-bottom: 20px;
+}
+.form input {
+    width: 250px;
+}
+#submit {
+    margin-left: 70px;
+}
+/** END LOGIN PAGE **/
+    
+/* BODY SECTION */
+}
+/**** END SUPER EXTRA SMALL DEVICES *****/
+    
+/*** END MEDIA DEVICES *****/
