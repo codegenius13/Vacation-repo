@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destination</title>
+    <!-- OUR STYLES SECTION -->
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/Vacation.css">
+    <!-- END STYLES SECTION -->
+</head>
+<body>
+   <!-- PRELOADER-->
+   <div id="preloader"></div>
+   <!-- END PRELOADER-->
+   
+    <!-- HEADER SECTION -->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+          <div class="navbar-header"></div>
+          <a href="Vacation-home.html" class="pull-left visible-md visible-lg visible-sm visible-xs">
+              <div>
+                  <img src="Vacation Images/images.jpeg"
+                   alt="Logo image" id="logo-pic">  
+              </div>
+          </a>
+          <div class="navbar-brand">
+             <a href="Vacation-home.html"><h1 class="visible-lg visible-md visible-sm"> ADVENTOIRRE</h1>
+             <h6 class="visible-xs">ADVENTOIRRE</h6>
+            </a>
+           </div> 
+           <!-- SIDEBAR -->
+           <label>
+            <input type="checkbox">
+            <div class="toggle visible-xs" id="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+            <div id="sidebar">
+            <div class="overlay  hidden-md hidden-lg hidden-sm" id="cover" onclick="close()">
+            </div>
+            <div class="slide hidden-md hidden-lg hidden-sm" id="slide">
+              <p><a href="mailto: adventoirre@gmail.com">adventoirre@gmail.com</a></p>
+             <ol>
+              <li>
+                <a href="Vacation-home.html">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">Home</a>
+              </li>
+              <hr id="line"class="visible-xs">
+                <li>
+                    <a href="">
+                      <span class="glyphicon glyphicon-info-sign"></span>
+                      <br class="hidden-xs">About</a>
+                </li>
+                <hr id="line"class="visible-xs">
+                <li class="active">
+                    <a href="Vacation-Destination.html">
+                        <span class="glyphicon glyphicon-road"></span>
+                    <br class="hidden-xs">Destination</a>
+                </li>
+                <hr id="line"class="visible-xs">
+                <li>
+                    <a href="">
+                        <span class="glyphicon glyphicon-time"></span>
+                    <br class="hidden-xs">Book a trip NOW!</a>
+                </li>
+                <hr id="line"class="visible-xs">
+                <li>
+                  <a href="">
+                      <span class="glyphicon glyphicon-book"></span>
+                  <br class="hidden-xs">Blog</a>
+              </li>
+              <hr id="line"class="visible-xs">
+              <li>
+                <a href="tel: 0802-970-3045">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                <br class="hidden-xs">Contact</a>
+            </li>
+            <hr id="line"class="visible-xs">
+            <div>
+             <li>
+              <a href="" target="_blank">
+                  <img src="icon svg/facebook.svg" alt="facebook">
+               <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/instagram.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/twitter.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+            </div>
+          </ol>
+           <p id="verified">&reg; ADVENTOIRRE 2022</p>
+          </div>
+          </div>
+        </label>
+        <!-- END SIDEBAR -->
+           <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="Vacation-home.html">
+                <span class="glyphicon glyphicon-home"></span>
+                <br class="hidden-xs">Home</a>
+            </li>
+            <hr id="line"class="visible-xs">
+              <li>
+                  <a href="Vacation-About.html">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                    <br class="hidden-xs">About</a>
+              </li>
+              <hr id="line"class="visible-xs">
+              <li class="active">
+                <a href="Vacation-Destination.html">
+                    <span class="glyphicon glyphicon-road"></span>
+                <br class="hidden-xs">Destination</a>
+             </li>
+              <hr id="line"class="visible-xs">
+              <li>
+                  <a href="Vacation-Book-a-trip.html">
+                      <span class="glyphicon glyphicon-time"></span>
+                  <br class="hidden-xs">Book a trip NOW!</a>
+              </li>
+              <hr id="line"class="visible-xs">
+              <li>
+                <a href="Vacation-Blog.html">
+                    <span class="glyphicon glyphicon-book"></span>
+                <br class="hidden-xs">Blog</a>
+            </li>
+            <hr id="line"class="visible-xs">
+            <li>
+              <a href="tel: 0802-970-3045">
+                  <span class="glyphicon glyphicon-earphone"></span>
+              <br class="hidden-xs">Contact</a>
+          </li>
+          <hr id="line"class="visible-xs">
+          <li>
+            <a href="" target="_blank">
+                <img src="icon svg/facebook.svg" alt="facebook">
+            <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/instagram.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/twitter.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+          </ul> 
+        </div> 
+      </div> 
+    </nav> 
+  </header>
+    <!-- END HEADER SECTION -->
+    <!-- BODY SECTION -->
+    <div class="fun">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="Vacation Images/Beach - 4722.mp4" type="video/mp4">
+      </video>
+      <div class="fun-content">
+        <h1>Have The Best Time!</h1>
+        <a href="#destination-categories-two">Explore</a>
+      </div>
+    </div>
+    <div class="destination-option-text reveal">
+      <p>Click The Below Tiles For More Info <i class="glyphicon glyphicon-hand-down"></i></p>
+    </div>
+    <div class="destination-categories-two reveal" id="destination-categories-two">
+      <div id="categories-section" class="row">
+        <div class="column">
+          <a href="America-Destination.html">
+          <img src="Vacation Images/America.jpeg"
+           alt="America" id="america">
+          </a>
+           <h4>A trip to America</h4>
+           <p>Next Trip:</p>
+           <div>December 23rd 2022 - January 9th 2023</div>
+        </div>
+        <div class="column">
+          <a href="Australia-Destination.html">
+          <img src="Vacation Images/Australia.jpeg"
+          alt="Australia" id="australia">
+          </a>
+          <h4>A trip to Australia</h4>
+          <p>Next Trip:</p>
+          <div>December 9th 2022 - January 3rd 2023</div>
+        </div>
+        <div class="column">
+          <a href="South-Africa-Destination.html">
+          <img src="Vacation Images/South Africa.jpeg" 
+          alt="South Africa" id="south-africa">
+          </a>
+          <h4>A trip to South Africa</h4>
+          <p>Next Trip:</p>
+          <div>January 6th 2023 - Febuary 10th 2023</div>
+        </div>
+        <div class="column">
+          <a href="Canada-Destination.html">
+          <img src="Vacation Images/Canada.jpeg" 
+          alt="Canada" id="Canada">
+          </a>
+          <h4>A trip to Canada</h4>
+          <p>Next Trip:</p>
+          <span>November 9th 2022 - December 3rd 2022</span>
+        </div>
+        <div class="column">
+          <a href="Japan-Destination.html">
+          <img src="Vacation Images/Japan.jpeg" 
+          alt="Japan" id="Japan">
+          </a>
+          <h4>A trip to Japan</h4>
+          <p>Next Trip:</p>
+          <span>Febuary 1st 2023 - Febuary 28th 2023</span>
+        </div>
+        <div class="column">
+          <a href="Germany-Destination.html">
+          <img src="Vacation Images/Germany.jpeg" 
+          alt="Germany" id="Germany">
+          </a>
+          <h4>A trip to Germany</h4>
+          <p>Next Trip:</p>
+          <span>January 1st 2023 - January 30th 2023</span>
+        </div>
+        <div class="column">
+          <a href="France-Destination.html">
+          <img src="Vacation Images/France.jpeg" 
+          alt="France" id="france">
+          </a>
+          <h4>A trip to France</h4>
+          <p>Next Trip:</p>
+          <span>March 3rd 2023 - April 1st 2023</span>
+        </div>
+        <div class="column">
+          <a href="India-Destination.html">
+          <img src="Vacation Images/India.jpeg" 
+          alt="India" id="India">
+          </a>
+          <h4>A trip to India</h4>
+          <p>Next Trip:</p>
+          <span>November 1st 2022 - December 2nd 2022</span>
+        </div>
+        <div class="column">
+          <a href="England-Destination.html">
+          <img src="Vacation Images/England.jpeg" 
+          alt="India" id="India">
+          </a>
+          <h4>A trip to England</h4>
+          <p>Next Trip:</p>
+          <span>November 5st 2022 - December 2nd 2022</span>
+        </div>
+        <div class="column">
+          <a href="UAE-Destination.html">
+          <img src="Vacation Images/UAE.jpeg" 
+          alt="India" id="India">
+          </a>
+          <h4>A trip to UAE</h4>
+          <p>Next Trip:</p>
+          <span>January 1st 2022 - Febuary 2nd 2022</span>
+        </div>
+        <div class="column">
+          <a href="Spain-Destination.html">
+          <img src="Vacation Images/Spain .jpeg" 
+          alt="India" id="India">
+          </a>
+          <h4>A trip to Spain</h4>
+          <p>Next Trip:</p>
+          <span>March 1st 2022 - April 5th 2022</span>
+        </div>
+        <div class="column">
+          <a href="Qatar-Destination.html">
+          <img src="Vacation Images/Qatar .jpeg" 
+          alt="India" id="India">
+          </a>
+          <h4>A trip to Qatar</h4>
+          <p>Next Trip:</p>
+          <span>April 5th 2022 - May 2nd 2022</span>
+        </div>
+       </div>
+     </div>
+    </div>
+    <div class="slider reveal">
+      <div class="slide active">
+         <img src="Vacation Images/canada people.jpeg" alt="slide">
+         <div class="info">
+             <h2>The Canada Trip</h2>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Assumenda reprehenderit aliquam quis cum nemo eveniet
+                voluptatibus vel quia, maxime facere illum provident modi 
+                quibusdam tenetur inventore veniam delectus explicabo atque.
+                Assumenda reprehenderit aliquam quis cum nemo eveniet
+                voluptatibus vel quia, maxime facere illum provident modi 
+                quibusdam tenetur inventore veniam delectus explicabo atque.
+             </p>
+         </div>
+         </div>
+         <div class="slide">
+          <img src="Vacation Images/Australia people.jpeg" alt="slide">
+          <div class="info">
+              <h2>The Cambera Trip</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                   Assumenda reprehenderit aliquam quis cum nemo eveniet
+                 voluptatibus vel quia, maxime facere illum provident modi 
+                 quibusdam tenetur inventore veniam delectus explicabo atque.
+                 Assumenda reprehenderit aliquam quis cum nemo eveniet
+                 voluptatibus vel quia, maxime facere illum provident modi 
+                 quibusdam tenetur inventore veniam delectus explicabo atque.
+              </p>
+              </div>
+          </div>
+         <div class="slide">
+         <img src="Vacation Images/paris people.jpeg" alt="slide">
+         <div class="info">
+             <h2>The Paris Trip</h2>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Assumenda reprehenderit aliquam quis cum nemo eveniet
+                voluptatibus vel quia, maxime facere illum provident modi 
+                quibusdam tenetur inventore veniam delectus explicabo atque.
+                Assumenda reprehenderit aliquam quis cum nemo eveniet
+                voluptatibus vel quia, maxime facere illum provident modi 
+                quibusdam tenetur inventore veniam delectus explicabo atque.
+             </p>
+         </div>
+      </div>
+      <div class="slide">
+        <img src="Vacation Images/paris people 2.jpeg" alt="slide">
+        <div class="info">
+            <h2>The Paris Trip</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Assumenda reprehenderit aliquam quis cum nemo eveniet
+               voluptatibus vel quia, maxime facere illum provident modi 
+               quibusdam tenetur inventore veniam delectus explicabo atque.
+               Assumenda reprehenderit aliquam quis cum nemo eveniet
+               voluptatibus vel quia, maxime facere illum provident modi 
+               quibusdam tenetur inventore veniam delectus explicabo atque.
+            </p>
+     </div>
+      </div>
+      <div class="slide">
+         <img src="Vacation Images/sec 6.jpg" alt="slide">
+         <div class="info">
+             <h2>Safari Trip</h2>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Assumenda reprehenderit aliquam quis cum nemo eveniet
+                voluptatibus vel quia, maxime facere illum provident modi 
+                quibusdam tenetur inventore veniam delectus explicabo atque.
+                Assumenda reprehenderit aliquam quis cum nemo eveniet
+                voluptatibus vel quia, maxime facere illum provident modi 
+                quibusdam tenetur inventore veniam delectus explicabo atque.
+             </p>
+         </div>
+      </div>
+      <div class="slide">
+         <img src="Vacation Images/safari 2.jpeg" alt="slide">
+         <div class="info">
+             <h2>Safari Trip</h2>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Assumenda reprehenderit aliquam quis cum nemo eveniet
+                voluptatibus vel quia, maxime facere illum provident modi 
+                quibusdam tenetur inventore veniam delectus explicabo atque.
+                Assumenda reprehenderit aliquam quis cum nemo eveniet
+                voluptatibus vel quia, maxime facere illum provident modi 
+                quibusdam tenetur inventore veniam delectus explicabo atque.
+             </p>
+         </div>
+      </div>
+      <div class="navigation">
+         <i class="prev-btn"><span class="glyphicon glyphicon-chevron-left"></span></i>
+         <i class="next-btn"><span class="glyphicon glyphicon-chevron-right"></span></i>
+      </div>
+    </div>
+    <!-- END BODY SECTION -->
+   <!-- FOOTER SECTION -->
+   <footer class="panel-footer">
+    <div id="site">Click the email to email us<i class="glyphicon glyphicon-hand-right"></i>
+      <a href=" mailto: adventoirre@gmail.com">adventoirre@gmail.com</a>
+      OR chat us<i class="glyphicon glyphicon-hand-right"></i>
+      <a href="https://wa.me/0802-970-3045" target="_blank"><img src="icon svg/whatsapp white.svg" alt="whatsapp" id="whatsapp"></a>
+    </div>
+    <div class="container-three">
+     <div class="row">
+       <section id="hours" class="col-sm-4">
+         <span>Hours:</span><div><br>
+         Mon-Thurs: 9:00am - 6:00pm <br>
+         Fri: 10:15am - 4:00pm <br>
+         Sunday Closed</div>
+         <hr id="line" class="visible-xs">
+       </section>
+       <section id="address" class="col-sm-4">
+         <span>Address:</span>
+         <div><br>Opposite New visa center, Off Igbe road, 
+         Igbogbo, Ikorodu, Lagos State <br></div>
+         <p>*Comments: We give the best services</p>
+         <hr id="line" class="visible-xs">
+       </section>
+       <section id="partners" class="col-sm-4">
+         <span>Agencies in Partner:</span>
+         <ul>
+           <li>Clearview Int'l Travels & Tours Ltd.</li>
+           <li>WOW Travels and Tours</li>
+           <li>Sephora Travels</li>
+           <li>Inspiring Careers and Solutions</li>
+           <li>Royal coat travels limited</li>
+         </ul>
+         <hr id="line" class="visible-xs">
+       </section>
+     </div>
+     <div class="text-center">&reg; ADVENTOIRRE 2022</div>
+   </footer>
+   <!-- END FOOTER SECTION -->
+
+   <!-- SCROLL TOP BUTTON -->
+   <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">
+   <i class="glyphicon glyphicon-chevron-up"></i></button></a>
+   <!-- END SCROLL TOP BUTTON -->
+
+   <!-- OUR JAVASCRIPT SECTION -->
+   <script src="jQuery library/jquery-3.6.1.min.js"></script>
+   <script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+   <script src="bootstrap-3.4.1-dist/js/Vacation.js"></script>
+   <!-- END JAVASCRIPT SECTION -->
+ </body>
+</html>

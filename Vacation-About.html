@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation About</title>
+    <!-- OUR STYLES SECTION -->
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/Vacation.css">
+    <!-- END STYLES SECTION -->
+</head>
+<body>
+   <!-- PRELOADER-->
+   <div id="preloader"></div>
+   <!-- END PRELOADER-->
+   
+    <!-- HEADER SECTION -->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+          <div class="navbar-header"></div>
+          <a href="Vacation-home.html" class="pull-left visible-md visible-lg visible-sm visible-xs">
+              <div>
+                  <img src="Vacation Images/images.jpeg"
+                   alt="Logo image" id="logo-pic">  
+              </div>
+          </a>
+          <div class="navbar-brand">
+             <a href="Vacation-home.html"><h1 class="visible-lg visible-md visible-sm"> ADVENTOIRRE</h1>
+             <h6 class="visible-xs">ADVENTOIRRE</h6>
+            </a>
+           </div> 
+           <!-- SIDEBAR -->
+           <label>
+            <input type="checkbox">
+            <div class="toggle visible-xs" id="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+            <div id="sidebar">
+            <div class="overlay  hidden-md hidden-lg hidden-sm" id="cover" onclick="close()">
+            </div>
+            <div class="slide hidden-md hidden-lg hidden-sm" id="slide">
+             <p><a href="mailto: adventoirre@gmail.com">adventoirre@gmail.com</a></p>
+             <ol>
+              <li>
+                <a href="Vacation-home.html">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">Home</a>
+              </li>
+              <hr id="line"class="visible-xs">
+                <li class="active">
+                    <a href="Vacation-About.html">
+                      <span class="glyphicon glyphicon-info-sign"></span>
+                      <br class="hidden-xs">About</a>
+                </li>
+                <hr id="line"class="visible-xs">
+                <li>
+                    <a href="Vacation-Destination.html">
+                        <span class="glyphicon glyphicon-road"></span>
+                    <br class="hidden-xs">Destination</a>
+                </li>
+                <hr id="line"class="visible-xs">
+                <li>
+                    <a href="Vacation-Book-a-trip.html">
+                        <span class="glyphicon glyphicon-time"></span>
+                    <br class="hidden-xs">Book a trip NOW!</a>
+                </li>
+                <hr id="line"class="visible-xs">
+                <li>
+                  <a href="Vacation-Blog.html">
+                      <span class="glyphicon glyphicon-book"></span>
+                  <br class="hidden-xs">Blog</a>
+              </li>
+              <hr id="line"class="visible-xs">
+              <li>
+                <a href="tel: 0802-970-3045">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                <br class="hidden-xs">Contact</a>
+            </li>
+            <hr id="line"class="visible-xs">
+            <div>
+             <li>
+              <a href="" target="_blank">
+                  <img src="icon svg/facebook.svg" alt="facebook">
+               <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/instagram.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/twitter.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+            </div>
+          </ol>
+           <p id="verified">&reg; ADVENTOIRRE 2022</p>
+          </div>
+          </div>
+        </label>
+        <!-- END SIDEBAR -->
+           <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="Vacation-home.html">
+                <span class="glyphicon glyphicon-home"></span>
+                <br class="hidden-xs">Home</a>
+            </li>
+            <hr id="line"class="visible-xs">
+              <li class="active">
+                  <a href="">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                    <br class="hidden-xs">About</a>
+              </li>
+              <hr id="line"class="visible-xs">
+              <li>
+                <a href="">
+                    <span class="glyphicon glyphicon-road"></span>
+                <br class="hidden-xs">Destination</a>
+             </li>
+             <hr id="line"class="visible-xs">
+              <li>
+                  <a href="Vacation-Book-a-trip.html">
+                      <span class="glyphicon glyphicon-time"></span>
+                  <br class="hidden-xs">Book a trip NOW!</a>
+              </li>
+              <hr id="line"class="visible-xs">
+              <li>
+                <a href="">
+                    <span class="glyphicon glyphicon-book"></span>
+                <br class="hidden-xs">Blog</a>
+            </li>
+            <hr id="line"class="visible-xs">
+            <li>
+              <a href="tel: 0802-970-3045">
+                  <span class="glyphicon glyphicon-earphone"></span>
+              <br class="hidden-xs">Contact</a>
+          </li>
+          <hr id="line"class="visible-xs">
+          <li>
+            <a href="" target="_blank">
+                <img src="icon svg/facebook.svg" alt="facebook">
+            <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/instagram.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/twitter.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+          </ul> 
+        </div> 
+      </div> 
+    </nav> 
+  </header>
+    <!-- END HEADER SECTION -->
+    <!-- BODY SECTION -->
+    <div class="about">
+      <h1>ADVENTOIRRE</h1>
+      <img src="Vacation Images/firm.jpeg" alt="firm" id="firm">
+    </div>
+    <div id="story">
+       <img src="Vacation Images/border line.png" alt="border line" id="border-line">
+       <img src="Vacation Images/airplane color.png" alt="airplane" id="airplane">
+     <div id="our-story">
+       <h3>Who We Are</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quo magni ipsam sit aliquid optio ea enim cupiditate. Mollitia veniam, fuga deleniti
+        neque nobis amet eius? Aspernatur repudiandae suscipit eveniet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quo magni ipsam sit aliquid optio ea enim cupiditate. Mollitia veniam, fuga deleniti
+        neque nobis amet eius? Aspernatur repudiandae suscipit eveniet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quo magni ipsam sit aliquid optio ea enim cupiditate. Mollitia veniam, fuga deleniti
+        neque nobis amet eius? Aspernatur repudiandae suscipit eveniet.
+       </p>
+       <div id="heritage">
+       <span>Our Story</span>
+       <a href="#our-story"><img src="Vacation images/arrow  down 2.gif" alt="arrow" id="gif"></a>
+       </div>
+       <img src="Vacation Images/happy people.png" alt="people" id="people">
+       <h3>Heritage</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quo magni ipsam sit aliquid optio ea enim cupiditate. Mollitia veniam, fuga deleniti
+        neque nobis amet eius? Aspernatur repudiandae suscipit eveniet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quo magni ipsam sit aliquid optio ea enim cupiditate. Mollitia veniam, fuga deleniti
+        neque nobis amet eius? Aspernatur repudiandae suscipit eveniet.</p>
+      </div>
+      <img src="Vacation Images/border line.png" alt="border line" id="border-line">
+    </div>
+    <img src="Vacation Images/rep 2.jpeg" alt="reception" id="reception" class="reveal">
+    <div id="building" class="row-three reveal">
+      <div class="column-three">
+        <img src="Vacation Images/our home 2.jpeg"
+         alt="firm" id="firm-two">
+      </div>
+      <div class="column-three">
+        <img src="Vacation Images/border img 2.png"
+        alt="border" id="border-img">
+        <div class="box-two">
+          <img src="Vacation Images/firm drawing 2.png" alt="firm" id="firm-draw">
+          <hr id="line-two">
+          <h3>Our Home</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro minus sunt dolorem labore voluptatibus nemo exercitationem est iusto repellendus ea ipsum natus,
+             laudantium. </p>
+          <hr id="line-two">
+          <button class="btn-default active" id="find-us"><a href="https://goo.gl/maps/opS7un7nSLJ2Z1gK8" 
+            target="_blank">Find our Location</a></button>
+        </div>
+      </div>
+    </div>
+    <div id="ceo-comments" class="reveal">
+      <div id="ceo-one">
+        <img src="Vacation Images/ceo 1.jpeg" alt="ceo" id="ceo-img">
+        <h2>Frank Maier Konald</h2>
+        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam voluptate iure obcaecati, quod itaque nobis sint quaerat, totam accusantium cupiditate velit tempora praesentium 
+          maxime consectetur consequuntur modi sunt. Exercitationem, atque.consectetur consequuntur modi sunt. Exercitationem, 
+          atque.consectetur consequuntur modi sunt. Exercitationem, atque."</p>
+      </div>
+      <div id="ceo-one">
+        <img src="Vacation Images/ceo 2.jpeg" alt="ceo" id="ceo-img">
+        <h2>Kelvin Maier Henry</h2>
+        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam voluptate iure obcaecati, quod itaque nobis sint quaerat, totam accusantium cupiditate velit tempora praesentium 
+          maxime consectetur consequuntur modi sunt. Exercitationem, atque.consectetur consequuntur modi sunt. Exercitationem, 
+          atque.consectetur consequuntur modi sunt. Exercitationem, atque."</p>
+      </div>
+    </div>
+    <div id="duos" class="reveal">
+      <div id="came">
+        <img src="Vacation Images/how-we-came.jpg" alt="came" id="came-img">
+        <div id="came-text">
+          <h3>How We Came About</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Eveniet, sit cum! In, rerum similique inventore maiores aut atque dolorum
+              porro tempore animi,officia iste consectetur delectus non, 
+              consequuntur sequi exercitationem!
+            </p>
+        </div>
+      </div>
+      <hr id="line" class="visible-sm visible-xs">
+      <div id="values">
+        <img src="Vacation Images/values.jpeg" alt="values" id="values-img">
+        <div id="values-text">
+          <h3>Values</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Eveniet, sit cum! In, rerum similique inventore maiores aut atque dolorum
+              porro tempore animi,officia iste consectetur delectus non, 
+              consequuntur sequi exercitationem!
+            </p>
+        </div>
+      </div>
+    </div>
+    <div id="services" class="reveal">
+      <img src="Vacation Images/rep 1.jpeg" alt="reception" id="reception">
+      <div id="start-service">
+        <img src="Vacation Images/hr line 3.png" alt="border-line" id="start-border">
+        <h3>Pick A Vacation You Love</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Quod beatae, qui accusantium saepe animi laboriosam ex necessitatibus 
+          omnis corporis veniam rem quisquam itaque voluptatem blanditiis quam facilis iste dolorum delectus?
+        </p>
+        <div>
+          <button id="start-pick"><a href="Vacation-Book-a-trip.html">Pick A Trip</a></button>
+        </div>
+        <img src="Vacation Images/hr line 3.png" alt="border-line" id="start-border">
+      </div>
+    </div>
+    <div id="for-you" class="reveal">
+      <img src="Vacation Images/rep 4.jpeg" alt="reception" id="reception">
+      <div id="end-service">
+        <img src="Vacation Images/hr line 3.png" alt="border-line" id="end-border">
+        <h3>Loyal Services</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Quod beatae, qui accusantium saepe animi laboriosam ex necessitatibus 
+          omnis corporis veniam rem quisquam itaque voluptatem blanditiis quam facilis iste dolorum delectus?
+        </p>
+        <img src="Vacation Images/hr line 3.png" alt="border-line" id="end-border">
+      </div>
+    </div>
+    <!-- END BODY SECTION -->
+   <!-- FOOTER SECTION -->
+   <footer class="panel-footer">
+    <div id="site">Click the email to email us<i class="glyphicon glyphicon-hand-right"></i>
+      <a href=" mailto: adventoirre@gmail.com">adventoirre@gmail.com</a>
+      OR chat us<i class="glyphicon glyphicon-hand-right"></i>
+      <a href="https://wa.me/0802-970-3045" target="_blank"><img src="icon svg/whatsapp white.svg" alt="whatsapp" id="whatsapp"></a>
+    </div>
+    <div class="container-three">
+     <div class="row">
+       <section id="hours" class="col-sm-4">
+         <span>Hours:</span><div><br>
+         Mon-Thurs: 9:00am - 6:00pm <br>
+         Fri: 10:15am - 4:00pm <br>
+         Sunday Closed</div>
+         <hr id="line" class="visible-xs">
+       </section>
+       <section id="address" class="col-sm-4">
+         <span>Address:</span>
+         <div><br>Opposite New visa center, Off Igbe road, 
+         Igbogbo, Ikorodu, Lagos State <br></div>
+         <p>*Comments: We give the best services</p>
+         <hr id="line" class="visible-xs">
+       </section>
+       <section id="partners" class="col-sm-4">
+         <span>Agencies in Partner:</span>
+         <ul>
+           <li>Clearview Int'l Travels & Tours Ltd.</li>
+           <li>WOW Travels and Tours</li>
+           <li>Sephora Travels</li>
+           <li>Inspiring Careers and Solutions</li>
+           <li>Royal coat travels limited</li>
+         </ul>
+         <hr id="line" class="visible-xs">
+       </section>
+     </div>
+     <div class="text-center">&reg; ADVENTOIRRE 2022</div>
+   </footer>
+   <!-- END FOOTER SECTION -->
+
+   <!-- SCROLL TOP BUTTON -->
+   <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">
+   <i class="glyphicon glyphicon-chevron-up"></i></button></a>
+   <!-- END SCROLL TOP BUTTON -->
+
+   <!-- OUR JAVASCRIPT SECTION -->
+   <script src="jQuery library/jquery-3.6.1.min.js"></script>
+   <script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+   <script src="bootstrap-3.4.1-dist/js/Vacation.js"></script>
+   <!-- END JAVASCRIPT SECTION -->
+ </body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Blog</title>
+    <!-- OUR STYLES SECTION -->
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/Vacation.css">
+    <!-- END STYLES SECTION -->
+</head>
+<body>
+   <!-- PRELOADER-->
+   <div id="preloader"></div>
+   <!-- END PRELOADER-->
+   
+    <!-- HEADER SECTION -->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+          <div class="navbar-header"></div>
+          <a href="Vacation-home.html" class="pull-left visible-md visible-lg visible-sm visible-xs">
+              <div>
+                  <img src="Vacation Images/images.jpeg"
+                   alt="Logo image" id="logo-pic">  
+              </div>
+          </a>
+          <div class="navbar-brand">
+             <a href="Vacation-home.html"><h1 class="visible-lg visible-md visible-sm"> ADVENTOIRRE</h1>
+             <h6 class="visible-xs">ADVENTOIRRE</h6>
+            </a>
+           </div> 
+           <!-- SIDEBAR -->
+           <label>
+            <input type="checkbox">
+            <div class="toggle visible-xs" id="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+            <div id="sidebar">
+            <div class="overlay  hidden-md hidden-lg hidden-sm" id="cover" onclick="close()">
+            </div>
+            <div class="slide hidden-md hidden-lg hidden-sm" id="slide">
+              <p><a href="mailto: adventoirre@gmail.com">adventoirre@gmail.com</a></p>
+             <ol>
+              <li>
+                <a href="Vacation-home.html">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">Home</a>
+              </li>
+              <hr id="line"class="visible-xs">
+                <li>
+                    <a href="">
+                      <span class="glyphicon glyphicon-info-sign"></span>
+                      <br class="hidden-xs">About</a>
+                </li>
+               <hr id="line"class="visible-xs">
+                <li>
+                    <a href="">
+                        <span class="glyphicon glyphicon-road"></span>
+                    <br class="hidden-xs">Destination</a>
+                </li>
+               <hr id="line"class="visible-xs">
+                <li>
+                    <a href="">
+                        <span class="glyphicon glyphicon-time"></span>
+                    <br class="hidden-xs">Book a trip NOW!</a>
+                </li>
+               <hr id="line"class="visible-xs">
+                <li class="active">
+                  <a href="Vacation-Blog.html">
+                      <span class="glyphicon glyphicon-book"></span>
+                  <br class="hidden-xs">Blog</a>
+              </li>
+             <hr id="line"class="visible-xs">
+              <li>
+                <a href="tel: 0802-970-3045">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                <br class="hidden-xs">Contact</a>
+            </li>
+           <hr id="line"class="visible-xs">
+            <div>
+             <li>
+              <a href="" target="_blank">
+                  <img src="icon svg/facebook.svg" alt="facebook">
+               <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/instagram.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+             <li>
+             <a href="" target="_blank">
+                <img src="icon svg/twitter.svg" alt="facebook">
+             <br class="hidden-xs"></a>
+             </li>
+            </div>
+          </ol>
+           <p id="verified">&reg; ADVENTOIRRE 2022</p>
+          </div>
+          </div>
+        </label>
+        <!-- END SIDEBAR -->
+           <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="Vacation-home.html">
+                <span class="glyphicon glyphicon-home"></span>
+                <br class="hidden-xs">Home</a>
+            </li>
+           <hr id="line"class="visible-xs">
+              <li>
+                  <a href="Vacation-About.html">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                    <br class="hidden-xs">About</a>
+              </li>
+             <hr id="line"class="visible-xs">
+              <li>
+                <a href="Vacation-Destination.html">
+                    <span class="glyphicon glyphicon-road"></span>
+                <br class="hidden-xs">Destination</a>
+             </li>
+             <hr id="line"class="visible-xs">
+              <li>
+                  <a href="Vacation-Book-a-trip.html">
+                      <span class="glyphicon glyphicon-time"></span>
+                  <br class="hidden-xs">Book a trip NOW!</a>
+              </li>
+             <hr id="line"class="visible-xs">
+              <li class="active">
+                <a href="Vacation-Blog.html">
+                    <span class="glyphicon glyphicon-book"></span>
+                <br class="hidden-xs">Blog</a>
+            </li>
+           <hr id="line"class="visible-xs">
+            <li>
+              <a href="tel: 0802-970-3045">
+                  <span class="glyphicon glyphicon-earphone"></span>
+              <br class="hidden-xs">Contact</a>
+          </li>
+         <hr id="line"class="visible-xs">
+          <li>
+            <a href="" target="_blank">
+                <img src="icon svg/facebook.svg" alt="facebook">
+            <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/instagram.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+              <img src="icon svg/twitter.svg" alt="facebook">
+          <br class="hidden-xs"></a>
+        </li>
+          </ul> 
+        </div> 
+      </div> 
+    </nav> 
+  </header>
+    <!-- END HEADER SECTION -->
+    <!-- BODY SECTION -->
+    <div class="blog">
+      <img src="Vacation Images/palm 2.jpeg" alt="palm tree" id="palm-tree">
+      <section class="palm">
+        <div class="palm-text">
+        <h1>Helping Travel Clients To have The Best Time</h1>
+        <p>Start a vacation trip list and enjoy your travels</p>
+        <p>Star Your Vacation Today<a href="#showcase"><img src="Vacation Images/arrow down.gif" alt="gif" id="gif-arrow"></a></p>
+        </div>
+      </section>
+    </div>
+    <div id="showcase" class="reveal">
+      <img src="Vacation Images/blog laptop.png" alt="laptop" id="laptop">
+      <h3>The Best Travel Platform Trusted By Thousands Of Travel Brands Worldwide</h3>
+    </div>
+    <div id="showcase-phone" class="reveal">
+      <img src="Vacation Images/blog 4.png" alt="blog" id="blog-phone">
+      <div id="showcase-phone-text">
+      <h3>Hotel Recommendations</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fuga illo provident tempore suscipit sequi earum,
+        quibusdam ullam libero doloribus similique cupiditate 
+        perferendis expedita recusandae porro doloremque molestias
+        rerum impedit debitis.
+      </p>
+      <a href=""><button id="showcase-phone-button">Learn More</button></a>
+      </div>
+    </div>
+    <div id="showcase-phone-two" class="reveal">
+      <div id="showcase-phone-text-two">
+        <h3>Who To Call</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fuga illo provident tempore suscipit sequi earum,
+          quibusdam ullam libero doloribus similique cupiditate 
+          perferendis expedita recusandae porro doloremque molestias
+          rerum impedit debitis.
+        </p>
+        <a href="tel:0802-970-3045"><button id="showcase-phone-button-two">Learn More</button></a>
+        </div>
+      <img src="Vacation Images/blog 3.png" alt="blog" id="blog-phone">
+    </div>
+    <div id="showcase-phone" class="reveal">
+      <img src="Vacation Images/blog 2.png" alt="blog" id="blog-phone">
+      <div id="showcase-phone-text">
+      <h3>Access Us On Android Devices</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fuga illo provident tempore suscipit sequi earum,
+        quibusdam ullam libero doloribus similique cupiditate 
+        perferendis expedita recusandae porro doloremque molestias
+        rerum impedit debitis.
+      </p>
+      <a href=""><button id="showcase-phone-button">Learn More</button></a>
+      </div>
+    </div>
+    <div id="showcase-phone-two" class="reveal">
+      <div id="showcase-phone-text-two">
+        <h3>Recommendation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fuga illo provident tempore suscipit sequi earum,
+          quibusdam ullam libero doloribus similique cupiditate 
+          perferendis expedita recusandae porro doloremque molestias
+          rerum impedit debitis.
+        </p>
+        <a href=""><button id="showcase-phone-button-two">Learn More</button></a>
+        </div>
+      <img src="Vacation Images/blog 1.png" alt="blog" id="blog-phone">
+    </div>
+    <div class="food reveal">
+      <div id="food-box">
+        <div id="food-box-text">
+          <h3>Food Recommendation</h3>
+          <div id="food-box-text-price">
+            <span>$</span>
+            <div>39</div>
+          </div>
+          <p>Per User Per Day, Billed After Use</p>
+          <div id="food-box-text-ok">
+            <p><i class="glyphicon glyphicon-ok"></i>&nbsp;Unlimited&nbsp;Food&nbsp;Supplies</p>
+            <p><i class="glyphicon glyphicon-ok"></i>&nbsp;Unlimited&nbsp;Varieties</p>
+            <p><i class="glyphicon glyphicon-ok"></i>Unlimited&nbsp;Amount&nbsp;Order</p>
+          </div>
+          <button id="food-box-enter">Start To Book Now!</button>
+          <p>Last For The Whole Trip/No Credit Card Required</p>
+        </div>
+      </div>
+      <div id="food-box-two">
+        <div id="food-box-text">
+          <h3>Food Recommendation Special</h3>
+          <div id="food-box-text-price-two">
+            <span>$</span>
+            <div><s>39</s></div>
+            <span id="food-box-dollar">$</span>
+            <div>31</div>
+          </div>
+          <p>Per User Per Day, Billed After Use</p>
+          <p id="save">That's a total savings of $96 for the payment</p>
+          <div id="food-box-text-ok">
+            <p><i class="glyphicon glyphicon-ok"></i>&nbsp;Unlimited&nbsp;Food&nbsp;Supplies</p>
+            <p><i class="glyphicon glyphicon-ok"></i>&nbsp;Unlimited&nbsp;Varieties</p>
+            <p><i class="glyphicon glyphicon-ok"></i><s>Unlimited&nbsp;Amount&nbsp;Order</s></p>
+          </div>
+          <button id="food-box-enter">Start To Book Now!</button>
+          <p>Last For The Whole Trip/No Credit Card Required</p>
+        </div>
+      </div>
+    </div>
+    <div class="blog-end"><p>Note: All payment are made in USD</p></div>
+    <!-- END BODY SECTION -->
+   <!-- FOOTER SECTION -->
+   <footer class="panel-footer">
+    <div id="site">Click the email to email us<i class="glyphicon glyphicon-hand-right"></i>
+      <a href=" mailto: adventoirre@gmail.com">adventoirre@gmail.com</a>
+      OR chat us<i class="glyphicon glyphicon-hand-right"></i>
+      <a href="https://wa.me/0802-970-3045" target="_blank"><img src="icon svg/whatsapp white.svg" alt="whatsapp" id="whatsapp"></a>
+    </div>
+    <div class="container-three">
+     <div class="row">
+       <section id="hours" class="col-sm-4">
+         <span>Hours:</span><div><br>
+         Mon-Thurs: 9:00am - 6:00pm <br>
+         Fri: 10:15am - 4:00pm <br>
+         Sunday Closed</div>
+         <hr id="line" class="visible-xs">
+       </section>
+       <section id="address" class="col-sm-4">
+         <span>Address:</span>
+         <div><br>Opposite New visa center, Off Igbe road, 
+         Igbogbo, Ikorodu, Lagos State <br></div>
+         <p>*Comments: We give the best services</p>
+         <hr id="line" class="visible-xs">
+       </section>
+       <section id="partners" class="col-sm-4">
+         <span>Agencies in Partner:</span>
+         <ul>
+           <li>Clearview Int'l Travels & Tours Ltd.</li>
+           <li>WOW Travels and Tours</li>
+           <li>Sephora Travels</li>
+           <li>Inspiring Careers and Solutions</li>
+           <li>Royal coat travels limited</li>
+         </ul>
+         <hr id="line" class="visible-xs">
+       </section>
+     </div>
+     <div class="text-center">&reg; ADVENTOIRRE 2022</div>
+   </footer>
+   <!-- END FOOTER SECTION -->
+
+   <!-- SCROLL TOP BUTTON -->
+   <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">
+   <i class="glyphicon glyphicon-chevron-up"></i></button></a>
+   <!-- END SCROLL TOP BUTTON -->
+
+   <!-- OUR JAVASCRIPT SECTION -->
+   <script src="jQuery library/jquery-3.6.1.min.js"></script>
+   <script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+   <script src="bootstrap-3.4.1-dist/js/Vacation.js"></script>
+   <!-- END JAVASCRIPT SECTION-->
+ </body>
+</html>
