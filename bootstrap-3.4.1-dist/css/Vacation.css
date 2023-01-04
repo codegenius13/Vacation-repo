@@ -63,7 +63,7 @@ img {
     padding-top: 25px;
 }
 .navbar-brand h1 {
-    font-family: 'Sevillana', cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: midnightblue;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -76,7 +76,7 @@ img {
     margin-left: 20px;
 }
 .navbar-brand h6 {
-    font-family: 'Sevillana', cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
     padding-top: 10px;
     padding-top: 20px;
@@ -917,7 +917,7 @@ form input, textarea, #destination_details_form button {
 }
 .about h1 {
     position: absolute;
-    margin-top: 250px;
+    margin-top: 350px;
     margin-left: 500px;
     font-weight: bold;
     font-family: cursive;
@@ -3930,7 +3930,7 @@ main {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 400px;
-    margin-top: 200px;
+    margin-top: 270px;
 }
 #airplane {
     margin-left: 500px;
@@ -3999,7 +3999,7 @@ main {
     margin-left: 130px;
 }
 .destination-categories-two {
-    margin-left: 100px;
+    margin-left: 200px;
 }
 /** END DESTINATION CATEGORY SECTION **/
 /** BLOG PAGE **/
@@ -4131,7 +4131,7 @@ main {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 350px;
-    margin-top: 150px;
+    margin-top: 250px;
 }
 #border-line {
     height: 50px;
@@ -4332,7 +4332,7 @@ main {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 300px;
-    margin-top: 150px;
+    margin-top: 220px;
 }
 #border-line {
     height: 50px;
@@ -4686,7 +4686,7 @@ main {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 300px;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 #border-line {
     height: 50px;
@@ -5126,7 +5126,7 @@ form .mode select {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 250px;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 #border-line {
     height: 50px;
@@ -5574,7 +5574,7 @@ form .mode select {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 250px;
-    margin-top: 100px;
+    margin-top: 180px;
 }
 #border-line {
     height: 50px;
@@ -6023,7 +6023,7 @@ form .mode select {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 230px;
-    margin-top: 80px;
+    margin-top: 150px;
 }
 #border-line {
     height: 50px;
@@ -6497,7 +6497,7 @@ form .mode select {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 140px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 #border-line {
     height: 50px;
@@ -7036,7 +7036,7 @@ form .mode select {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 130px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 #border-line {
     height: 50px;
@@ -7576,7 +7576,7 @@ form .mode select {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 140px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 #border-line {
     height: 50px;
@@ -8101,7 +8101,7 @@ form .mode select {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 150px;
-    margin-top: 80px;
+    margin-top: 130px;
 }
 #border-line {
     height: 50px;
@@ -8586,7 +8586,7 @@ form .mode select {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 130px;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 #border-line {
     height: 50px;
@@ -8637,9 +8637,15 @@ form .mode select {
     margin-bottom: 30px;
     margin-left: 30px;
 }
+#came-text p {
+    text-align: left;
+}
 #values {
     margin-left: 30px;
     margin-top: 30px;
+}
+#values-text p {
+    text-align: left;
 }
 #came-img {
     width: 300px;
@@ -9197,7 +9203,7 @@ form .mode select {
 /** ABOUT CATEGORY SECTION **/
 .about h1 {
     margin-left: 120px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 #border-line {
     height: 50px;
@@ -9248,9 +9254,15 @@ form .mode select {
     margin-bottom: 30px;
     margin-left: 30px;
 }
+#came-text p {
+    text-align: left;
+}
 #values {
     margin-left: 30px;
     margin-top: 30px;
+}
+#values-text p {
+    text-align: left;
 }
 #came-img {
     width: 250px;
