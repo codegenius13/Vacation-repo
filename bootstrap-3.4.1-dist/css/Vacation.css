@@ -323,10 +323,10 @@ input:checked ~ #sidebar .overlay {
     pointer-events: none;
 }
 #bird1{
-    height: 150px;
-    width: 100vw;
+    height: 220px;
+    width: 100%;
     margin-top: 10px;
-    margin-left: -50px;
+    margin-left: 300px;
 }
 #water {
     margin-top: 430px;
@@ -369,10 +369,10 @@ input:checked ~ #sidebar .overlay {
     margin-top: -70px;
 }
 #ad-air {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     margin-top: 10px;
-    margin-left: -100px;
+    margin-left: -200px;
 }
 #cloud {
     width: 100%;
