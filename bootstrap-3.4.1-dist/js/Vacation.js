@@ -29,7 +29,7 @@ window.addEventListener('load', function () {
     var value = window.scrollY;
     text.style.top =  30 + value * -0.2 + '%' ;
     bird1.style.top = value * -1.5 + 'px';
-    bird1.style.left = value * 5 + 'px'; 
+    bird1.style.left = value * -5 + 'px'; 
     button.style.marginTop = value * 0.9 + 'px';
     forest.style.top = value * 0.3 + 'px';
     rock1.style.left = value * -0.4 + 'px';
