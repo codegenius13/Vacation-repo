@@ -20,7 +20,7 @@ img {
     height: 100px;
 }
 #preloader {
-    background: black url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/loading.gif")no-repeat center center;
+    background: black url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/loading.gif")no-repeat center center;
     background-size: 10%;
     height: 100vh;
     width: 100%;
@@ -4050,9 +4050,11 @@ main {
 }
 #discover {
     text-align: center;
+    margin-left: -30px;
 }
 #click {
     text-align: center;
+    margin-left: -30px;
 }
 /** BOOK A TRIP SECTION **/
 .box {
@@ -4193,7 +4195,7 @@ main {
     margin-left: 120px;
 }
 .destination-categories-two {
-    margin-left: 100px;
+    margin-left: 150px;
 }
 /** END DESTINATION CATEGORY SECTION **/
 
@@ -4246,16 +4248,18 @@ main {
     margin-left: 90px;
 }
 .destination-categories {
-    margin-left: 90px;
+    margin-left: 60px;
 }
 .column-two {
     margin-left: 150px;
 }
 #discover {
     text-align: center;
+    margin-left: -30px;
 }
 #click {
     text-align: center;
+    margin-left: -30px;
 }
 /** BOOK A TRIP SECTION **/
 .box {
@@ -4392,7 +4396,7 @@ main {
     margin-left: 100px;
 }
 .destination-categories-two {
-    margin-left: 80px;
+    margin-left: 100px;
 }
 /*** SOUTH AFRICA ***/
 #south-africa-logo {
@@ -4993,6 +4997,9 @@ main {
     height: 100px;
     margin-left: 35vw;
 }
+#forest {
+    object-fit: cover;
+}
 #varieties {
     margin-left: 150px;
 }
@@ -5438,6 +5445,9 @@ form .mode select {
     height: 100px;
     margin-left: 38vw;
 }
+#forest {
+    object-fit: cover;
+}
 #varieties {
     margin-left: 120px;
 }
@@ -5880,6 +5890,9 @@ form .mode select {
     width: 200px;
     height: 100px;
     margin-left: 40vw;
+}
+#forest {
+    object-fit: cover;
 }
 #varieties {
     margin-left: 100px;
@@ -6338,6 +6351,9 @@ form .mode select {
     width: 150px;
     height: 70px;
     margin-left: 55vw;
+}
+#forest {
+    object-fit: cover;
 }
 #varieties {
     margin-right: 100px;
@@ -6875,6 +6891,9 @@ header {
     height: 70px;
     margin-left: 55vw;
 }
+#forest {
+    object-fit: cover;
+}
 #varieties {
     margin-right: 170px;
     font-size: 14px;
@@ -7411,6 +7430,9 @@ form .mode select {
     height: 70px;
     margin-left: 55vw;
 }
+#forest {
+    object-fit: cover;
+}
 #varieties {
     margin-right: 150px;
 }
@@ -7946,6 +7968,9 @@ form .mode select {
     height: 100px;
     margin-left: 40vw;
 }
+#forest {
+    object-fit: cover;
+}
 #varieties {
     margin-left: 30px;
 }
@@ -8409,6 +8434,9 @@ form .mode select {
     width: 150px;
     height: 70px;
     margin-left: 55vw;
+}
+#forest {
+    object-fit: cover;
 }
 #comments {
     margin-top: 220px;
@@ -9019,6 +9047,9 @@ form .mode select {
     width: 150px;
     height: 70px;
     margin-left: 50vw;
+}
+#forest {
+    object-fit: cover;
 }
 #varieties {
     margin-left: -27px;
