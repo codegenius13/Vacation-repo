@@ -1,4 +1,24 @@
 window.addEventListener('load', function () {
+  var south = document.querySelector('.need-to');
+  south.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural.jpg")';
+  var southChild1 = document.querySelector('.south')
+  southChild1.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
+  var southChild2 = document.querySelector('.south-two')
+  southChild2.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
+  var southChild3 = document.querySelector('.south-three')
+  southChild3.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
+  var southChild4 = document.querySelector('.south-four')
+  southChild4.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
+  var southChild5 = document.querySelector('.south-five')
+  southChild5.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
+  var southChild6 = document.querySelector('.south-six')
+  southChild6.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
+  var southChild7 = document.querySelector('.south-seven')
+  southChild7.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
+  var southChild8 = document.querySelector('.south-eight')
+  southChild8.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
+});
+window.addEventListener('load', function () {
     "use strict"
     // PRELOADER 
     var loader = document.getElementById("preloader");
@@ -111,22 +131,4 @@ window.addEventListener('load', function () {
     });
     // END SCROLL THREE
     // END PROVINCE/ CITY VARIETY
-    var south = document.querySelector('.need-to');
-    south.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural.jpg")';
-    var southChild1 = document.querySelector('.south')
-    southChild1.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
-    var southChild2 = document.querySelector('.south-two')
-    southChild2.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
-    var southChild3 = document.querySelector('.south-three')
-    southChild3.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
-    var southChild4 = document.querySelector('.south-four')
-    southChild4.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
-    var southChild5 = document.querySelector('.south-five')
-    southChild5.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
-    var southChild6 = document.querySelector('.south-six')
-    southChild6.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
-    var southChild7 = document.querySelector('.south-seven')
-    southChild7.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
-    var southChild8 = document.querySelector('.south-eight')
-    southChild8.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg")';
 })();
