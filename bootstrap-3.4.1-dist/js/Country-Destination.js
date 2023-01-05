@@ -111,19 +111,19 @@ window.addEventListener('load', function () {
     });
     // END SCROLL THREE
     // END PROVINCE/ CITY VARIETY
+    
+    var south = document.querySelector('.need-to')
+    var southStyles = window.getComputedStyle(south);
+    var southImage = southStyles.backgroundImage;
+    var southUrl = southImage.slice(4, -1);
 })();
  // SOUTH AFRICA BACKGROUND
-  var south = document.querySelector('.need-to')
-  var southStyles = window.getComputedStyle(south);
-  var southImage = southStyles.backgroundImage;
-  var southUrl = southImage.slice(4, -1);
-  southUrl.addEventListener('load');
 
-  var southChild = document.querySelectorAll('.child');
+  /*var southChild = document.querySelectorAll('.child');
   var southChildStyles = window.getComputedStyle(southChild);
   var southChildStyles = window.getComputedStyle(southChild);
   var southChildImage = southChildStyles.backgroundImage;
   var southChildUrl = southChildImage.slice(4, -1);
-  southChildUrl.addEventListener('load');
+  southChildUrl.addEventListener('load');*/
 
   // END SOUTH AFRICA BACKGROUND
