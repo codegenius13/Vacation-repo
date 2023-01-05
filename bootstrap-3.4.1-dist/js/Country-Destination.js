@@ -112,3 +112,19 @@ window.addEventListener('load', function () {
     // END SCROLL THREE
     // END PROVINCE/ CITY VARIETY
 })();
+ // SOUTH AFRICA BACKGROUND
+window.addEventListener('load', function () {
+  var south = document.querySelector('.need-to')
+  var southStyles = window.getComputedStyle(south);
+  var southImage = southStyles.backgroundImage;
+  var southUrl = southImage.slice(4, -1);
+});
+window.addEventListener ('load', function () {
+  var southChild = document.querySelectorAll('.child');
+  var southChildStyles = window.getComputedStyle(southChild);
+  var southChildStyles = window.getComputedStyle(southChild);
+  var southChildImage = southChildStyles.backgroundImage;
+  var southChildUrl = southChildImage.slice(4, -1);
+  console.log(southChildUrl);
+});
+  // END SOUTH AFRICA BACKGROUND
