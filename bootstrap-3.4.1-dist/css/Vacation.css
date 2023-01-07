@@ -1435,17 +1435,23 @@ form input, textarea, #destination_details_form button {
     background-color:whitesmoke;
 }
 .need-to {
-    margin-top: -18px;
     border-top: 2px solid darkgoldenrod;
-    position: relative;
     overflow: hidden;
-    /*background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural.jpg");*/
-    background-position: center;
-    background-size: 100vh;
+}
+.background {
+    width: 100%;
+    height: 2000px;
     position: relative;
+    margin-bottom: 380px;
+}
+#cultural-back {
+    width: 100vw;
+    height: 2000px;
+    object-fit: cover;
 }
 .need-to-content {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content h2 {
     color: black;
@@ -1537,19 +1543,18 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    /*background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural%203.jpg") no-repeat;*/
     background-position: center;
 }
 .child img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
 }
 .child h2 {
-    color: white;
+    color: black;
 }
 .child #need-to-line {
-    border: 2px solid white
+    border: 2px solid black
 }
 .scroll-images::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -1598,16 +1603,22 @@ form input, textarea, #destination_details_form button {
     opacity: .6;
 }
 .country-footer {
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/cultural%205.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
+}
+#country-back {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
 }
 .country-footer-content {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: absolute;
+    margin-top: -650px;
+    width: 100%;
 }
 #south-africa-logo-two {
     width: 100px;
@@ -1622,6 +1633,7 @@ form input, textarea, #destination_details_form button {
 .country-footer-content p {
     font-style: italic;
     font-weight: 600;
+    text-shadow: 1px 1px 1px black;
 }
 .footer-official-three {
     background-color: black;
@@ -1750,17 +1762,12 @@ form input, textarea, #destination_details_form button {
     background-color: whitesmoke;
 }
 .need-to-two {
-    margin-top: -18px;
     border-top: 2px solid maroon;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/canada%201.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-two {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-two h2 {
     color: black;
@@ -1787,7 +1794,7 @@ form input, textarea, #destination_details_form button {
     margin-top: 150px;
 }
 .need-to-popular-two-canada h2 {
-    color: red;
+    color: black;
 }
 .need-to-popular-two-canada #need-to-line-two {
     border: 2px solid black;
@@ -1812,13 +1819,10 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/canada%206.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-two img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
 }
 .child-two h2 {
@@ -1857,11 +1861,9 @@ form input, textarea, #destination_details_form button {
     color: whitesmoke;
 }
 .country-footer-two {
-    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/canada%205.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
 }
 /*** END CANADA ***/
 
@@ -1941,17 +1943,12 @@ form input, textarea, #destination_details_form button {
     background-color: whitesmoke;
 }
 .need-to-three {
-    margin-top: -18px;
     border-top: 2px solid midnightblue;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/america%201.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-three {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-three h2 {
     color: white;
@@ -2003,13 +2000,10 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/america%201.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-three img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-three h2 {
@@ -2048,24 +2042,16 @@ form input, textarea, #destination_details_form button {
     color: white;
 }
 .country-footer-three {
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/america%204.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
 }
 /*** END AMERICA ***/
 
 /*** AUSTRALIA ***/
 .need-to-australia {
-    margin-top: -18px;
     border-top: 2px solid ;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/Australia%20background%203.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .child-four {
     min-width: 100%;
@@ -2073,24 +2059,20 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/Australia%20background%201.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-four img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-four h2 {
     color: black;
 }
 .country-footer-four {
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/Australia%20fotter.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
+    margin-top: -600px;
 }
 /*** END AUSTRALIA ***/
 
@@ -2170,17 +2152,12 @@ form input, textarea, #destination_details_form button {
     background-color: whitesmoke;
 }
 .need-to-four {
-    margin-top: -18px;
     border-top: 2px solid darkred;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/England%20background%203.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-four {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-four h2 {
     color: darkred;
@@ -2188,7 +2165,7 @@ form input, textarea, #destination_details_form button {
     margin-left: 20px;
 }
 .need-to-content-four p {
-    color: white;
+    color: black;
     font-style: italic;
     font-weight: 600;
     margin-left: 20px;
@@ -2222,13 +2199,10 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/England%20background%201.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-five img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-five h2 {
@@ -2267,11 +2241,10 @@ form input, textarea, #destination_details_form button {
     color: white;
 }
 .country-footer-five {
-    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/England%20footter.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
+    margin-top: -600px;
 }
 /*** END ENGLAND ***/
 
@@ -2351,17 +2324,12 @@ form input, textarea, #destination_details_form button {
     background-color: black;
 }
 .need-to-five {
-    margin-top: -18px;
     border-top: 2px solid black;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/uae%20background%202.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-five {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-five h2 {
     color: black;
@@ -2369,7 +2337,7 @@ form input, textarea, #destination_details_form button {
     margin-left: 20px;
 }
 .need-to-content-five p {
-    color: whitesmoke;
+    color: black;
     font-style: italic;
     font-weight: 600;
     margin-left: 20px;
@@ -2413,13 +2381,10 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/uae%20background%203.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-six img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-six h2 {
@@ -2458,11 +2423,9 @@ form input, textarea, #destination_details_form button {
     color: black;
 }
 .country-footer-six {
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/uae%20footter.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
 }
 /*** END UAE ***/
 
@@ -2510,17 +2473,12 @@ form input, textarea, #destination_details_form button {
     background-color: darkgoldenrod;
 }
 .need-to-six {
-    margin-top: -18px;
     border-top: 2px solid black;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/spain%20background%205.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-spain {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-spain h2 {
     color: black;
@@ -2540,20 +2498,17 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/spain%20background%202.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-seven img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-seven h2 {
     color: black;
 }
 .icon-prev-five {
-    color: darkgoldenrod;
+    color: maroon;
     font-size: 30px;
     outline: none;
     border: none;
@@ -2566,10 +2521,10 @@ form input, textarea, #destination_details_form button {
     margin-left: 50px;
 }
 .icon-prev-five:hover {
-    color: maroon;
+    color: darkgoldenrod;
 }
 .icon-next-five {
-    color: darkgoldenrod;
+    color: maroon;
     font-size: 30px;
     outline: none;
     border: none;
@@ -2582,14 +2537,13 @@ form input, textarea, #destination_details_form button {
     right: 50px;
 }
 .icon-next-five:hover {
-    color: maroon;
+    color: darkgoldenrod;
 }
 .country-footer-seven {
-    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/spain%20background%206.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
+    margin-top: -710px;
 }
 /*** END SPAIN ***/
 
@@ -2669,17 +2623,12 @@ form input, textarea, #destination_details_form button {
     background-color: white;
 }
 .need-to-seven  {
-    margin-top: -18px;
     border-top: 2px solid black;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/qatar%20background%202.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-six {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-six h2 {
     color: rgba(63, 3, 3, 0.856);
@@ -2721,17 +2670,14 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/qatar%20background%201.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-eight img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-eight h2 {
-    color: black;
+    color: white;
 }
 .icon-prev-six {
     color: rgba(63, 3, 3, 0.856);
@@ -2766,11 +2712,10 @@ form input, textarea, #destination_details_form button {
     color: white;
 }
 .country-footer-eight {
-    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/qatar%20footer%20.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
+    margin-top: -600px;
 }
 /*** END QATAR ***/
 
@@ -2850,17 +2795,12 @@ form input, textarea, #destination_details_form button {
     background-color: maroon;
 }
 .need-to-eight  {
-    margin-top: -18px;
     border-top: 2px solid black;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/japan%20background%201.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-japan {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-japan h2 {
     color: white;
@@ -2905,24 +2845,19 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/japan%20background%203.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-nine img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-nine h2 {
-    color: maroon;
+    color: black;
 }
 .country-footer-nine {
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/japan%20background%204.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
 }
 /*** END JAPAN ***/
 
@@ -3002,17 +2937,12 @@ form input, textarea, #destination_details_form button {
     background-color: goldenrod;
 }
 .need-to-nine  {
-    margin-top: -18px;
     border-top: 2px solid black;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/germany%20background%202.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-seven {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-seven h2 {
     color: rgb(184, 1, 1);
@@ -3064,13 +2994,10 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/germany%20background%201.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-ten img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-ten h2 {
@@ -3109,11 +3036,9 @@ form input, textarea, #destination_details_form button {
     color: rgb(184, 1, 1);
 }
 .country-footer-ten {
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/germany%20background%204.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: white;
+    position: relative;
 }
 /*** END GERMANY ***/
 
@@ -3193,17 +3118,12 @@ form input, textarea, #destination_details_form button {
     background-color: white;
 }
 .need-to-ten  {
-    margin-top: -18px;
     border-top: 2px solid midnightblue;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/france%20background%201.jpg");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-eight {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-eight h2 {
     color: midnightblue;
@@ -3258,13 +3178,10 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/france%20background%204.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-eleven img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-eleven h2 {
@@ -3303,11 +3220,9 @@ form input, textarea, #destination_details_form button {
     color: white;
 }
 .country-footer-eleven {
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/france%20background%202.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
 }
 /*** END FRANCE ***/
 
@@ -3387,17 +3302,12 @@ form input, textarea, #destination_details_form button {
     background-color: orange;
 }
 .need-to-eleven  {
-    margin-top: -18px;
     border-top: 2px solid orange;
-    position: relative;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/india%20background%205.webp");
-    background-position: center;
-    background-size: 100vh;
-    position: relative;
 }
 .need-to-content-nine {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -1950px;
 }
 .need-to-content-nine h2 {
     color: darkgreen;
@@ -3405,7 +3315,7 @@ form input, textarea, #destination_details_form button {
     margin-left: 20px;
 }
 .need-to-content-nine p {
-    color: white;
+    color: black;
     font-style: italic;
     font-weight: 600;
     margin-left: 20px;
@@ -3449,24 +3359,19 @@ form input, textarea, #destination_details_form button {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/india%20background%202.jpg") no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .child-twelve img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 .child-twelve h2 {
     color: darkgreen;
 }
 .country-footer-twelve {
-    background: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation%20local/Vacation%20Images/india%20background%206.jpg");
-    background-position: center;
-    background-size: 100%;
     height: 650px;
     color: #000;
+    position: relative;
 }
 /*** END INDIA ***/
 
