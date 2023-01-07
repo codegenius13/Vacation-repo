@@ -201,6 +201,7 @@ img {
     margin-bottom: 20px;
     text-transform: lowercase;
     font-weight: 100;
+    color: #000;
 }
 label input {
     display: none;
@@ -266,6 +267,13 @@ input:checked ~ #sidebar .overlay {
     transform: translate(0);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     transition: 1.5s;
+}
+#line-side {
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity: .2;
 }
 /* END HEADER SECTION */
 
@@ -6604,6 +6612,9 @@ form .mode select {
 .destination-categories-two {
     margin-left: 50px;
 }
+.destination-option-text {
+    font-size: 4.5vw;
+}
 /*** SOUTH AFRICA ***/
 #south-africa-logo {
     width: 70px;
@@ -7142,6 +7153,9 @@ form .mode select {
 }
 .destination-categories-two {
     margin-left: 50px;
+}
+.destination-option-text {
+    font-size: 4.5vw;
 }
 /*** SOUTH AFRICA ***/
 #south-africa-logo {
@@ -7682,6 +7696,9 @@ form .mode select {
 }
 .destination-categories-two {
     margin-left: 60px;
+}
+.destination-option-text {
+    font-size: 4.5vw;
 }
 /*** SOUTH AFRICA ***/
 #south-africa-logo {
@@ -8699,6 +8716,9 @@ form .mode select {
 .destination-categories-two {
     margin-left: 30px;
 }
+.destination-option-text {
+    font-size: 4.5vw;
+}
 /*** SOUTH AFRICA ***/
 #south-africa-logo {
     width: 70px;
@@ -9322,6 +9342,9 @@ form .mode select {
 }
 .destination-categories-two {
     margin-left: 13px;
+}
+.destination-option-text {
+    font-size: 4.5vw;
 }
 /*** SOUTH AFRICA ***/
 #south-africa-logo {
