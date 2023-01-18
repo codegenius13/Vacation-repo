@@ -1,5 +1,4 @@
 window.addEventListener('load', function () {
-    "use strict"
     // PRELOADER 
     var loader = document.getElementById("preloader");
       loader.style.display = "none"; 
@@ -111,13 +110,4 @@ window.addEventListener('load', function () {
     });
     // END SCROLL THREE
     // END PROVINCE/ CITY VARIETY
-    /*var south = document.querySelector('.need-to');
-    var southStyle = south.style.backgroundImage = 'url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Vacation/Vacation-repo/Vacation%20Images/cultural.jpg")';
-    function show() {
-      var url = southStyle.slice(4, -1);
-      if (document < 20) {
-       url.addEventListener('load');
-      };
-    };
-    show();*/
-})();
+});
