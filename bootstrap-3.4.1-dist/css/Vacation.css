@@ -1547,7 +1547,7 @@ form input, textarea, #destination_details_form button {
 }
 .child img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
 }
 .child h2 {
@@ -1822,7 +1822,7 @@ form input, textarea, #destination_details_form button {
 }
 .child-two img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
 }
 .child-two h2 {
@@ -3068,7 +3068,7 @@ form input, textarea, #destination_details_form button {
     margin-left: 30px;
 }
 .country-name-nine .country-id-nine h1 {
-    color: white;
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3vw;
 }

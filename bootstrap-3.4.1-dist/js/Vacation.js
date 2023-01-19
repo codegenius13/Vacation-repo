@@ -1,5 +1,4 @@
 window.addEventListener('load', function () {
-    "use strict"
     // PRELOADER 
     var loader = document.getElementById("preloader");
       loader.style.display = "none"; 
@@ -162,4 +161,4 @@ window.addEventListener('load', function () {
 
  // END DESTINATION PAGE IMAGE SLIDER
  
-})();
+});
